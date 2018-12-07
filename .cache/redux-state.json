@@ -810,12 +810,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-12-07T19:27:13.243Z",
+      "buildTime": "2018-12-07T19:29:30.773Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "9888541b094bc7ba0af11bf35116ebd8",
+        "contentDigest": "6d2eaa32b79faf0d853437e7694f593b",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -926,13 +926,18 @@
   },
   "componentDataDependencies": {
     "nodes": {},
-    "connections": {}
+    "connections": {
+      "NasaData": [
+        null,
+        "/"
+      ]
+    }
   },
   "jsonDataPaths": {
     "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
     "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
     "generic-bbb": "520/path---generic-bbb-df1-NZuapzHg3X9TaN1iIixfv1W23E",
-    "index": "173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E",
+    "index": "528/path---index-6a9-OOIxxLNpZkPbRFMc9YR2Exqkabg",
     "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E"
   },
   "components": {
@@ -949,7 +954,7 @@
       "componentPath": "/home/myron/Desktop/myProjects/whatismykino/src/pages/generic.js"
     },
     "/home/myron/Desktop/myProjects/whatismykino/src/pages/index.js": {
-      "query": "",
+      "query": "query homeMyronDesktopMyProjectsWhatismykinoSrcPagesIndexJs1655626263 {\n  allNasaData {\n    edges {\n      node {\n        explanation\n        date\n        title\n        url\n      }\n    }\n  }\n}\n",
       "componentPath": "/home/myron/Desktop/myProjects/whatismykino/src/pages/index.js"
     }
   },
