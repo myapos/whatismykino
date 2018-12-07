@@ -567,11 +567,55 @@
         "owner": "internal-data-bridge"
       }
     },
+    "5f850732-039b-5f6c-8c95-2f1b045bb7e1": {
+      "resolve": "/home/myron/Desktop/myProjects/whatismykino/plugins/nasa",
+      "name": "nasa",
+      "id": "5f850732-039b-5f6c-8c95-2f1b045bb7e1",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "key": "NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo"
+      },
+      "nodeAPIs": [
+        "sourceNodes"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/myron/Desktop/myProjects/whatismykino/plugins/nasa",
+      "packageJson": {
+        "name": "nasa",
+        "description": "A GatsBy plugin for requesting OPAP nasa Lottery data",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Apostolakis Myron",
+        "license": "ISC",
+        "devDependencies": [
+          {
+            "name": "node-fetch",
+            "version": "^2.3.0"
+          },
+          {
+            "name": "query-string",
+            "version": "^6.2.0"
+          }
+        ],
+        "dependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "976f8201154299cd043f2c06d6a8b858",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "7374ebf2-d961-52ee-92a2-c25e7cb387a9": {
       "resolve": "/home/myron/Desktop/myProjects/whatismykino",
       "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "name": "default-site-plugin",
-      "version": "5031ec58ed392448612cc667dad51561",
+      "version": "ef9bbdac94ea617dabe27acce8446afc",
       "pluginOptions": {
         "plugins": []
       },
@@ -651,28 +695,8 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "ace0d8a567281ff9fa43cd3473853237",
+        "contentDigest": "95eab2cd36e7ead7ec442633d7f271c3",
         "type": "SitePlugin",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "Site": {
-      "siteMetadata": {
-        "title": "Gatsby Starter - Stellar by HTML5 UP",
-        "author": "Hunter Chang",
-        "description": "A Gatsby.js Starter based on Stellar by HTML5 UP"
-      },
-      "port": "8000",
-      "host": "localhost",
-      "pathPrefix": "",
-      "polyfill": true,
-      "buildTime": "2018-12-07T18:02:29.152Z",
-      "id": "Site",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "contentDigest": "0ce1b40f7f6664a2dc244082f12c4793",
-        "type": "Site",
         "owner": "internal-data-bridge"
       }
     },
@@ -776,6 +800,45 @@
         "owner": "internal-data-bridge"
       }
     },
+    "Site": {
+      "siteMetadata": {
+        "title": "Gatsby Starter - Stellar by HTML5 UP",
+        "author": "Hunter Chang",
+        "description": "A Gatsby.js Starter based on Stellar by HTML5 UP"
+      },
+      "port": "8000",
+      "host": "localhost",
+      "pathPrefix": "",
+      "polyfill": true,
+      "buildTime": "2018-12-07T19:27:13.243Z",
+      "id": "Site",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "9888541b094bc7ba0af11bf35116ebd8",
+        "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "2e005b04-d752-5a18-8398-1c68646bee58": {
+      "copyright": "Juan Carlos Casado",
+      "date": "2018-12-07",
+      "explanation": "Coming close in mid-December, Comet 46P Wirtanen hangs in this starry sky over the bell tower of a Romanesque church. In the constructed vertical panorama, a series of digital exposures capture its greenish coma on December 3 from Sant Llorenc de la Muga, Girona, Catalonia, Spain, planet Earth. With an orbital period that is now about 5.4 years, the periodic comet's perihelion, its closest approach, to the Sun will be on December 12. On December 16 it will be closest to Earth, passing at a distance of about 11.6 million kilometers or 39 light-seconds. That's close for a comet, a mere 30 times the Earth-Moon distance. A good binocular target for comet watchers, Wirtanen could be visible to the unaided eye from a dark sky site. To spot it after dusk on December 16, look close on the sky to the Pleiades star cluster in Taurus.",
+      "hdurl": "https://apod.nasa.gov/apod/image/1812/031218_stllorenc_jcc.jpg",
+      "media_type": "image",
+      "service_version": "v1",
+      "title": "December's Comet Wirtanen",
+      "url": "https://apod.nasa.gov/apod/image/1812/031218_stllorenc_jcc1200.jpg",
+      "id": "2e005b04-d752-5a18-8398-1c68646bee58",
+      "parent": null,
+      "children": [],
+      "internal": {
+        "type": "NasaData",
+        "content": "{\"copyright\":\"Juan Carlos Casado\",\"date\":\"2018-12-07\",\"explanation\":\"Coming close in mid-December, Comet 46P Wirtanen hangs in this starry sky over the bell tower of a Romanesque church. In the constructed vertical panorama, a series of digital exposures capture its greenish coma on December 3 from Sant Llorenc de la Muga, Girona, Catalonia, Spain, planet Earth. With an orbital period that is now about 5.4 years, the periodic comet's perihelion, its closest approach, to the Sun will be on December 12. On December 16 it will be closest to Earth, passing at a distance of about 11.6 million kilometers or 39 light-seconds. That's close for a comet, a mere 30 times the Earth-Moon distance. A good binocular target for comet watchers, Wirtanen could be visible to the unaided eye from a dark sky site. To spot it after dusk on December 16, look close on the sky to the Pleiades star cluster in Taurus.\",\"hdurl\":\"https://apod.nasa.gov/apod/image/1812/031218_stllorenc_jcc.jpg\",\"media_type\":\"image\",\"service_version\":\"v1\",\"title\":\"December's Comet Wirtanen\",\"url\":\"https://apod.nasa.gov/apod/image/1812/031218_stllorenc_jcc1200.jpg\"}",
+        "contentDigest": "02a089ff5137691b3f613e2639113161",
+        "owner": "nasa"
+      }
+    },
     "SitePage /404/": {
       "jsonName": "404-22d",
       "internalComponentName": "Component404",
@@ -859,7 +922,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "63235ed9792e58c267d9caf68fd019af"
+    "PLUGINS_HASH": "13d168254dceb52f9c15a98b48a4eca6"
   },
   "componentDataDependencies": {
     "nodes": {},

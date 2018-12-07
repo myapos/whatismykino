@@ -1,0 +1,15 @@
+{
+  "name": "nasa",
+  "version": "1.0.0",
+  "description": "A GatsBy plugin for requesting OPAP nasa Lottery data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Apostolakis Myron",
+  "license": "ISC",
+  "devDependencies": {
+    "node-fetch": "^2.3.0",
+    "query-string": "^6.2.0"
+  }
+}
