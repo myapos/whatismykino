@@ -7,6 +7,10 @@
 /* Main */
 
 	#main {
+		.responsiveImg {
+			width: 100%;
+			height: auto;
+		}				
 		@include color(invert);
 		border-radius: _size(border-radius-main);
 
@@ -97,3 +101,4 @@
 			}
 		}
 	}
+

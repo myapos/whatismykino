@@ -32,7 +32,7 @@ class Index extends React.Component {
 
     const { edges } = this.props.data.allNasaData;
 
-    console.log(edges);
+    // console.log(edges);
     return <Layout>
         <Helmet title="Gatsby Starter - Stellar" />
 
@@ -195,12 +195,14 @@ class Index extends React.Component {
               <p>
                 Info
                 <br />
-                {edges.map(edge => <div>
+                {
+                  edges.map(edge => <div>
                   <p>Date: {edge.node.date}</p>
                   <p>Title: {edge.node.title}</p>
                   <p>Explanation: {edge.node.explanation}</p>
-                  <p><img src={edge.node.url}></img></p> 
-                  </div>)}
+                  <p><img className='responsiveImg' src={edge.node.url}></img></p> 
+                  </div>)
+                }
               </p>
             </header>
             <footer className="major">

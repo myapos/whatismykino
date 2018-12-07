@@ -810,12 +810,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-12-07T19:29:30.773Z",
+      "buildTime": "2018-12-07T20:47:58.509Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "6d2eaa32b79faf0d853437e7694f593b",
+        "contentDigest": "19a93e46999727f76b455c8c55a614dc",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
