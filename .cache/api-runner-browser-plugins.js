@@ -1,7 +1,7 @@
 module.exports = [{
-      plugin: require('/home/myros/Desktop/myProjects/whatismykino/node_modules/gatsby-plugin-offline/gatsby-browser'),
+      plugin: require('/home/myron/Desktop/myProjects/whatismykino/node_modules/gatsby-plugin-offline/gatsby-browser'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/myros/Desktop/myProjects/whatismykino/gatsby-browser.js'),
+      plugin: require('/home/myron/Desktop/myProjects/whatismykino/gatsby-browser.js'),
       options: {"plugins":[]},
     }]
