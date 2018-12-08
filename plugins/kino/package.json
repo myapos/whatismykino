@@ -1,14 +1,15 @@
 {
-  "name": "nasa",
+  "name": "kino",
   "version": "1.0.0",
-  "description": "A GatsBy plugin for requesting nasa API data",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Apostolakis Myron",
+  "keywords": [],
+  "author": "Myron Apostolakis",
   "license": "ISC",
-  "devDependencies": {
+  "description": "A GatsBy plugin for requesting OPAP Kino data",
+  "dependencies": {
     "node-fetch": "^2.3.0",
     "query-string": "^6.2.0"
   }

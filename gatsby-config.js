@@ -20,12 +20,15 @@ module.exports = {
     },
     "gatsby-plugin-sass",
     "gatsby-plugin-offline",
+    // {
+    //   resolve: `nasa`,
+    //   options: {
+    //     key: "NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo"
+    //     // q: "yellow flowers"
+    //   }
+    // },
     {
-      resolve: `nasa`,
-      options: {
-        key: "NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo",
-        // q: "yellow flowers"
-      }
+      resolve: `kino`,
     }
   ]
 };

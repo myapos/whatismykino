@@ -27,10 +27,9 @@ class Index extends React.Component {
 
   render() {
     // debugger;
-    // console.log(this);
+    console.log(this);
 
-
-    const { edges } = this.props.data.allNasaData;
+    // const { edges } = this.props.data.allNasaData;
 
     // console.log(edges);
     return <Layout>
@@ -195,13 +194,13 @@ class Index extends React.Component {
               <p>
                 Info
                 <br />
-                {
+                {/*
                   edges.map(edge => <div>
                   <p>Date: {edge.node.date}</p>
                   <p>Title: {edge.node.title}</p>
                   <p>Explanation: {edge.node.explanation}</p>
                   <p><img className='responsiveImg' src={edge.node.url}></img></p> 
-                  </div>)
+                  </div>) */
                 }
               </p>
             </header>
@@ -225,18 +224,39 @@ class Index extends React.Component {
   }
 }
 
+// export const query = graphql`
+//   query {
+//     allNasaData {
+//       edges {
+//         node {
+//           explanation
+//           date
+//           title
+//           url
+//         }
+//       }
+//     }
+//   }`;
+
 export const query = graphql`
-  query {
-    allNasaData {
-      edges {
-        node {
-          explanation
-          date
-          title
-          url
-        }
-      }
-    }
-  }
-`;
+         query {
+           allKinoData {
+             edges {
+               node {
+                 content {
+                   gameId
+                   drawId
+                   drawTime
+                   status
+                   drawBreak
+                   visualDraw
+                   winningNumbers {
+                     list
+                   }
+                 }
+               }
+             }
+           }
+         }
+       `;
 export default Index

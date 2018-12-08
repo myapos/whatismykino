@@ -35,7 +35,7 @@ exports.sourceNodes = (
        console.log("Testing my plugin", configOptions);
        // Convert the options object into a query string
        const apiOptions = queryString.stringify(configOptions);
-       // // Join apiOptions with the Pixabay API URL
+       // // Join apiOptions with the NASA API URL
        const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${configOptions.key}`;
 
        console.log("apiUrl:", apiUrl);
