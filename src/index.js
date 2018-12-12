@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './components/App';
+import Root from './components/Root';
 
 const placeholder = document.getElementById('root');
 
 ReactDOM.render(
-    <App />,
+    <Root />,
   placeholder
 );
