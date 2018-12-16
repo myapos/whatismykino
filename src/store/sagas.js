@@ -17,9 +17,19 @@ function* initialize() {
   });
 }
 
+function* fetchForDate(action) {
+  const kino = yield call(api.fetchKinoDraws, action.date);
+  console.log(kino);
+  
+  yield put({
+    type: actions.KINO_DATA_FETCHED,
+    kino
+  })  
+}
 
 function* rootSaga() {
   yield initialize();
+  yield takeEvery(actions.FETCH_FOR_DATE, fetchForDate);
 }
 
 export default rootSaga;

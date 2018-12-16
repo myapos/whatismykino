@@ -7,7 +7,9 @@ import ErrorBoundary from "../ErrorHandling/ErrorBoundary";
 import App from './App';
 
 const initialState = {
-  data: {}
+  data: {
+    kinoData: {}
+  }
 };
 
 const Root = () => (
