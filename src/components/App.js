@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Options from "./Options";
 import PropTypes from "prop-types";
 import '../css/css.styl'
 
@@ -18,7 +18,7 @@ class App extends Component {
     console.log('render:',this.state);
     return (
       <div id="container">
-        Hello World!!!!
+        <Options />
     </div>);
   }
 }
