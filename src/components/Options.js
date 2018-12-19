@@ -42,13 +42,15 @@ class Options extends Component {
 		const { kino } = this.props;
 
     return (
-      <div id="options-container">
+			<div id="options-container">
         <DatePicker
+					className="dates" 
 					selected={selectedDate}
 					placeholderText="Click to select a date"
-					onChange={this.handleDate} 
+					onChange={this.handleDate}
 					dateFormat="yyyy-MM-dd" />
 				<Select
+					className="select"
 					value={selectedOption}
 					onChange={this.handleChange}
 					{...(kino ? { options: kino.drawIds } : { isDisabled: true })}

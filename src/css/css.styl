@@ -1,3 +1,7 @@
+/* variables */
+widthPixels = 300px
+paddingPixels = 5px
+/* rules */
 .react-datepicker-wrapper {
 	input {
 		padding: 5px;
@@ -5,4 +9,16 @@
 		border: 1px solid #ccc;
 	}
 
+}
+
+#options-container {
+	.react-datepicker__input-container > input{
+		padding: paddingPixels
+		width: widthPixels
+	}
+
+	.select{
+		padding: paddingPixels
+		width: widthPixels
+	}
 }
