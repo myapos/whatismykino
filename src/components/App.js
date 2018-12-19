@@ -23,7 +23,7 @@ class App extends Component {
     return <div id="wrapper">
         <Header />
         <Nav />
-        <Content />
+        {/* <Content /> */}
         <Footer />
       </div>;
   }
