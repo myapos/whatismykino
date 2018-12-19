@@ -1,5 +1,9 @@
 import React, { Component } from "react";
-import Options from "./Options";
+
+import Content from "./Content";
+import Footer from "./Footer";
+import Nav from "./Nav";
+import Header from "./Header";
 import PropTypes from "prop-types";
 import '../css/css.styl'
 
@@ -16,10 +20,12 @@ class App extends Component {
   render() {
 
     console.log('render:',this.state);
-    return (
-      <div id="container">
-        <Options />
-    </div>);
+    return <div id="wrapper">
+        <Header />
+        <Nav />
+        <Content />
+        <Footer />
+      </div>;
   }
 }
 
