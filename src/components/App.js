@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import Content from './Content';
-import Footer from './Footer';
-import Nav from './Nav';
-import Header from './Header';
+import Content from './presentational/Content';
+import Footer from './presentational/Footer';
+import Nav from './presentational/Nav';
+import Header from './presentational/Header';
 import PropTypes from 'prop-types';
 import '../css/css.styl';
 
@@ -21,8 +21,10 @@ class App extends Component {
     console.log('render:', this.state);
     return <div id="wrapper">
       <Header />
-      <Nav />
-      {/* <Content /> */}
+      <div className="grid_child" id="content">
+        <Nav />
+        <Content />
+      </div>
       <Footer />
     </div>;
   }

@@ -1,7 +1,7 @@
 /* variables */
 widthPixels = 300px
 paddingPixels = 5px
-
+contentColor = #f7f7f7
 /* rules */
 
 body 
@@ -13,55 +13,52 @@ body
 	vertical-align baseline
 	background-color tomato
 
-#wrapper
-	width 64em
-	max-width calc(100% - 4em)
-	margin 0 auto
+ul 
+	display flex
+	li 
+		list-style none
+		margin-right 5px
+// .grid_child
+// 	justify-self center
+
+#wrapper {
+	display: grid;
+  grid-template-columns: 1fr 10fr 10fr 1fr;
+  grid-template-rows: 1fr 40fr 1fr;
+  grid-template-areas:
+    ". header header ." ". content content ." ". footer footer .";
+}
 
 #header
-	text-align center
+	grid-area: header;
+	justify-self: center;
 
-#nav 
-	transition: background-color .2s ease,border-top-left-radius .2s ease,border-top-right-radius .2s ease,padding .2s ease;
-	background-color: #fff;
-	position: absolute;
-	width: 64em;
-	max-width: calc(100% - 4em);
-	padding: 1em;
-	background-color: #f7f7f7;
-	border-top-left-radius: .25em;
-	border-top-right-radius: .25em;
-	cursor: default;
-	text-align: center;
-	ul 
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		li 
-			transition: margin .2s ease;
-			display: inline-block;
-			margin: 0 .35em;
-			padding: 0;
-			vertical-align: middle
-			a 
-				transition: font-size .2s ease;
-				display: inline-block;
-				height: 2.25em;
-				line-height: 2.25em;
-				padding: 0 1.25em;
-				border: 0;
-				border-radius: 8px;
+#nav
+	grid-area: nav;
+	background-color: contentColor
+	display: flex;
+	justify-content: center;
+
+#content
+	grid-area: content;
+	background-color: contentColor
+
+#footer
+	grid-area: footer;
+	justify-self: center;
+
 .react-datepicker-wrapper 
 	input 
-		padding: 5px;
-		border-radius: 4px;
-		border: 1px solid #ccc;
+		padding 5px
+		border-radius 4px
+		border 1px solid #ccc
 
 #options-container 
 	.react-datepicker__input-container > input
-		padding: paddingPixels
-		width: widthPixels
+		padding paddingPixels
+		width widthPixels
 	.select
-		padding: paddingPixels
-		width: widthPixels
+		padding paddingPixels
+		width widthPixels
 	
+  
