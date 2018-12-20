@@ -1,5 +1,7 @@
 {
-  "extends": "phaistos-networks",
+  "extends": [
+    "phaistos-networks"
+  ],
   "rules": {
     "func-names": 0,
     "one-var": 0,
@@ -13,14 +15,8 @@
     "max-lines-per-function": 1,
     "no-debugger": 0
   },
-  "settings": {
-    "react": {
-      "pragma": "h"
-    }
-  },
-  "globals": {
-  
-  },
+  "settings": {},
+  "globals": {},
   "parserOptions": {
     "sourceType": "module",
     "ecmaVersion": 6
