@@ -7,5 +7,6 @@ export const formatDate = fullDate => {
   dd = dd < 10 ? `0${dd}` : dd;
   mm = mm < 10 ? `0${mm}` : mm;
 
-	return  `${yyyy}-${mm}-${dd}`;
+  return `${yyyy}-${mm}-${dd}`;
 }
+;
