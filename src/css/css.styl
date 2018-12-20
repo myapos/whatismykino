@@ -1,23 +1,64 @@
 /* variables */
 widthPixels = 300px
 paddingPixels = 5px
+contentColor = #f7f7f7
 /* rules */
-.react-datepicker-wrapper {
-	input {
-		padding: 5px;
-		border-radius: 4px;
-		border: 1px solid #ccc;
-	}
+
+body 
+	margin 0
+	padding 0
+	border 0
+	font-size 100%
+	font inherit
+	vertical-align baseline
+	background-color tomato
+
+ul 
+	display flex
+	li 
+		list-style none
+		margin-right 5px
+// .grid_child
+// 	justify-self center
+
+#wrapper {
+	display: grid;
+  grid-template-columns: 1fr 10fr 10fr 1fr;
+  grid-template-rows: 1fr 40fr 1fr;
+  grid-template-areas:
+    ". header header ." ". inner_wrapper inner_wrapper ." ". footer footer .";
 }
 
-#options-container {
-	.react-datepicker__input-container > input{
-		padding: paddingPixels
-		width: widthPixels
-	}
+#header
+	grid-area: header;
+	justify-self: center;
 
-	.select{
-		padding: paddingPixels
-		width: widthPixels
-	}
-}
+#nav
+	grid-area: nav;
+	background-color: contentColor
+	display: flex;
+	justify-content: center;
+
+#inner_wrapper
+	grid-area: inner_wrapper;
+	background-color: contentColor
+
+#footer
+	grid-area: footer;
+	justify-self: center;
+
+.react-datepicker-wrapper 
+	input 
+		padding 5px
+		border-radius 4px
+		border 1px solid #ccc
+
+#options-container 
+	.react-datepicker__input-container > input
+		padding paddingPixels
+		width widthPixels
+	.select
+		padding paddingPixels
+		width widthPixels
+	
+  

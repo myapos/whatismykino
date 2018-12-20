@@ -5,29 +5,29 @@ import * as api from '../api';
 import * as actions from './actions';
 import * as constants from '../constants';
 
-import gql from "graphql-tag";
-import graphql from "graphql-anywhere";
+import gql from 'graphql-tag';
+import graphql from 'graphql-anywhere';
 
-function* initialize() {
+function* initialize () {
   const data = yield call(api.getKinoData);
 
   yield put({
     type: actions.INITIALIZATIONS,
-    data
+    data,
   });
 }
 
-function* fetchForDate(action) {
+function* fetchForDate (action) {
   const kino = yield call(api.fetchKinoDraws, action.date);
   console.log(kino);
-  
+
   yield put({
     type: actions.KINO_DATA_FETCHED,
-    kino
-  })  
+    kino,
+  });
 }
 
-function* rootSaga() {
+function* rootSaga () {
   yield initialize();
   yield takeEvery(actions.FETCH_FOR_DATE, fetchForDate);
 }

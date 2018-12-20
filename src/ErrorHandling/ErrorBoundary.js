@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 class ErrorBoundary extends React.Component {
   state = { error: null, errorInfo: null };
 
-  componentDidCatch(error, errorInfo) {
+  componentDidCatch (error, errorInfo) {
     this.setState({
       error,
       errorInfo,
     });
   }
 
-  render() {
+  render () {
     if (this.state.error) {
       return <>
         <p className="warning">Something went wrong. Please try later or contact support.</p>

@@ -1,15 +1,15 @@
-import { Provider } from "react-redux";
-import React, { Component } from "react";
+import { Provider } from 'react-redux';
+import React, { Component } from 'react';
 
-import configureStore from "../store/store";
+import configureStore from '../store/store';
 
-import ErrorBoundary from "../ErrorHandling/ErrorBoundary";
+import ErrorBoundary from '../ErrorHandling/ErrorBoundary';
 import App from './App';
 
 const initialState = {
   data: {
-    kinoData: {}
-  }
+    kinoData: {},
+  },
 };
 
 const Root = () => (

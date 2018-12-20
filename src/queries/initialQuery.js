@@ -1,7 +1,7 @@
 import gql from 'graphql-tag';
 
 // Write a query that gets just the fields we want
-export default () => 
+export default () =>
   gql`
     {
       name
