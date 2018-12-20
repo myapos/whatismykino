@@ -5,9 +5,9 @@ import * as actions from '../../store/actions';
 export const Nav = () => <div id="nav">
   <ul>
     <li><a href="#">Introduction</a> </li>
-    <li><a href="#">First Section</a> </li>
-    <li><a href="#">Second Section</a> </li>
-    <li><a href="#">Third Section</a> </li>
+    <li><a href="#">Graphs</a> </li>
+    <li><a href="#">Links</a> </li>
+    <li><a href="#">About</a> </li>
   </ul>
 </div>;
 

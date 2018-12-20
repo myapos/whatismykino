@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../store/actions';
 
-export const Header = () => <div className="grid_child" id="header"> Header </div>;
+export const Header = () => <div className="grid_child" id="header"> Header - Logo </div>;
 
 export default connect(
   state => state,

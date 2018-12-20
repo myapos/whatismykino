@@ -21,7 +21,7 @@ class App extends Component {
     console.log('render:', this.state);
     return <div id="wrapper">
       <Header />
-      <div className="grid_child" id="content">
+      <div id="inner_wrapper">
         <Nav />
         <Content />
       </div>

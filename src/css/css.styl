@@ -26,7 +26,7 @@ ul
   grid-template-columns: 1fr 10fr 10fr 1fr;
   grid-template-rows: 1fr 40fr 1fr;
   grid-template-areas:
-    ". header header ." ". content content ." ". footer footer .";
+    ". header header ." ". inner_wrapper inner_wrapper ." ". footer footer .";
 }
 
 #header
@@ -39,8 +39,8 @@ ul
 	display: flex;
 	justify-content: center;
 
-#content
-	grid-area: content;
+#inner_wrapper
+	grid-area: inner_wrapper;
 	background-color: contentColor
 
 #footer

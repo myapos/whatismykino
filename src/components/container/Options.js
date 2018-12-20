@@ -3,9 +3,9 @@ import DatePicker from 'react-datepicker';
 import Select from 'react-select';
 
 import { connect } from 'react-redux';
-import { formatDate } from '../utils/';
+import { formatDate } from '../../utils/';
 
-import { fetchForDate } from '../store/actions';
+import { fetchForDate } from '../../store/actions';
 
 import 'react-datepicker/dist/react-datepicker.css';
 
@@ -44,11 +44,11 @@ class Options extends Component {
     return (
       <div id="options-container">
         <DatePicker
-    className="dates"
-    selected={selectedDate}
-    placeholderText="Click to select a date"
-    onChange={this.handleDate}
-    dateFormat="yyyy-MM-dd" />
+          className="dates"
+          selected={selectedDate}
+          placeholderText="Click to select a date"
+          onChange={this.handleDate}
+          dateFormat="yyyy-MM-dd" />
         <Select
           className="select"
           value={selectedOption}
