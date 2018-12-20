@@ -4,7 +4,8 @@ paddingPixels = 5px
 contentColor = #f7f7f7
 /* rules */
 
-body 
+body
+	font-family: Verdana, Geneva, sans-serif !important;
 	margin 0
 	padding 0
 	border 0
@@ -22,31 +23,55 @@ ul
 // 	justify-self center
 
 #wrapper {
-	display: grid;
-  grid-template-columns: 1fr 10fr 10fr 1fr;
-  grid-template-rows: 1fr 40fr 1fr;
-  grid-template-areas:
-    ". header header ." ". inner_wrapper inner_wrapper ." ". footer footer .";
+	display grid
+  grid-template-columns 1fr 10fr 10fr 1fr
+  grid-template-rows 1fr 40fr 1fr
+  grid-template-areas ". header header ." ". inner_wrapper inner_wrapper ." ". footer footer ."
 }
 
 #header
-	grid-area: header;
-	justify-self: center;
+	grid-area header
+	justify-self center
 
 #nav
-	grid-area: nav;
-	background-color: contentColor
-	display: flex;
-	justify-content: center;
+	grid-area nav
+	background-color contentColor
+	display flex
+	justify-content center
 
 #inner_wrapper
-	grid-area: inner_wrapper;
-	background-color: contentColor
+	grid-area inner_wrapper
+	background-color contentColor
 
 #footer
-	grid-area: footer;
-	justify-self: center;
+	grid-area footer
+	justify-self center
 
+#section_wrapper
+	width 70%
+	margin 0 auto
+
+.subtitle
+	font-size 2em
+	text-decoration underline hotpink
+
+.msg
+	font-size 1em
+	text-align justify
+
+.section_footer{
+	font-size 0.9em
+	display flex
+ 	justify-content space-between
+}
+
+
+.section
+	padding-bottom 1em
+
+.top 
+	cursor pointer
+	text-decoration: underline blue
 .react-datepicker-wrapper 
 	input 
 		padding 5px
