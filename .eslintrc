@@ -11,9 +11,9 @@
     "one-var-declaration-per-line": 0,
     "no-unused-expressions": 0,
     "prefer-template": 0,
-    "max-classes-per-file": 1,
-    "max-lines-per-function": 1,
-    "no-debugger": 0
+    "max-classes-per-file": true,
+    "max-lines-per-function": true,
+    "no-debugger": 1
   },
   "settings": {},
   "globals": {},
