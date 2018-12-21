@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../../../logos/logo_5.png';
 import { connect } from 'react-redux';
+import logo from '../../../logos/logo_5.png';
 import * as actions from '../../store/actions';
 
 export const Header = () => <div className="grid_child" id="header">

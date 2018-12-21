@@ -20,6 +20,12 @@ class App extends Component {
   render () {
     console.log('render:', this.state);
     return <div id="wrapper">
+      <a href="https://github.com/myapos/whatismykino">
+        <img
+          style={{ position: 'absolute', top: 0, right: 0, border: 0 }}
+          src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
+          alt="Fork me on GitHub" />
+      </a>
       <Header />
       <div id="inner_wrapper">
         <Nav />
