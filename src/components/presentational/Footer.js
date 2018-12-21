@@ -22,6 +22,7 @@ export const Footer = () => <div id="footer">
   </div>
   <div className="coder">
     Coded with <span id="heart" /> by <a id="mailToCoder" href="mailto:myapos@gmail.com"> Myron Apostolakis </a>
+    and <a id="mailToCoder" href="mailto:mkgrks@gmail.com"> Michael Garganourakis </a>
   </div>
   <div className="coder copyright">
     Copyright @2018. All rights reserved
