@@ -3,13 +3,12 @@ import { connect } from 'react-redux';
 import logo from '../../../logos/logo_5.png';
 import * as actions from '../../store/actions';
 
-export const Header = () => <div className="grid_child" id="header">
+export const Header = () => <div id="header">
   <a href=".">
     <img
+      id="logo"
       src={logo}
-      alt="what is my kino logo"
-      width="100"
-      height="100" />
+      alt="what is my kino logo" />
   </a>
 </div>;
 

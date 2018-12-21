@@ -4,6 +4,9 @@ paddingPixels = 5px
 contentColor = #f8faff
 colorLink = #034f84
 colorBackground = tomato
+footerFontSize = 2em
+footerTopPadding = 1em
+leftRightPadding = 0.5em
 /* rules */
 
 body
@@ -22,10 +25,13 @@ ul
 		list-style none
 		margin-right 5px
 
+#logo
+	width 7em
+
 #wrapper {
 	display grid
   grid-template-columns 1fr 10fr 10fr 1fr
-  grid-template-rows 3fr 40fr 1fr
+  grid-template-rows 1fr 12fr 1fr
   grid-template-areas ". header header ." ". inner_wrapper inner_wrapper ." ". footer footer ."
 }
 
@@ -46,7 +52,6 @@ ul
 
 #footer
 	grid-area footer
-	justify-self center
 
 #section_wrapper
 	width 70%
@@ -82,6 +87,56 @@ ul
 	font-style: normal;
 }
 
+// footer
+.footer_container
+	padding-top footerTopPadding
+	display flex
+	justify-content space-around
+
+.coder {
+	display flex
+  justify-content center
+  padding-top 1em
+}
+.copyright
+	font-size 0.7em
+	font-style italic
+
+#heart, #mailToCoder
+	padding-left leftRightPadding
+	padding-right leftRightPadding
+
+#heart::after{
+	content: "\f004";
+	font-family: FontAwesome;
+	font-style: normal;
+}
+// social in footer
+
+#facebook::after {
+	content: "\f082";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-size footerFontSize
+}
+#twitter::after {
+	content:"\f081";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-size footerFontSize
+}
+#linkedin::after {
+	content:"\f08c";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-size footerFontSize
+}
+#github::after {
+	content:"\f092";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-size footerFontSize
+}
 #options-container
 	padding-top 1em
 
