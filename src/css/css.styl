@@ -1,7 +1,9 @@
 /* variables */
 widthPixels = 300px
 paddingPixels = 5px
-contentColor = #f7f7f7
+contentColor = #f8faff
+colorLink = #034f84
+colorBackground = tomato
 /* rules */
 
 body
@@ -12,7 +14,7 @@ body
 	font-size 100%
 	font inherit
 	vertical-align baseline
-	background-color tomato
+	background-color colorBackground
 
 ul 
 	display flex
@@ -25,13 +27,17 @@ ul
 #wrapper {
 	display grid
   grid-template-columns 1fr 10fr 10fr 1fr
-  grid-template-rows 1fr 40fr 1fr
+  grid-template-rows 3fr 40fr 1fr
   grid-template-areas ". header header ." ". inner_wrapper inner_wrapper ." ". footer footer ."
 }
 
-#header
+#header {
 	grid-area header
 	justify-self center
+	// background-image: url('../../logos/logo_5.png')
+	// background-size 100%
+  // background-repeat no-repeat
+}
 
 #nav
 	grid-area nav
@@ -53,25 +59,37 @@ ul
 
 .subtitle
 	font-size 2em
-	text-decoration underline hotpink
+	text-decoration underline colorLink
+	padding-bottom 1em
 
 .msg
+	padding-bottom 1em
 	font-size 1em
 	text-align justify
 
 .section_footer{
 	font-size 0.9em
+	padding-top 1em
 	display flex
  	justify-content space-between
 }
 
-
 .section
 	padding-bottom 1em
 
-.top 
+.top, .clickable
 	cursor pointer
-	text-decoration: underline blue
+	text-decoration: underline colorLink
+
+.top::after {
+	content: "\f102";
+	font-family: FontAwesome;
+	font-style: normal;
+}
+
+#options-container
+	padding-top 1em
+
 .react-datepicker-wrapper 
 	input 
 		padding 5px

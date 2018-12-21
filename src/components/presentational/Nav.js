@@ -20,10 +20,10 @@ const handleScroll = e => {
 };
 export const Nav = () => <div id="nav">
   <ul>
-    <li onClick={e => handleScroll(e)} ><a href="#">Introduction</a> </li>
-    <li onClick={e => handleScroll(e)} ><a href="#">Graphs</a> </li>
-    <li onClick={e => handleScroll(e)} ><a href="#">Links</a> </li>
-    <li onClick={e => handleScroll(e)} ><a href="#">About</a> </li>
+    <li onClick={e => handleScroll(e)} ><span className="clickable">Introduction</span> </li>
+    <li onClick={e => handleScroll(e)} ><span className="clickable">Graphs</span> </li>
+    <li onClick={e => handleScroll(e)} ><span className="clickable">Links</span> </li>
+    <li onClick={e => handleScroll(e)} ><span className="clickable">About</span> </li>
   </ul>
 </div>;
 
