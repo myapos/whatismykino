@@ -1,51 +1,144 @@
 /* variables */
 widthPixels = 300px
 paddingPixels = 5px
-contentColor = #f7f7f7
+contentColor = #f8faff
+colorLink = #034f84
+colorBackground = tomato
+footerFontSize = 2em
+footerTopPadding = 1em
+leftRightPadding = 0.5em
 /* rules */
 
-body 
+body
+	font-family: Verdana, Geneva, sans-serif !important;
 	margin 0
 	padding 0
 	border 0
 	font-size 100%
 	font inherit
 	vertical-align baseline
-	background-color tomato
+	background-color colorBackground
 
 ul 
 	display flex
 	li 
 		list-style none
 		margin-right 5px
-// .grid_child
-// 	justify-self center
+
+#logo
+	width 7em
 
 #wrapper {
-	display: grid;
-  grid-template-columns: 1fr 10fr 10fr 1fr;
-  grid-template-rows: 1fr 40fr 1fr;
-  grid-template-areas:
-    ". header header ." ". inner_wrapper inner_wrapper ." ". footer footer .";
+	display grid
+  grid-template-columns 1fr 10fr 10fr 1fr
+  grid-template-rows 1fr 12fr 1fr
+  grid-template-areas ". header header ." ". inner_wrapper inner_wrapper ." ". footer footer ."
 }
 
-#header
-	grid-area: header;
-	justify-self: center;
+#header {
+	grid-area header
+	justify-self center
+}
 
 #nav
-	grid-area: nav;
-	background-color: contentColor
-	display: flex;
-	justify-content: center;
+	grid-area nav
+	background-color contentColor
+	display flex
+	justify-content center
 
 #inner_wrapper
-	grid-area: inner_wrapper;
-	background-color: contentColor
+	grid-area inner_wrapper
+	background-color contentColor
 
 #footer
-	grid-area: footer;
-	justify-self: center;
+	grid-area footer
+
+#section_wrapper
+	width 70%
+	margin 0 auto
+
+.subtitle
+	font-size 2em
+	padding-bottom 1em
+
+.msg
+	padding-bottom 1em
+	font-size 1em
+	text-align justify
+	line-height 2em
+
+.section_footer{
+	font-size 0.9em
+	padding-top 1em
+	display flex
+ 	justify-content space-between
+}
+
+.section
+	padding-bottom 1em
+
+.top, .clickable
+	cursor pointer
+	text-decoration: underline colorLink
+
+.top::after {
+	content: "\f102";
+	font-family: FontAwesome;
+	font-style: normal;
+}
+
+// footer
+.footer_container
+	padding-top footerTopPadding
+	display flex
+	justify-content space-around
+
+.coder {
+	display flex
+  justify-content center
+  padding-top 1em
+}
+.copyright
+	font-size 0.7em
+	font-style italic
+
+#heart, #mailToCoder
+	padding-left leftRightPadding
+	padding-right leftRightPadding
+
+#heart::after{
+	content: "\f004";
+	font-family: FontAwesome;
+	font-style: normal;
+}
+// social in footer
+
+#facebook::after {
+	content: "\f082";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-size footerFontSize
+}
+#twitter::after {
+	content:"\f081";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-size footerFontSize
+}
+#linkedin::after {
+	content:"\f08c";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-size footerFontSize
+}
+#github::after {
+	content:"\f092";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-size footerFontSize
+}
+#options-container
+	padding-top 1em
 
 .react-datepicker-wrapper 
 	input 

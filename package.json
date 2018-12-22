@@ -30,6 +30,7 @@
     "eslint-plugin-react": "^7.10.0",
     "expose-loader": "^0.7.5",
     "extract-text-webpack-plugin": "^v4.0.0-alpha.0",
+    "file-loader": "^3.0.1",
     "graphql": "^14.0.2",
     "graphql-anywhere": "^4.1.23",
     "graphql-tag": "^2.10.0",
