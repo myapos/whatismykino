@@ -19,7 +19,6 @@ function* initialize () {
 
 function* fetchForDate (action) {
   const kino = yield call(api.fetchKinoDraws, action.date);
-  console.log(kino);
 
   yield put({
     type: actions.KINO_DATA_FETCHED,
@@ -27,9 +26,22 @@ function* fetchForDate (action) {
   });
 }
 
+function* fetchKinosForDates (action) {
+  // debugger;
+  const kinos = yield call(api.fetchKinos, action.startDate, action.endDate);
+  console.log('fetcted', kinos);
+  // debugger;
+
+  yield put({
+    type: actions.SAGAS_KINOS_FETCHED,
+    // kino,
+  });
+}
+
 function* rootSaga () {
   yield initialize();
   yield takeEvery(actions.FETCH_FOR_DATE, fetchForDate);
+  yield takeEvery(actions.FETCH_KINOS_FOR_DATES, fetchKinosForDates);
 }
 
 export default rootSaga;

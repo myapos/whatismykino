@@ -12,34 +12,53 @@ import 'bootstrap-daterangepicker/daterangepicker.css';
 
 import * as actions from '../../store/actions';
 
-const handleEvent = (event, picker) => {
-  console.log(picker.startDate);
+const onApply = (event, picker, fetchKinosForDates) => {
+  fetchKinosForDates(picker.startDate, picker.endDate);
 };
 
-const MyCustomDatePicker = ({ startDate, endDate, maxDate }) =>
+// const handleEvent = (event, picker) => {
+//   console.log(picker.startDate);
+// };
+
+const label = (startDate, endDate) => {
+  let output = `${startDate.format('MMMM D, YYYY')} - ${endDate.format('MMMM D, YYYY')}`;
+  if (startDate === endDate) {
+    output = startDate.format('MMMM D, YYYY');
+  }
+
+  return output;
+};
+const MyCustomDatePicker = ({ startDate, endDate, maxDate, fetchKinosForDates }) =>
+  // debugger;
+  // console.log('test');
   <div>
     <DateRangePicker
       startDate={startDate}
       endDate={endDate}
       maxDate={maxDate}
-      onEvent={handleEvent} >
-      <div className="input-group" id="customizeInputGroup">
+      onApply={(event, picker) => {
+        onApply(event, picker, fetchKinosForDates);
+      }}
+      containerClass="picker">
+      <div className="input-group">
         <input
           type="text"
           className="form-control"
           readOnly
-          value={'test'} />
+          value={label(startDate, endDate)} />
         <span className="input-group-btn">
           <button className="default date-range-toggle btn btn-default">
             <div id="calImg" />
           </button>
         </span>
       </div>
-    </DateRangePicker> </div>;
+    </DateRangePicker> </div>
+;
 
 MyCustomDatePicker.propTypes = {
   startDate: PropTypes.object,
   endDate: PropTypes.object,
   maxDate: PropTypes.object,
+  fetchKinosForDates: PropTypes.func,
 };
 export default connect(state => state, actions)(MyCustomDatePicker);
