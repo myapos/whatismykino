@@ -58,11 +58,6 @@ Options.propTypes = {
   fetchForDate: PropTypes.func,
 };
 
-// export default connect(
-//   state => ({ kino: state.kino }),
-//   { fetchForDate }
-// )(Options);
-
 export default connect(
   state => ({
     startDate: state.startDate,
@@ -71,5 +66,3 @@ export default connect(
   }),
   { fetchForDate }
 )(Options);
-
-// export default connect(state => state, actions)(Options);
