@@ -6,6 +6,6 @@ import Root from './components/Root';
 const placeholder = document.getElementById('root');
 
 ReactDOM.render(
-    <Root />,
+  <Root />,
   placeholder
 );
