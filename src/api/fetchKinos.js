@@ -2,7 +2,7 @@ import moment from 'moment';
 import analyzeRange from '../utils/analyzeRange';
 import loopDates from '../utils/loopDates';
 
-export default (startDate, endDate) => {
+export default async (startDate, endDate) => {
   /* Fetch  kino numbers for the range startDate - endDate  */
 
   // log startDate and endDate
@@ -10,13 +10,12 @@ export default (startDate, endDate) => {
   /* Loop dates array and fetch data for all dates
   date formats yyyy-mm-dd
   1100 KINO gameid
-  same date for now
   */
 
-  const res = loopDates(dates);
+  const res = await loopDates(dates);
 
   return ({
-    res,
+    kinos: res,
     fromDate: moment(dates[0]),
     toDate: moment(dates[dates.length - 1]),
   });

@@ -18,9 +18,7 @@ export default async dates => {
   const res = urls.map(url => fetch(url).then(r => r.json()));
 
   // 'got results for all dates'
-  const res__ = await Promise.all(res).then(r =>
-    r
-  );
+  const res__ = await Promise.all(res).then(r => r);
 
   console.log('got results for all dates __', res__);
 
