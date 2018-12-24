@@ -21,9 +21,12 @@ const reducer = (state = {}, action) => {
       };
 
     case actions.SAGAS_KINOS_FETCHED:
+      debugger;
       return {
         ...state,
         kinos,
+        startDate,
+        endDate,
       };
 
     default:

@@ -7,8 +7,6 @@ const port = 2345;
 
 app.use(cors());
 
-// getKinos and parse request variables
-
 app.get('/', (req, res) => {
   console.log('empika mre');
   const msg = {
@@ -17,6 +15,7 @@ app.get('/', (req, res) => {
   res.send(msg);
 });
 
+// getKinos and parse request variables
 app.get('/getKinos', (req, res) => {
   // console.log('request params', req.query);
   const { date } = req.query;

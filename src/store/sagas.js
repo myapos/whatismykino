@@ -27,12 +27,19 @@ function* fetchForDate (action) {
 }
 
 function* fetchKinosForDates (action) {
-  const kinos = yield call(api.fetchKinos, action.startDate, action.endDate);
-  console.log('fetched', kinos);
+  const { startDate, endDate } = action;
+  debugger;
+  const { res, fromDate, toDate } = yield call(api.fetchKinos, startDate, endDate);
+  console.log('fetched', res);
+  // debugger;
+  // console.log('startDate', startDate);
+  // console.log('endDate', endDate);
 
   yield put({
     type: actions.SAGAS_KINOS_FETCHED,
-    kinos,
+    res,
+    startDate: fromDate,
+    endDate: toDate,
   });
 }
 

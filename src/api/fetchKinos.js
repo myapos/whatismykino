@@ -1,20 +1,23 @@
+import moment from 'moment';
 import analyzeRange from '../utils/analyzeRange';
-
 import loopDates from '../utils/loopDates';
 
 export default (startDate, endDate) => {
   /* Fetch  kino numbers for the range startDate - endDate  */
 
   // log startDate and endDate
-
-  const fromDate = startDate;// .format('YYYY-MM-DD');
-  const toDate = endDate;// .format('YYYY-MM-DD');
-
-  const dates = analyzeRange(fromDate, toDate);
+  const dates = analyzeRange(startDate, endDate);
   /* Loop dates array and fetch data for all dates
   date formats yyyy-mm-dd
   1100 KINO gameid
   same date for now
   */
-  return loopDates(dates);
+
+  const res = loopDates(dates);
+
+  return ({
+    res,
+    fromDate: moment(dates[0]),
+    toDate: moment(dates[dates.length - 1]),
+  });
 };
