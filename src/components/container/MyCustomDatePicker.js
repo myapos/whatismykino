@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import DateRangePicker from 'react-bootstrap-daterangepicker';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -29,7 +29,7 @@ const label = (startDate, endDate) => {
   return output;
 };
 const MyCustomDatePicker = ({ startDate, endDate, maxDate, fetchKinosForDates }) =>
-  // debugger;
+
   // console.log('test');
   <div>
     <DateRangePicker

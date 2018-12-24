@@ -18,7 +18,6 @@ class App extends Component {
   }
 
   render () {
-    console.log('render:', this.state);
     return <div id="wrapper">
       <div
         onClick={() => window.open('https://github.com/myapos/whatismykino')}
