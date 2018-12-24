@@ -54,3 +54,5 @@ export const mapGoToElement = {
   'Links': 'Links',
   'About': 'About',
 };
+
+export const localServerApi = 'http://localhost:2345/getKinos';

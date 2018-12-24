@@ -1,5 +1,5 @@
 import analyzeRange from '../utils/analyzeRange';
-import getDate from '../utils/getDate';
+
 import loopDates from '../utils/loopDates';
 
 export default (startDate, endDate) => {
@@ -16,8 +16,5 @@ export default (startDate, endDate) => {
   1100 KINO gameid
   same date for now
   */
-  loopDates(dates);
-  // return fetch(`https://api.opap.gr/draws/v3.0/1100/draw-date/${getDate(dates[0])}/${getDate(dates[0])}`)
-  //   .then(r => r.json())
-  // ;
+  return loopDates(dates);
 };
