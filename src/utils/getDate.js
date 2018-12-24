@@ -1,1 +1,1 @@
-export default date => `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
+export default date => `${date.getDate()}-${date.getMonth()}-${date.getFullYear()}`;

@@ -1,7 +1,7 @@
 import * as actions from './actions';
 
 const reducer = (state = {}, action) => {
-  const { type, data, kino, startDate, endDate } = action;
+  const { type, data, kino, startDate, endDate, kinos } = action;
 
   switch (type) {
     case actions.INITIALIZATIONS:
@@ -21,14 +21,9 @@ const reducer = (state = {}, action) => {
       };
 
     case actions.SAGAS_KINOS_FETCHED:
-
       return {
         ...state,
-        // kino: {
-        //   drawIds: kino.content.map(c => ({ value: c.drawId, label: c.drawId })),
-        //   winningNumbers: kino.content.map(c => ({ [c.drawId]: { numbers: c.winningNumbers.list, bonus: c.winningNumbers.bonus } })),
-        //   // we can here add anything we need from kino object
-        // },
+        kinos,
       };
 
     default:
