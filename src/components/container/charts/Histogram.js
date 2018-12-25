@@ -15,7 +15,7 @@ class Histogram extends Component {
   render () {
     const { occurences } = this.props;
 
-    return (<div> hello from Histogram
+    return (<div>
       <BarChart
         width={600} height={300}
         data={occurences}
@@ -27,7 +27,6 @@ class Histogram extends Component {
         <Legend />
         <Bar dataKey="occurences" fill="#8884d8" />
       </BarChart>
-
     </div>);
   }
 }
