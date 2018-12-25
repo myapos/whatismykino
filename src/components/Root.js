@@ -14,6 +14,7 @@ const initialState = {
   startDate: moment().subtract(7, 'days'),
   endDate: moment(),
   maxDate: moment(),
+  occurences: [],
 };
 
 const Root = () => (

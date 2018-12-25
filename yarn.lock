@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"30-seconds-of-code@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/30-seconds-of-code/-/30-seconds-of-code-1.2.3.tgz#b955acba83a050e3754fd0c84faaf25b32287fd4"
+  integrity sha512-IRjJtNwmSfVLplKCOxHfjup1Z7Cq1IgDCvGiKf+6gFGq/eEVfYqwGaEQx+NH1vsQZkCJrg8YMfBKGNUnb+uI+w==
+
 "@babel/cli@^7.0.0":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.2.0.tgz#505ed8d351daee6a88918da02c046c18c8c5a24f"

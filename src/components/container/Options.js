@@ -10,6 +10,8 @@ import { formatDate } from '../../utils/';
 import { fetchForDate } from '../../store/actions';
 
 import MyCustomDatePicker from './MyCustomDatePicker';
+import Scatter from './charts/Scatter';
+import Histogram from './charts/Histogram';
 
 class Options extends Component {
   constructor (props) {
@@ -44,6 +46,8 @@ class Options extends Component {
     return (
       <div id="options-container">
         <MyCustomDatePicker />
+        <Scatter />
+        <Histogram />
         {/* <Select
           className="select"
           value={selectedOption}

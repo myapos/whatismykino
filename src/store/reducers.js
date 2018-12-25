@@ -1,7 +1,7 @@
 import * as actions from './actions';
 
 const reducer = (state = {}, action) => {
-  const { type, initialized, kino, startDate, endDate, kinos } = action;
+  const { type, initialized, kino, startDate, endDate, kinos, occurences } = action;
 
   switch (type) {
     case actions.INITIALIZATIONS:
@@ -26,6 +26,7 @@ const reducer = (state = {}, action) => {
         kinos,
         startDate,
         endDate,
+        occurences,
       };
 
     default:

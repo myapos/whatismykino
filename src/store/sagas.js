@@ -8,6 +8,8 @@ import * as constants from '../constants';
 import gql from 'graphql-tag';
 import graphql from 'graphql-anywhere';
 
+import { groupBy } from '30-seconds-of-code';
+
 function* initialize () {
   const initialized = yield call(api.getKinoData);
 
@@ -32,11 +34,17 @@ function* fetchKinosForDates (action) {
   const { kinos, fromDate, toDate } = yield call(api.fetchKinos, startDate, endDate);
   console.log('fetched', kinos);
 
+  const groupped = groupBy(kinos, 'kino');
+
+  // console.log(groupped);
+  // debugger;
+  const occurences = Object.keys(groupped).map(key => ({ key, occurences: groupped[key].length }));
   yield put({
     type: actions.SAGAS_KINOS_FETCHED,
     kinos,
     startDate: fromDate,
     endDate: toDate,
+    occurences,
   });
 }
 
