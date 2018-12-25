@@ -1,13 +1,13 @@
 import * as actions from './actions';
 
 const reducer = (state = {}, action) => {
-  const { type, data, kino, startDate, endDate, kinos } = action;
+  const { type, initialized, kino, startDate, endDate, kinos } = action;
 
   switch (type) {
     case actions.INITIALIZATIONS:
       return {
         ...state,
-        data,
+        initialized,
       };
 
     case actions.KINO_DATA_FETCHED:

@@ -9,11 +9,11 @@ import gql from 'graphql-tag';
 import graphql from 'graphql-anywhere';
 
 function* initialize () {
-  const data = yield call(api.getKinoData);
+  const initialized = yield call(api.getKinoData);
 
   yield put({
     type: actions.INITIALIZATIONS,
-    data,
+    initialized,
   });
 }
 

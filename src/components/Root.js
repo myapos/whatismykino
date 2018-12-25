@@ -7,9 +7,10 @@ import ErrorBoundary from '../ErrorHandling/ErrorBoundary';
 import App from './App';
 
 const initialState = {
-  data: {
-    kinoData: {},
-  },
+  // data: {
+  //   kinoData: {},
+  // },
+  initialized: false,
   startDate: moment().subtract(7, 'days'),
   endDate: moment(),
   maxDate: moment(),
