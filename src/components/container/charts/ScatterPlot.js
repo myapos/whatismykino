@@ -14,24 +14,27 @@ class ScatterPlot extends Component {
 
   render () {
     const { occurences } = this.props;
-
-    return (<div>
-      <ScatterChart
-        width={400} height={400}
-        margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
-        <CartesianGrid />
-        <XAxis
-          dataKey={'kino'} type="number"
-          name="kino" />
-        <YAxis
-          dataKey={'occurences'} type="number"
-          name="occurences" />
-        <Scatter
-          name="A school" data={occurences}
-          fill="#8884d8" />
-        <Tooltip cursor={{ strokeDasharray: '3 3' }} />
-      </ScatterChart>
-    </div>);
+    if (occurences.length > 0) {
+      return (<div>
+        <ScatterChart
+          width={400} height={400}
+          margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
+          <CartesianGrid />
+          <XAxis
+            dataKey={'kino'} type="number"
+            name="kino" />
+          <YAxis
+            dataKey={'occurences'} type="number"
+            name="occurences" />
+          <Scatter
+            name="A school" data={occurences}
+            fill="#8884d8" />
+          <Tooltip cursor={{ strokeDasharray: '3 3' }} />
+        </ScatterChart>
+      </div>);
+    } else {
+      return (<div />);
+    }
   }
 }
 

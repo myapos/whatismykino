@@ -15,19 +15,23 @@ class Histogram extends Component {
   render () {
     const { occurences } = this.props;
 
-    return (<div>
-      <BarChart
-        width={600} height={300}
-        data={occurences}
-        margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="kino" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Bar dataKey="occurences" fill="#8884d8" />
-      </BarChart>
-    </div>);
+    if (occurences.length > 0) {
+      return (<div>
+        <BarChart
+          width={600} height={300}
+          data={occurences}
+          margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="kino" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar dataKey="occurences" fill="#8884d8" />
+        </BarChart>
+      </div>);
+    } else {
+      return (<div />);
+    }
   }
 }
 
