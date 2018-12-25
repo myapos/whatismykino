@@ -38,7 +38,7 @@ function* fetchKinosForDates (action) {
 
   // console.log(groupped);
   // debugger;
-  const occurences = Object.keys(groupped).map(key => ({ key, occurences: groupped[key].length }));
+  const occurences = Object.keys(groupped).map(key => ({ kino: key, occurences: groupped[key].length }));
   yield put({
     type: actions.SAGAS_KINOS_FETCHED,
     kinos,
