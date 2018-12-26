@@ -47,9 +47,9 @@ class Options extends Component {
     return (
       <div id="options-container">
         <MyCustomDatePicker />
+        <LinePlot />
         <ScatterPlot />
         <Histogram />
-        <LinePlot />
         {/* <Select
           className="select"
           value={selectedOption}
