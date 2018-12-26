@@ -23,7 +23,8 @@ class App extends Component {
   render () {
     const { loading } = this.props;
     console.log('loading', loading);
-    return <div id="wrapper">
+
+    return <div id="wrapper" className={loading ? 'withOpacity' : null} >
       { loading
         ? <div className="spinner_layer">
           <div className="active_spinner">
