@@ -1,7 +1,7 @@
 import * as actions from './actions';
 
 const reducer = (state = {}, action) => {
-  const { type, initialized, kino, startDate, endDate, kinos, occurences } = action;
+  const { type, initialized, kino, startDate, endDate, kinos, occurences, loading } = action;
 
   switch (type) {
     case actions.INITIALIZATIONS:
@@ -19,7 +19,11 @@ const reducer = (state = {}, action) => {
           // we can here add anything we need from kino object
         },
       };
-
+    case actions.FETCH_KINOS_FOR_DATES:
+      return {
+        ...state,
+        loading: true,
+      };
     case actions.SAGAS_KINOS_FETCHED:
       return {
         ...state,
@@ -27,6 +31,7 @@ const reducer = (state = {}, action) => {
         startDate,
         endDate,
         occurences,
+        loading: false,
       };
 
     default:

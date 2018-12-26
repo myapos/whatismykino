@@ -25,15 +25,26 @@ ul
 		list-style none
 		margin-right 5px
 
+#root
+	position relative
+
 #logo
 	width 7em
 
+.spinner_layer
+	position absolute
+	top 50%
+	left 50%
+
 #wrapper {
+	position relative
 	display grid
   grid-template-columns 1fr 10fr 10fr 1fr
   grid-template-rows 1fr 12fr 1fr
   grid-template-areas ". header header ." ". inner_wrapper inner_wrapper ." ". footer footer ."
 }
+.withOpacity
+	opacity 0.7
 
 #header {
 	grid-area header
