@@ -16,6 +16,7 @@ const initialState = {
   maxDate: moment(),
   occurences: [],
   loading: false,
+  kinos: {},
 };
 
 const Root = () => (

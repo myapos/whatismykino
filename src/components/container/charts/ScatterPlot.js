@@ -27,9 +27,10 @@ class ScatterPlot extends Component {
             dataKey={'occurences'} type="number"
             name="occurences" />
           <Scatter
-            name="A school" data={occurences}
+            name="occurences" data={occurences}
             fill="#8884d8" />
           <Tooltip cursor={{ strokeDasharray: '3 3' }} />
+          <Legend />
         </ScatterChart>
       </div>);
     } else {

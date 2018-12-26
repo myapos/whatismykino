@@ -12,6 +12,7 @@ import { fetchForDate } from '../../store/actions';
 import MyCustomDatePicker from './MyCustomDatePicker';
 import ScatterPlot from './charts/ScatterPlot';
 import Histogram from './charts/Histogram';
+import LinePlot from './charts/LinePlot';
 
 class Options extends Component {
   constructor (props) {
@@ -48,6 +49,7 @@ class Options extends Component {
         <MyCustomDatePicker />
         <ScatterPlot />
         <Histogram />
+        <LinePlot />
         {/* <Select
           className="select"
           value={selectedOption}

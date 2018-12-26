@@ -24,9 +24,9 @@ class Histogram extends Component {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="kino" />
           <YAxis />
-          <Tooltip />
           <Legend />
           <Bar dataKey="occurences" fill="#8884d8" />
+          <Tooltip />
         </BarChart>
       </div>);
     } else {
