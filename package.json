@@ -61,6 +61,7 @@
     "react-apollo": "^2.3.2",
     "react-bootstrap-daterangepicker": "^4.1.0",
     "react-dom": "^16.6.3",
+    "react-loader-spinner": "^2.3.0",
     "react-redux": "^6.0.0",
     "react-select": "^2.1.2",
     "recharts": "^1.4.2",
