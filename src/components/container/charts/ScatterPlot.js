@@ -13,7 +13,7 @@ class ScatterPlot extends Component {
   }
 
   render () {
-    const { occurences } = this.props;
+    const { occurences, limited, allOccurences } = this.props;
     if (occurences.length > 0) {
       return (<div>
         <ScatterChart
@@ -27,7 +27,8 @@ class ScatterPlot extends Component {
             dataKey={'occurences'} type="number"
             name="occurences" />
           <Scatter
-            name="occurences" data={occurences}
+            name="occurences"
+            data={limited ? occurences : allOccurences}
             fill="#8884d8" />
           <Tooltip cursor={{ strokeDasharray: '3 3' }} />
           <Legend />

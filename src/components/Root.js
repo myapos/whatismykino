@@ -17,6 +17,8 @@ const initialState = {
   occurences: [],
   loading: false,
   kinos: {},
+  allkinos: {},
+  limited: false,
 };
 
 const Root = () => (

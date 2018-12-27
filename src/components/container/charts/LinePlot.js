@@ -13,12 +13,12 @@ class LinePlot extends Component {
   }
 
   render () {
-    const { kinos } = this.props;
+    const { kinos, limited, allKinos } = this.props;
     if (kinos.length > 0) {
       return (<div>
         <LineChart
           width={600} height={300}
-          data={kinos}
+          data={limited ? kinos : allKinos}
           margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
           <XAxis dataKey="drawNo" />
           <YAxis />

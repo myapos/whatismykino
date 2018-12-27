@@ -56,3 +56,24 @@ export const mapGoToElement = {
 };
 
 export const localServerApi = 'http://localhost:2345/getKinos';
+
+export const availableSelectValues = {
+  generateValues: () => {
+    const available = [];
+    available.push({
+      'value': 'ALL',
+      'label': 'ALL',
+    });
+    const limit = 200;
+
+    for (let i = 5; i <= limit; i = i + 5) {
+      // console.log('i:', i);
+      available.push({
+        'value': i,
+        'label': i,
+      });
+    }
+    return available;
+  },
+}
+;
