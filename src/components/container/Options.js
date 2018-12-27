@@ -46,7 +46,11 @@ class Options extends Component {
   render () {
     return (
       <div id="options-container">
-        <MyCustomDatePicker />
+        <div id="options">
+          <MyCustomDatePicker />
+          <Select
+            className="select" />
+        </div>
         <LinePlot />
         <ScatterPlot />
         <Histogram />

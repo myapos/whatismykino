@@ -31,7 +31,7 @@ const label = (startDate, endDate) => {
 const MyCustomDatePicker = ({ startDate, endDate, maxDate, fetchKinosForDates }) =>
 
   // console.log('test');
-  <div>
+  <div className="datePicker">
     <DateRangePicker
       startDate={startDate}
       endDate={endDate}
