@@ -37,7 +37,7 @@ function* fetchKinosForDates (action) {
   // console.log('fetched', kinos);
 
   const groupped = groupBy(kinos, 'kino');
-  whatismykino(kinos);
+  // whatismykino(kinos);
 
   const occurences = Object.keys(groupped).map(key =>
     ({ kino: key, occurences: groupped[key].length }));
