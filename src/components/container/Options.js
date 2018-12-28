@@ -5,48 +5,45 @@ import Select from 'react-select';
 import PropTypes from 'prop-types';
 
 import { connect } from 'react-redux';
-import { formatDate } from '../../utils/';
 
-import { fetchForDate } from '../../store/actions';
+import * as actions from '../../store/actions';
 
 import MyCustomDatePicker from './MyCustomDatePicker';
 import ScatterPlot from './charts/ScatterPlot';
 import Histogram from './charts/Histogram';
 import LinePlot from './charts/LinePlot';
 
+import { availableSelectValues } from '../../constants';
+
 class Options extends Component {
-  constructor (props) {
-    super(props);
-
-    // this.state = {
-    //   selectedOption: null,
-    // };
-
-    // this.handleDate = this.handleDate.bind(this);
-    // this.handleChange = this.handleChange.bind(this);
-  }
-
-  handleDate (date) {
-    const { fetchForDate } = this.props;
-
-    this.setState({
-      selectedDate: date,
-    });
-
-    fetchForDate(formatDate(date));
-  }
-
   handleChange (selectedOption) {
-    this.setState({ selectedOption });
+    const { allKinos, occurences, allOccurences, kinos } = this.props;
+
+    if (allKinos.length > 0 && selectedOption.value !== 'ALL') {
+      this.props.limitKinos(selectedOption, allKinos, occurences, true);
+      this.props.setLimited(true);
+    } else if (allKinos.length > 0 && selectedOption.value === 'ALL') {
+      this.props.limitKinos(selectedOption, allKinos, allOccurences, false);
+      this.props.setLimited(false);
+    } else {
+      alert('You have to select date range first!');
+    }
+    // this.setState({ selectedOption });
   }
 
-  handleEvent (event, picker) {
-    console.log(picker.startDate);
-  }
   render () {
+    const { kinos } = this.props;
+    console.log(availableSelectValues.generateValues(kinos.length));
+
     return (
       <div id="options-container">
-        <MyCustomDatePicker />
+        <div id="options">
+          <MyCustomDatePicker />
+          <Select
+            className="select"
+            options={availableSelectValues.generateValues(kinos.length)}
+            onChange={this.handleChange.bind(this)} />
+        </div>
         <LinePlot />
         <ScatterPlot />
         <Histogram />
@@ -62,13 +59,18 @@ class Options extends Component {
 Options.propTypes = {
   kino: PropTypes.object,
   fetchForDate: PropTypes.func,
+  limitKinos: PropTypes.func,
+  setLimited: PropTypes.func,
 };
 
-export default connect(
-  state => ({
-    startDate: state.startDate,
-    endDate: state.endDate,
-    maxDate: state.maxDate,
-  }),
-  { fetchForDate }
-)(Options);
+export default connect(state => state, actions)(Options);
+
+// export default connect(
+//   state => ({
+//     startDate: state.startDate,
+//     endDate: state.endDate,
+//     maxDate: state.maxDate,
+//     kinos: state.kinos,
+//   }),
+//   { fetchForDate }
+// )(Options);

@@ -3,6 +3,8 @@ import { call, put, select, takeEvery } from 'redux-saga/effects';
 
 import * as api from '../api';
 import * as actions from './actions';
+
+import whatismykino from '../utils/whatismykino';
 import * as constants from '../constants';
 
 import gql from 'graphql-tag';
@@ -32,13 +34,14 @@ function* fetchKinosForDates (action) {
   const { startDate, endDate } = action;
 
   const { kinos, fromDate, toDate } = yield call(api.fetchKinos, startDate, endDate);
-  console.log('fetched', kinos);
+  // console.log('fetched', kinos);
 
   const groupped = groupBy(kinos, 'kino');
+  whatismykino(kinos);
 
-  // console.log(groupped);
-  // debugger;
-  const occurences = Object.keys(groupped).map(key => ({ kino: key, occurences: groupped[key].length }));
+  const occurences = Object.keys(groupped).map(key =>
+    ({ kino: key, occurences: groupped[key].length }));
+
   yield put({
     type: actions.SAGAS_KINOS_FETCHED,
     kinos,

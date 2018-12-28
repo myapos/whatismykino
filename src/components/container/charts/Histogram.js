@@ -13,13 +13,13 @@ class Histogram extends Component {
   }
 
   render () {
-    const { occurences } = this.props;
+    const { occurences, limited, allOccurences } = this.props;
 
     if (occurences.length > 0) {
       return (<div>
         <BarChart
           width={600} height={300}
-          data={occurences}
+          data={limited ? occurences : allOccurences}
           margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="kino" />

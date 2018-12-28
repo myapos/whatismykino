@@ -117,39 +117,44 @@ ul
 	padding-left leftRightPadding
 	padding-right leftRightPadding
 
-#heart::after{
-	content: "\f004";
-	font-family: FontAwesome;
-	font-style: normal;
-}
+#heart::after
+	content "\f004"
+	font-family FontAwesome
+	font-style normal
+
 // social in footer
 
-#facebook::after {
-	content: "\f082";
-	font-family: FontAwesome;
-	font-style: normal;
+#facebook::after 
+	content "\f082"
+	font-family FontAwesome
+	font-style normal
 	font-size footerFontSize
-}
-#twitter::after {
-	content:"\f081";
-	font-family: FontAwesome;
-	font-style: normal;
+
+#twitter::after 
+	content "\f081"
+	font-family FontAwesome
+	font-style normal
 	font-size footerFontSize
-}
-#linkedin::after {
-	content:"\f08c";
-	font-family: FontAwesome;
-	font-style: normal;
+
+#linkedin::after 
+	content "\f08c"
+	font-family FontAwesome
+	font-style normal
 	font-size footerFontSize
-}
-#github::after {
-	content:"\f092";
-	font-family: FontAwesome;
-	font-style: normal;
+
+#github::after 
+	content "\f092"
+	font-family FontAwesome
+	font-style normal
 	font-size footerFontSize
-}
+
 #options-container
 	padding-top 1em
+
+#options
+	display flex
+	justify-content space-between
+	line-height 10px
 
 .react-datepicker-wrapper 
 	input 
@@ -159,11 +164,11 @@ ul
 
 #options-container 
 	.react-datepicker__input-container > input
-		padding paddingPixels
+		// padding paddingPixels
 		width widthPixels
 	.select
-		padding paddingPixels
+		// padding paddingPixels
+		font-size 14px
 		width widthPixels
 	
-
 @import './datetimerangepicker.styl'
