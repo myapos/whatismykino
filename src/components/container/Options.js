@@ -33,12 +33,13 @@ class Options extends Component {
 
   render () {
     const { kinos } = this.props;
-    console.log(availableSelectValues.generateValues(kinos.length));
+    // console.log(availableSelectValues.generateValues(kinos.length));
 
     return (
       <div id="options-container">
         <div id="options">
           <MyCustomDatePicker />
+          <div id="labelForSelect">Select last draws: </div>
           <Select
             className="select"
             options={availableSelectValues.generateValues(kinos.length)}
