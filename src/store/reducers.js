@@ -41,24 +41,24 @@ const reducer = (state = {}, action) => {
         limited: false,
       };
     case actions.LIMIT_KINOS:
-      // console.log(selectedOption);
-      // console.log(kinos);
 
       // return to kinos array only the last selectedOption value
 
       const limitedKinos = kinos.slice(kinos.length - selectedOption.value, kinos.length);
       const groupped = groupBy(limitedKinos, 'kino');
 
-      whatismykino(limitedKinos);
-      const limitedOccurences = Object.keys(groupped).map(key => ({ kino: key, occurences: groupped[key].length }));
+      whatismykino(limitedKinos); // prediction here
+      const limitedOccurences = Object.keys(groupped).map(key =>
+        ({ kino: key, occurences: groupped[key].length }));
 
-      console.log(limitedOccurences);
-      console.log(occurences);
-      debugger;
+      // console.log('limited:', limitedOccurences);
+      // // console.log('occurences:', occurences);
+      // debugger;
+
       return {
         ...state,
         allKinos: kinos,
-        allOccurences: occurences,
+        allOccurences: limited ? occurences : limitedOccurences,
         kinos: limitedKinos,
         occurences: limitedOccurences,
       };

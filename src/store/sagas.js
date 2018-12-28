@@ -38,7 +38,10 @@ function* fetchKinosForDates (action) {
 
   const groupped = groupBy(kinos, 'kino');
   whatismykino(kinos);
-  const occurences = Object.keys(groupped).map(key => ({ kino: key, occurences: groupped[key].length }));
+
+  const occurences = Object.keys(groupped).map(key =>
+    ({ kino: key, occurences: groupped[key].length }));
+
   yield put({
     type: actions.SAGAS_KINOS_FETCHED,
     kinos,

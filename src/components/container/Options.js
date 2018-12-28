@@ -17,13 +17,13 @@ import { availableSelectValues } from '../../constants';
 
 class Options extends Component {
   handleChange (selectedOption) {
-    const { kinos, occurences } = this.props;
-    // console.log('kinos:', kinos);
-    debugger;
-    if (kinos.length > 0 && selectedOption.value !== 'ALL') {
-      this.props.limitKinos(selectedOption, kinos, occurences);
+    const { allKinos, occurences, allOccurences, kinos } = this.props;
+
+    if (allKinos.length > 0 && selectedOption.value !== 'ALL') {
+      this.props.limitKinos(selectedOption, allKinos, occurences, true);
       this.props.setLimited(true);
-    } else if (kinos.length > 0 && selectedOption.value === 'ALL') {
+    } else if (allKinos.length > 0 && selectedOption.value === 'ALL') {
+      this.props.limitKinos(selectedOption, allKinos, allOccurences, false);
       this.props.setLimited(false);
     } else {
       alert('You have to select date range first!');
@@ -32,15 +32,16 @@ class Options extends Component {
   }
 
   render () {
-    console.log(availableSelectValues.generateValues());
-    // debugger;
+    const { kinos } = this.props;
+    console.log(availableSelectValues.generateValues(kinos.length));
+
     return (
       <div id="options-container">
         <div id="options">
           <MyCustomDatePicker />
           <Select
             className="select"
-            options={availableSelectValues.generateValues()}
+            options={availableSelectValues.generateValues(kinos.length)}
             onChange={this.handleChange.bind(this)} />
         </div>
         <LinePlot />

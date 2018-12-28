@@ -14,6 +14,7 @@ class ScatterPlot extends Component {
 
   render () {
     const { occurences, limited, allOccurences } = this.props;
+
     if (occurences.length > 0) {
       return (<div>
         <ScatterChart

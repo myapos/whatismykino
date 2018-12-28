@@ -19,11 +19,12 @@ export const fetchKinosForDates = (startDate, endDate) => ({
   endDate,
 });
 
-export const limitKinos = (selectedOption, kinos, occurences) => ({
+export const limitKinos = (selectedOption, kinos, occurences, limited) => ({
   type: LIMIT_KINOS,
   kinos,
   occurences,
   selectedOption,
+  limited,
 });
 
 export const setLimited = limited => ({
