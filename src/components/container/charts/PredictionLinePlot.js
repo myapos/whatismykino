@@ -19,18 +19,26 @@ class PredictionLinePlot extends Component {
     console.log('waitForPrediction:', waitForPrediction, ' bestfit:', bestfit);
 
     if (bestfit.length > 0 && !waitForPrediction) {
+      // preprocess data and convert  float32arry to array with integers
+
+      const bestfit_ = Array.prototype.slice.call(bestfit).map((item, index) => ({
+        xs: index,
+        ys: item, // parseInt(item.toString().split('.')[0]),
+      }));
+
+      console.log(bestfit_);
       return (<div>
         <LineChart
           width={600} height={300}
-          data={limited ? kinos : allKinos}
+          data={bestfit_}
           margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-          <XAxis dataKey="drawNo" />
+          <XAxis dataKey="xs" />
           <YAxis />
           <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
           <Legend />
           <Line
-            type="monotone" dataKey="kino"
+            type="monotone" dataKey="ys"
             stroke="#8884d8" activeDot={{ r: 8 }} />
         </LineChart>
       </div>);
