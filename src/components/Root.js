@@ -19,6 +19,7 @@ const initialState = {
   kinos: {},
   allkinos: {},
   limited: false,
+  prediction: [],
 };
 
 const Root = () => (

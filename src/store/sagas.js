@@ -51,10 +51,23 @@ function* fetchKinosForDates (action) {
   });
 }
 
+function* limitKinos (action) {
+  const state = yield select();
+
+  const prediction = yield call(whatismykino, state.kinos); // kinos here are limited already
+  console.log(prediction);
+
+  yield put({
+    type: actions.SAGAS_PREDICTION,
+    prediction,
+  });
+}
+
 function* rootSaga () {
   yield initialize();
   yield takeEvery(actions.FETCH_FOR_DATE, fetchForDate);
   yield takeEvery(actions.FETCH_KINOS_FOR_DATES, fetchKinosForDates);
+  yield takeEvery(actions.LIMIT_KINOS, limitKinos);
 }
 
 export default rootSaga;

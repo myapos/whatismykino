@@ -5,7 +5,7 @@ import whatismykino from '../utils/whatismykino';
 
 const reducer = (state = {}, action) => {
   const { type, initialized, kino, startDate, endDate, kinos, occurences,
-    loading, selectedOption, limited } = action;
+    loading, selectedOption, limited, prediction } = action;
 
   switch (type) {
     case actions.INITIALIZATIONS:
@@ -47,13 +47,8 @@ const reducer = (state = {}, action) => {
       const limitedKinos = kinos.slice(kinos.length - selectedOption.value, kinos.length);
       const groupped = groupBy(limitedKinos, 'kino');
 
-      whatismykino(limitedKinos); // prediction here
       const limitedOccurences = Object.keys(groupped).map(key =>
         ({ kino: key, occurences: groupped[key].length }));
-
-      // console.log('limited:', limitedOccurences);
-      // // console.log('occurences:', occurences);
-      // debugger;
 
       return {
         ...state,
@@ -67,6 +62,11 @@ const reducer = (state = {}, action) => {
       return {
         ...state,
         limited,
+      };
+    case actions.SAGAS_PREDICTION:
+      return {
+        ...state,
+        prediction,
       };
     default:
       return state;
