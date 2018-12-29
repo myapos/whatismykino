@@ -22,8 +22,14 @@ export default async kinos => {
 
   await model.fit(tf.tensor(xs), tf.tensor(ys), { epochs: 500 });
 
-  const prediction = model.predict(tf.tensor(xs[xs.length - 1] + 1, [1, 1])).dataSync();
+  const prediction = model.predict(tf.tensor(xs[xs.length - 1] + 1, [1, 1])).dataSync(); // single value
 
-  console.log('prediction:', prediction);
-  return prediction;
+  const bestfit = model.predict(tf.tensor(xs, [xs.length, 1])).dataSync(); // create best-fit line from xs data
+
+  console.log('prediction:', prediction, ' bestfit: ', bestfit);
+
+  return ({
+    prediction,
+    bestfit,
+  });
 };
