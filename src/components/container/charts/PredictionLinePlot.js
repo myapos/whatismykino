@@ -23,7 +23,7 @@ class PredictionLinePlot extends Component {
 
       const bestfit_ = Array.prototype.slice.call(bestfit).map((item, index) => ({
         xs: index,
-        ys: item, // parseInt(item.toString().split('.')[0]),
+        ys: item,
       }));
 
       console.log(bestfit_);
