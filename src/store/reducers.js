@@ -5,7 +5,8 @@ import whatismykino from '../utils/whatismykino';
 
 const reducer = (state = {}, action) => {
   const { type, initialized, kino, startDate, endDate, kinos, occurences,
-    loading, selectedOption, limited, prediction, waitForPrediction, bestfit } = action;
+    loading, selectedOption, limited, prediction, waitForPrediction, maData,
+    trendData, lwmaData } = action;
 
   switch (type) {
     case actions.INITIALIZATIONS:
@@ -56,7 +57,6 @@ const reducer = (state = {}, action) => {
         allOccurences: limited ? occurences : limitedOccurences,
         kinos: limitedKinos,
         occurences: limitedOccurences,
-        bestfit: [],
         waitForPrediction: true,
       };
 
@@ -69,7 +69,9 @@ const reducer = (state = {}, action) => {
       return {
         ...state,
         prediction,
-        bestfit,
+        maData,
+        lwmaData,
+        trendData,
         waitForPrediction,
       };
     default:

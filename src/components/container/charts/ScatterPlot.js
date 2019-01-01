@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import * as actions from '../../../store/actions';
+import { widthPlot, heightPlot } from '../../../constants';
 
 class ScatterPlot extends Component {
   constructor (props) {
@@ -17,8 +18,9 @@ class ScatterPlot extends Component {
 
     if (occurences.length > 0) {
       return (<div>
+        <div className="labelForChart"> Kinos occurences scater plot </div>
         <ScatterChart
-          width={400} height={400}
+          width={widthPlot} height={heightPlot}
           margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
           <CartesianGrid />
           <XAxis

@@ -20,7 +20,8 @@ const initialState = {
   allkinos: {},
   limited: false,
   prediction: [],
-  bestfit: [],
+  maData: [],
+  lwmaData: [],
   waitForPrediction: false,
 };
 
