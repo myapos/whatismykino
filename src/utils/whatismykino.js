@@ -32,15 +32,13 @@ export default async kinos => {
   const beta = 0.2; // trend smoothing component
   const gamma = 0.2; // seasonal smoothing component
 
-  debugger;
   const period = 4;// # of observations per season
-  const step = 0.0001;
+
   while (onlyKinos.length % period > 0) {
-    // period = period + step;
-    onlyKinos.shift(); // shifts elements from the beginning of array
-    // to achieve perfect division for Holt-Winters algorithm
+    onlyKinos.shift(); /* shifts elements from the beginning of array
+                       to achieve perfect division for Holt-Winters algorithm */
   }
-  debugger;
+
   const m = 1; // # of future observations to forecast
   let prediction = [];
 
@@ -48,6 +46,9 @@ export default async kinos => {
     // prediction = forecast(data, alpha, beta, gamma, period, m);
     prediction = forecast(onlyKinos, alpha, beta, gamma, period, m);
     console.log(prediction);
+
+    // ignore the elements with zero values
+    prediction = prediction.filter(item => item > 0 && item <= 80 && !isNaN(item));
   } catch (e) {
     console.log('error:', e);
     alert('error:' + e.message);
