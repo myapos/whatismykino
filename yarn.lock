@@ -5579,6 +5579,11 @@ normalize-path@^2.0.1, normalize-path@^2.1.1:
   dependencies:
     remove-trailing-separator "^1.0.1"
 
+nostradamus@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/nostradamus/-/nostradamus-0.1.0.tgz#993ec3a49bf82625bdd4da57990b7926c1913e38"
+  integrity sha1-mT7DpJv4JiW91NpXmQt5JsGRPjg=
+
 npm-bundled@^1.0.1:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/npm-bundled/-/npm-bundled-1.0.5.tgz#3c1732b7ba936b3a10325aef616467c0ccbcc979"

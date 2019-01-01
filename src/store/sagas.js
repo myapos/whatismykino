@@ -57,6 +57,7 @@ function* limitKinos (action) {
   const state = yield select();
 
   const results = yield call(whatismykino, state.kinos); // kinos here are limited already
+  debugger;
   const { prediction, bestfit } = results;
   console.log(prediction);
 
