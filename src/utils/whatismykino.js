@@ -2,7 +2,6 @@
 // import * as tf from '@tensorflow/tfjs';
 import forecast from 'nostradamus';
 import timeseries from 'timeseries-analysis';
-import { setPriority } from 'os';
 
 export default async kinos => {
   console.log('kinos received:', kinos);
@@ -21,36 +20,32 @@ export default async kinos => {
     const miniData = [d, item.kino];
     return miniData;
   });
-  // debugger;
-  // const data = [
-  //   362, 385, 432, 341, 382, 409,
-  //   498, 387, 473, 513, 582, 474,
-  //   544, 582, 681, 557, 628, 707,
-  //   773, 592, 627, 725, 854, 661,
-  // ];
-  const alpha = 0.2; // overall smoothing component
-  const beta = 0.2; // trend smoothing component
-  const gamma = 0.2; // seasonal smoothing component
 
-  const period = 4;// # of observations per season
+  const alpha = 0.1; // overall smoothing component
+  const beta = 0.1; // trend smoothing component
+  const gamma = 0.1; // seasonal smoothing component
 
-  while (onlyKinos.length % period > 0) {
-    onlyKinos.shift(); /* shifts elements from the beginning of array
-                       to achieve perfect division for Holt-Winters algorithm */
-  }
+  const period = 4; // # of observations per season
 
   const m = 1; // # of future observations to forecast
+
+  while (onlyKinos.length % period > 0) {
+  /* shifts elements from the beginning of array
+  to achieve perfect division for Holt-Winters algorithm */
+    onlyKinos.shift();
+  }
+
   let prediction = [];
 
   try {
     // prediction = forecast(data, alpha, beta, gamma, period, m);
     prediction = forecast(onlyKinos, alpha, beta, gamma, period, m);
-    console.log(prediction);
+    // console.log(prediction);
 
     // ignore the elements with zero values
-    prediction = prediction.filter(item => item > 0 && item <= 80 && !isNaN(item));
+    prediction = prediction.filter(item => item > 0 && !isNaN(item));
   } catch (e) {
-    console.log('error:', e);
+    // console.log('error:', e);
     alert('error:' + e.message);
   }
 
