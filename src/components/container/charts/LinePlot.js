@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import * as actions from '../../../store/actions';
+import { widthPlot, heightPlot } from '../../../constants';
 
 class LinePlot extends Component {
   constructor (props) {
@@ -16,8 +17,9 @@ class LinePlot extends Component {
     const { kinos, limited, allKinos } = this.props;
     if (kinos.length > 0) {
       return (<div>
+        <div className="labelForChart"> Kinos line plot </div>
         <LineChart
-          width={600} height={300}
+          width={widthPlot} height={heightPlot}
           data={limited ? kinos : allKinos}
           margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
           <XAxis dataKey="drawNo" />

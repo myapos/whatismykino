@@ -54,9 +54,54 @@ export default async kinos => {
   // Load the data
   const t = new timeseries.main(formattedKinos);
 
-  // debugger;
+  // calculate moving average with time series analysis
+
+  const ma = t.ma({
+    period,
+  }).output();
+
+  // extract only values from output
+  const maData = ma.map(item => item[1]);
+
+  const lwma = t.lwma({
+    period,
+  }).output();
+
+  // extract only values from output
+  const lwmaData = lwma.map(item => item[1]);
+
+  const trend = t.dsp_itrend({
+    alpha,
+  }).output();
+
+  const trendData = trend.map(item => item[1]);
+
+  // processing for display in charts
+
+  const prediction_ = prediction.map((item, index) => ({
+    xs: index,
+    kinos: item,
+  }));
+
+  const maData_ = maData.map((item, index) => ({
+    xs: index,
+    kinos: item,
+  }));
+
+  const lwmaData_ = lwmaData.map((item, index) => ({
+    xs: index,
+    kinos: item,
+  }));
+
+  const trendData_ = trendData.map((item, index) => ({
+    xs: index,
+    kinos: item,
+  }));
+
   return ({
-    prediction,
-    bestfit: prediction,
+    prediction: prediction_,
+    maData: maData_,
+    lwmaData: lwmaData_,
+    trendData: trendData_,
   });
 };

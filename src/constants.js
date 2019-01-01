@@ -75,5 +75,7 @@ export const availableSelectValues = {
     }
     return available;
   },
-}
-;
+};
+
+export const widthPlot = 600;
+export const heightPlot = 300;

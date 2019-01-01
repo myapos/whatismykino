@@ -45,7 +45,6 @@ function* fetchKinosForDates (action) {
   yield put({
     type: actions.SAGAS_KINOS_FETCHED,
     kinos,
-    bestfit: [],
     waitForPrediction: false,
     startDate: fromDate,
     endDate: toDate,
@@ -58,13 +57,17 @@ function* limitKinos (action) {
 
   const results = yield call(whatismykino, state.kinos); // kinos here are limited already
 
-  const { prediction, bestfit } = results;
-  console.log(prediction);
+  const { prediction, maData, lwmaData, trendData } = results;
+  // console.log(prediction);
+
+  // console.log(maData);
 
   yield put({
     type: actions.SAGAS_PREDICTION,
     prediction,
-    bestfit,
+    maData,
+    lwmaData,
+    trendData,
     waitForPrediction: false,
   });
 }

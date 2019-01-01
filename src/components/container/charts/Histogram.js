@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import { connect } from 'react-redux';
 import * as actions from '../../../store/actions';
+import { widthPlot, heightPlot } from '../../../constants';
 
 class Histogram extends Component {
   constructor (props) {
@@ -17,8 +18,9 @@ class Histogram extends Component {
 
     if (occurences.length > 0) {
       return (<div>
+        <div className="labelForChart"> Histogram of kinos </div>
         <BarChart
-          width={600} height={300}
+          width={widthPlot} height={heightPlot}
           data={limited ? occurences : allOccurences}
           margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" />
