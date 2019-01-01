@@ -8,6 +8,8 @@ export const KINO_DATA_FETCHED = 'KINO_DATA_FETCHED';
 export const LIMIT_KINOS = 'LIMIT_KINOS';
 export const SET_LIMITED = 'SET_LIMITED';
 
+export const SAGAS_PREDICTION = 'SAGAS_PREDICTION';
+
 export const fetchForDate = date => ({
   type: FETCH_FOR_DATE,
   date,

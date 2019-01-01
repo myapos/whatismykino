@@ -12,6 +12,7 @@ import MyCustomDatePicker from './MyCustomDatePicker';
 import ScatterPlot from './charts/ScatterPlot';
 import Histogram from './charts/Histogram';
 import LinePlot from './charts/LinePlot';
+import PredictionLinePlot from './charts/PredictionLinePlot';
 
 import { availableSelectValues } from '../../constants';
 
@@ -33,7 +34,6 @@ class Options extends Component {
 
   render () {
     const { kinos } = this.props;
-    // console.log(availableSelectValues.generateValues(kinos.length));
 
     return (
       <div id="options-container">
@@ -45,14 +45,17 @@ class Options extends Component {
             options={availableSelectValues.generateValues(kinos.length)}
             onChange={this.handleChange.bind(this)} />
         </div>
-        <LinePlot />
-        <ScatterPlot />
-        <Histogram />
-        {/* <Select
-          className="select"
-          value={selectedOption}
-          onChange={this.handleChange}
-          {...(kino ? { options: kino.drawIds } : { isDisabled: true })} /> */}
+        <div className="results">
+          <div className="chartContainer">
+            <LinePlot />
+            <ScatterPlot />
+            <Histogram />
+          </div>
+          <div className="preditionContainer">
+            <PredictionLinePlot />
+          </div>
+        </div>
+
       </div>);
   }
 }
