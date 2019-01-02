@@ -22,7 +22,7 @@ class App extends Component {
 
   render () {
     const { loading } = this.props;
-    // console.log('loading', loading);
+    console.log('loading', loading);
 
     return <div id="wrapper" className={loading ? 'withOpacity' : null} >
       { loading
