@@ -60,7 +60,7 @@ console.log(process.env.USAGE);
 if (process.env.USAGE === "dev") {
   point = "http://localhost:2345/getKinos";
 } else if (process.env.USAGE === "prod") {
-  point = "https://serene-dusk-60425.herokuapp.com/"; // url of online server in kinoproxu heroku app
+  point = "https://serene-dusk-60425.herokuapp.com/getKinos"; // url of online server in kinoproxu heroku app
 }
 
 export const localServerApi = point;
