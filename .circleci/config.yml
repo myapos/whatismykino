@@ -22,15 +22,13 @@ jobs:
       - image: circleci/node:10-browsers-legacy
     steps:
       - checkout
-      - run:
-        name: Deploy Master to Heroku
-        command: |
-          git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
+      - run: echo 'test'
 workflows:
   version: 2
   test_build_deploy:
     jobs:
       - test
+      - build
       - deploy:
           requires:
             - test
