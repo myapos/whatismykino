@@ -5,6 +5,20 @@ jobs:
       - image: circleci/node:10-browsers-legacy
     steps:
       - checkout
-      - run: echo "A first hello"
+      - run: echo "Installing node packages"
       - run: yarn
+  test:
+    docker:
+      - image: circleci/node:10-browsers-legacy
+    steps:
+      - checkout
+      - run: echo "Installing node packages"
+      - run: yarn
+      - run: echo "Testing"
       - run: yarn test
+workflows:
+  version: 2
+  install_test:
+    jobs:
+      - build
+      - test
