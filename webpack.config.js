@@ -1,10 +1,10 @@
 // require('babel-polyfill');
-const webpack = require('webpack');
+const webpack = require("webpack");
 // const ExtractTextPlugin = require('extract-text-webpack-plugin');
 // const StringReplacePlugin = require('string-replace-webpack-plugin');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const path = require('path');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const path = require("path");
+// const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 // const MomentLocalesPlugin = require('moment-locales-webpack-plugin');
 
 const PORT = 1234;

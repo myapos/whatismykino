@@ -1,22 +1,22 @@
-const fetch = require('node-fetch');
-const express = require('express');
-const cors = require('cors');
+const fetch = require("node-fetch");
+const express = require("express");
+const cors = require("cors");
 
 const app = express();
 const port = 2345;
 
 app.use(cors());
 
-app.get('/', (req, res) => {
-  console.log('empika mre');
+app.get("/", (req, res) => {
+  console.log("empika mre");
   const msg = {
-    'hello': 'Hello World',
+    hello: "Hello World"
   };
   res.send(msg);
 });
 
 // getKinos and parse request variables
-app.get('/getKinos', (req, res) => {
+app.get("/getKinos", (req, res) => {
   // console.log('request params', req.query);
   const { date } = req.query;
 
@@ -29,9 +29,10 @@ app.get('/getKinos', (req, res) => {
     .then(res => res.json())
     .then(data => {
       res.send({ data });
-    }).catch(err => {
+    })
+    .catch(err => {
       // res.redirect('/error');
-      console.log('error:', err);
+      console.log("error:", err);
     });
   // const msg = {
   //   'hello': 'Hello World',

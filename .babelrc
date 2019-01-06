@@ -5,7 +5,10 @@
       {
         "useBuiltIns": "usage",
         "targets": {
-          "browsers": ["last 2 versions", "not ie < 10"]
+          "browsers": [
+            "last 2 versions",
+            "not ie < 10"
+          ]
         }
       }
     ]
@@ -16,7 +19,6 @@
     "@babel/plugin-proposal-class-properties",
     [
       "@babel/plugin-transform-react-jsx"
-      
     ]
   ]
 }
