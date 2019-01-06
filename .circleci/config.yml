@@ -27,8 +27,8 @@ workflows:
   version: 2
   test_build_deploy:
     jobs:
-      - test
       - build
+      - test
       - deploy:
         requires:
           - test
