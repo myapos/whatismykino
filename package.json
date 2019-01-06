@@ -86,7 +86,7 @@
     "start": "webpack-dev-server --mode development --hot",
     "build": "webpack --mode production --config webpack.config.production.js",
     "test": "jest",
-    "server": "nodemon ./src/serverish/server.js",
+    "server": "nodemon ./serverish/server.js",
     "precommit": "pretty-quick --staged"
   },
   "repository": {

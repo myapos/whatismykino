@@ -1,13 +1,13 @@
-const webpack = require('webpack');
-const CleanWebpackPlugin = require('clean-webpack-plugin'); // installed via npm
+const webpack = require("webpack");
+const CleanWebpackPlugin = require("clean-webpack-plugin"); // installed via npm
 
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const path = require('path');
-const config = require('./webpack.config');
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const path = require("path");
+const config = require("./webpack.config");
 
 // Reflect.deleteProperty(config, 'devServer');
-Reflect.deleteProperty(config, 'plugins');
-Reflect.deleteProperty(config.module, 'rules');
+Reflect.deleteProperty(config, "plugins");
+// Reflect.deleteProperty(config.module, 'rules');
 
 // https://slack.engineering/keep-webpack-fast-a-field-guide-for-better-build-performance-f56a5995e8f1
 // https://hackernoon.com/reduce-webpack-bundle-size-for-production-880bb6b2c72f
@@ -44,53 +44,68 @@ const uglifyOptions = {
   evaluate: true,
   cache: true,
   parallel: true,
-  sourceMap: false,
+  sourceMap: false
 };
 
 config.output = {
-  filename: 'bundle.js',
-  chunkFilename: 'bundle.[chunkhash].js',
-  path: path.resolve(__dirname, 'dist'),
+  filename: "bundle.js",
+  chunkFilename: "bundle.[chunkhash].js",
+  path: path.resolve(__dirname, "dist")
 };
 
 config.devtool = false;
 
-config.module.rules = [
-  {
-    test: /\.js$/,
-    exclude: /node_modules/,
-    use: {
-      loader: 'babel-loader',
-    },
-  },
-  {
-    test: /\.css$/,
-    use: ['style-loader', 'css-loader'],
-  },
-];
+// config.module.rules = [
+//   {
+//     test: /\.js$/,
+//     exclude: /node_modules/,
+//     use: {
+//       loader: 'babel-loader',
+//     },
+//   },
+//   {
+//     test: /\.css$/,
+//     use: ['style-loader', 'css-loader'],
+//   },
+//   {
+//     test: /\.styl$/,
+//     // use: 'css-loader',
+//     use: [
+//       {
+//         loader: "style-loader" // creates style nodes from JS strings
+//       },
+//       {
+//         loader: "css-loader" // translates CSS into CommonJS
+//       },
+//       {
+//         loader: "stylus-loader" // compiles Stylus to CSS
+//       }
+//     ]
+//   }
+// ];
 
-config.mode = 'production';
+config.mode = "production";
 
 Object.assign(config.output, {
-  path: path.resolve(__dirname, 'dist'),
-  publicPath: '/dist/',
+  path: path.resolve(__dirname, "dist"),
+  publicPath: "/dist/"
 });
 
 config.plugins = [
-  new CleanWebpackPlugin(['dist']),
+  new CleanWebpackPlugin(["dist"]),
   new UglifyJsPlugin({
-    uglifyOptions,
+    uglifyOptions
   }),
   new webpack.ProvidePlugin({
-    'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch',
-    Promise: 'es6-promise', // <============ add Promises for IE !!!
+    fetch: "imports?this=>global!exports?global.fetch!whatwg-fetch",
+    Promise: "es6-promise" // <============ add Promises for IE !!!
   }),
   // new ExtractTextPlugin('player.css'),
   new webpack.BannerPlugin({
-    banner: `@Build ${new Date().toLocaleString()}`,
-  }),
+    banner: `@Build ${new Date().toLocaleString()}`
+  })
 ];
 
-Reflect.deleteProperty(config, 'devServer');
+Reflect.deleteProperty(config, "devServer");
 
 module.exports = config;
