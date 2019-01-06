@@ -8,7 +8,7 @@ const config = require("./webpack.config");
 // Reflect.deleteProperty(config, 'devServer');
 Reflect.deleteProperty(config, "plugins");
 // Reflect.deleteProperty(config.module, 'rules');
-
+Reflect.deleteProperty(config, "devServer");
 // https://slack.engineering/keep-webpack-fast-a-field-guide-for-better-build-performance-f56a5995e8f1
 // https://hackernoon.com/reduce-webpack-bundle-size-for-production-880bb6b2c72f
 const uglifyOptions = {
@@ -97,15 +97,14 @@ config.plugins = [
     uglifyOptions
   }),
   new webpack.ProvidePlugin({
-    fetch: "imports?this=>global!exports?global.fetch!whatwg-fetch",
-    Promise: "es6-promise" // <============ add Promises for IE !!!
+    Promise:
+      "imports-loader?this=>global!exports-loader?global.Promise!es6-promise"
+    // fetch: 'imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch'
   }),
   // new ExtractTextPlugin('player.css'),
   new webpack.BannerPlugin({
     banner: `@Build ${new Date().toLocaleString()}`
   })
 ];
-
-Reflect.deleteProperty(config, "devServer");
 
 module.exports = config;
