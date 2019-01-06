@@ -1,4 +1,4 @@
-/*! @Build 2019-1-7 00:16:15 */
+/*! @Build 2019-1-7 00:41:31 */
 !(function(e) {
   var t = {};
   function n(r) {
@@ -3468,7 +3468,7 @@
       o =
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. \nLorem Ipsum has been the industry's standard dummy text ever since the 1500s, \nwhen an unknown printer took a galley of type and scrambled it to make a type \nspecimen book.It has survived not only five centuries, but also the leap into electronic \ntypesetting, remaining essentially unchanged.It was popularised in the 1960s with the release \nof Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing \nsoftware like Aldus PageMaker including versions of Lorem Ipsum",
       s = "Graphs",
-      u = "graphs_section_footer_tttteeeesttt____",
+      u = "graphs_section_footer_ttt",
       l =
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. \nLorem Ipsum has been the industry's standard dummy text ever since the 1500s, \nwhen an unknown printer took a galley of type and scrambled it to make a type \nspecimen book.It has survived not only five centuries, but also the leap into electronic \ntypesetting, remaining essentially unchanged.It was popularised in the 1960s with the release \nof Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing \nsoftware like Aldus PageMaker including versions of Lorem Ipsum",
       c = "Links",
