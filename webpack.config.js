@@ -60,7 +60,6 @@ const config = {
       }
     ]
   },
-
   devServer: {
     hot: true,
     overlay: true,
