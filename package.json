@@ -85,7 +85,8 @@
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --hot",
+    "start": "cross-env USAGE=prod webpack-dev-server --mode development --hot",
+    "startDev": "cross-env USAGE=dev webpack-dev-server --mode development --hot",
     "build": "webpack --mode production --config webpack.config.production.js",
     "test": "jest",
     "server": "nodemon ./serverish/server.js",

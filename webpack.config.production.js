@@ -104,6 +104,11 @@ config.plugins = [
   // new ExtractTextPlugin('player.css'),
   new webpack.BannerPlugin({
     banner: `@Build ${new Date().toLocaleString()}`
+  }),
+  new webpack.DefinePlugin({
+    "process.env": {
+      USAGE: JSON.stringify(process.env.USAGE)
+    }
   })
 ];
 
