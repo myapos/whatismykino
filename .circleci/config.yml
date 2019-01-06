@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run: echo "Installing node packages"
       - run: yarn
-      - run: build
+      - run: yarn build
   test:
     docker:
       - image: circleci/node:10-browsers-legacy
