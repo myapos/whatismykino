@@ -1,4 +1,4 @@
-export const headerTitle = 'headerTitle';
+export const headerTitle = "headerTitle";
 
 export const intro_msg = `This web application aims to provide some tools that we would be useful 
 in data processing for keno game of OPAP (Greek lottery). Data are being retrieved live from OPAP 
@@ -12,8 +12,8 @@ The results are being refreshed every 1 minute.
 
 More information about OPAP Web services can be found in the next link: OPAP web services`;
 
-export const intro_subtitle = 'Introduction';
-export const intro_section_footer = 'Happy browsing';
+export const intro_subtitle = "Introduction";
+export const intro_section_footer = "Happy browsing";
 
 export const graphs_msg = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, 
@@ -23,8 +23,8 @@ typesetting, remaining essentially unchanged.It was popularised in the 1960s wit
 of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
 software like Aldus PageMaker including versions of Lorem Ipsum`;
 
-export const graphs_subtitle = 'Graphs';
-export const graphs_section_footer = 'graphs_section_footer';
+export const graphs_subtitle = "Graphs";
+export const graphs_section_footer = "graphs_section_footer";
 
 export const links_msg = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, 
@@ -34,8 +34,8 @@ typesetting, remaining essentially unchanged.It was popularised in the 1960s wit
 of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
 software like Aldus PageMaker including versions of Lorem Ipsum`;
 
-export const links_subtitle = 'Links';
-export const links_section_footer = 'links_section_footer';
+export const links_subtitle = "Links";
+export const links_section_footer = "links_section_footer";
 
 export const about_msg = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, 
@@ -45,36 +45,44 @@ typesetting, remaining essentially unchanged.It was popularised in the 1960s wit
 of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
 software like Aldus PageMaker including versions of Lorem Ipsum`;
 
-export const about_subtitle = 'About';
-export const about_section_footer = 'about_section_footer';
+export const about_subtitle = "About";
+export const about_section_footer = "about_section_footer";
 
 export const mapGoToElement = {
-  'Graphs': 'Graphs',
-  'Introduction': 'Introduction',
-  'Links': 'Links',
-  'About': 'About',
+  Graphs: "Graphs",
+  Introduction: "Introduction",
+  Links: "Links",
+  About: "About"
 };
+// debugger;
+let point = "";
+console.log(process.env.USAGE);
+if (process.env.USAGE === "dev") {
+  point = "http://localhost:2345/getKinos";
+} else if (process.env.USAGE === "prod") {
+  point = "https://serene-dusk-60425.herokuapp.com/"; // url of online server in kinoproxu heroku app
+}
 
-export const localServerApi = 'http://localhost:2345/getKinos';
+export const localServerApi = point;
 
 export const availableSelectValues = {
   generateValues: length => {
     const available = [];
     available.push({
-      'value': 'ALL',
-      'label': 'ALL',
+      value: "ALL",
+      label: "ALL"
     });
     const limit = 200;
 
     for (let i = 5; i <= length; i = i + 5) {
       // console.log('i:', i);
       available.push({
-        'value': i,
-        'label': i,
+        value: i,
+        label: i
       });
     }
     return available;
-  },
+  }
 };
 
 export const widthPlot = 600;
