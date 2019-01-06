@@ -1,4 +1,4 @@
-/*! @Build 2019-1-6 18:03:58 */
+/*! @Build 2019-1-6 21:37:31 */
 !(function(e) {
   var t = {};
   function n(r) {
@@ -3482,8 +3482,9 @@
         Introduction: "Introduction",
         Links: "Links",
         About: "About"
-      },
-      g = "http://localhost:2345/getKinos",
+      };
+    console.log("prod");
+    var g = "https://serene-dusk-60425.herokuapp.com/getKinos",
       b = {
         generateValues: function(e) {
           var t = [];

@@ -70,6 +70,7 @@
     "recharts": "^1.4.2",
     "redux": "^4.0.1",
     "redux-saga": "^0.16.2",
+    "serve": "^10.1.1",
     "style-loader": "^0.23.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
@@ -85,9 +86,9 @@
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
-    "start": "cross-env USAGE=prod webpack-dev-server --mode development --hot",
-    "startDev": "cross-env USAGE=dev webpack-dev-server --mode development --hot",
-    "build": "webpack --mode production --config webpack.config.production.js",
+    "start": "serve -s ./",
+    "dev": "cross-env USAGE=dev webpack-dev-server --mode development --hot",
+    "build": "cross-env USAGE=prod webpack --mode production --config webpack.config.production.js",
     "test": "jest",
     "server": "nodemon ./serverish/server.js",
     "precommit": "pretty-quick --staged"
