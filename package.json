@@ -41,7 +41,7 @@
     "graphql-anywhere": "^4.1.23",
     "graphql-tag": "^2.10.0",
     "html-webpack-plugin": "^3.2.0",
-    "husky": "^0.14.3",
+    "husky": "^1.3.1",
     "jest": "^23.6.0",
     "jquery": "^3.3.1",
     "jsdoc": "^3.5.5",
@@ -86,10 +86,14 @@
     "start": "webpack-dev-server --mode development --hot",
     "build": "webpack --mode production --config webpack.config.production.js",
     "test": "jest",
-    "server": "nodemon ./src/serverish/server.js"
+    "server": "nodemon ./src/serverish/server.js",
+    "precommit": "pretty-quick --staged"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/myapos/whatismykino"
+  },
+  "devDependencies": {
+    "pretty-quick": "^1.8.0"
   }
 }
