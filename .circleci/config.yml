@@ -19,7 +19,7 @@ jobs:
       - run: yarn test
 workflows:
   version: 2
-  install_test:
+  test_build:
     jobs:
-      - build
       - test
+      - build
