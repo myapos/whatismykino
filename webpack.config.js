@@ -71,7 +71,6 @@ const config = {
     disableHostCheck: true,
     headers: { "Access-Control-Allow-Origin": "*" }
   },
-
   plugins: [
     new webpack.BannerPlugin({
       banner: `Build: ${new Date().toLocaleString()}`
