@@ -24,7 +24,7 @@ of Letraset sheets containing Lorem Ipsum passages, and more recently with deskt
 software like Aldus PageMaker including versions of Lorem Ipsum`;
 
 export const graphs_subtitle = "Graphs";
-export const graphs_section_footer = "graphs_section_footer_123";
+export const graphs_section_footer = "graphs_section_footer";
 
 export const links_msg = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, 
