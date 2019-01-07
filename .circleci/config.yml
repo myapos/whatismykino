@@ -31,6 +31,7 @@ jobs:
             git config credential.helper 'cache --timeout=120'
             git config user.email "<email>"
             git config user.name "Deployment Bot"
+            git add .
             git commit --allow-empty -m "Trigger deployment"
             # Push quietly to prevent showing the token in log
             git push -f https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
