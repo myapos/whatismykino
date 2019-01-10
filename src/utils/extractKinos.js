@@ -4,7 +4,7 @@ export default res => {
 
   res.forEach(item => {
     // draws array
-    const draw = item.data.draws.draw;
+    const draw = item.result.draws.draw;
     // console.log('draw', draw);
     draw.forEach(item_ => {
       const kino = {
