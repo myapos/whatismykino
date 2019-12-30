@@ -5,7 +5,7 @@ import extractKinos from "../utils/extractKinos";
 
 export default async (startDate, endDate) => {
   /* Fetch  kino numbers for the range startDate - endDate  */
-
+  debugger;
   // log startDate and endDate
   const dates = analyzeRange(startDate, endDate);
   /* Loop dates array and fetch data for all dates

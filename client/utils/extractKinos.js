@@ -4,13 +4,13 @@ export default res => {
 
   res.forEach(item => {
     // draws array
-    const draw = item.data.draws.draw;
+    const draws = item.data.content;
     // console.log('draw', draw);
-    draw.forEach(item_ => {
+    draws.forEach(item_ => {
       const kino = {
         drawTime: item_.drawTime,
-        drawNo: item_.drawNo,
-        kino: item_.results[item_.results.length - 1]
+        drawNo: item_.drawId,
+        kino: item_.winningNumbers.bonus[0]
       };
 
       kinos.push(kino);
