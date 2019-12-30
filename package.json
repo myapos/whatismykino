@@ -1,7 +1,7 @@
 {
   "name": "what-is-my-kino-number",
   "description": "A web app that provides basic tools for data processing on Kino lottery",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Myron Apostolakis",
   "scripts": {
     "start": "serve -s ./dist",
@@ -36,7 +36,7 @@
     "babel-jest": "^25.0.0",
     "babel-loader": "^8.0.0",
     "bootstrap": "^4.2.1",
-    "bootstrap-daterangepicker": "^3.0.3",
+    "bootstrap-daterangepicker": "^3.0.5",
     "chalk": "^2.3.0",
     "clean-webpack-plugin": "^0.1.19",
     "core-js": "^2.6.11",
@@ -78,7 +78,7 @@
     "react-dom": "^16.6.3",
     "react-loader-spinner": "^2.3.0",
     "react-redux": "^6.0.0",
-    "react-select": "^2.1.2",
+    "react-select": "^3.0.8",
     "recharts": "^1.4.2",
     "redux": "^4.0.1",
     "redux-saga": "^0.16.2",

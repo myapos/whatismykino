@@ -39,7 +39,7 @@ function* fetchKinosForDates(action) {
     endDate
   );
   // console.log('fetched', kinos);
-
+  debugger;
   const groupped = groupBy(kinos, "kino");
   // whatismykino(kinos);
 
@@ -47,7 +47,7 @@ function* fetchKinosForDates(action) {
     kino: key,
     occurences: groupped[key].length
   }));
-
+  debugger;
   yield put({
     type: actions.SAGAS_KINOS_FETCHED,
     kinos,
