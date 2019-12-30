@@ -11,10 +11,12 @@ function configureStore(initialState) {
     initialState,
     compose(
       applyMiddleware(sagaMiddleware),
-      window.devToolsExtension ? window.devToolsExtension() : f => f
+
+      window.__REDUX_DEVTOOLS_EXTENSION__ && !process.env.PRODUCTION
+        ? window.__REDUX_DEVTOOLS_EXTENSION__({ name: "whatismykino" })
+        : f => f
     )
   );
-
   sagaMiddleware.run(rootSaga);
 
   return store;
