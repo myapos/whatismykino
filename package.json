@@ -1,7 +1,7 @@
 {
   "name": "what-is-my-kino-number",
   "description": "A web app that provides basic tools for data processing on Kino lottery",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "author": "Myron Apostolakis",
   "scripts": {
     "start": "serve -s ./dist",
@@ -13,6 +13,11 @@
     "test": "jest",
     "server": "nodemon ./serverish/server.js",
     "precommit": "pretty-quick --staged"
+  },
+  "husky": {
+    "hooks": {
+      "post-merge": "node ./buildVersion.js && git commit -am 'update version' && git push"
+    }
   },
   "dependencies": {
     "30-seconds-of-code": "^1.2.3",
@@ -82,6 +87,7 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "timeseries-analysis": "^1.0.12",
+    "versiony": "^2.0.1",
     "whatwg-fetch": "^3.0.0"
   },
   "license": "MIT",
