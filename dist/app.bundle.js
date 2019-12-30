@@ -1,4 +1,4 @@
-/*! @Build 12/30/2019, 7:38:33 PM */ !(function(e) {
+/*! @Build 12/30/2019, 10:52:17 PM */ !(function(e) {
   var t = {};
   function n(r) {
     if (t[r]) return t[r].exports;
@@ -51424,7 +51424,7 @@ object-assign
   },
   function(e) {
     e.exports = JSON.parse(
-      '{"_args":[["elliptic@6.5.2","/home/myros/projects/whatismykino"]],"_from":"elliptic@6.5.2","_id":"elliptic@6.5.2","_inBundle":false,"_integrity":"sha512-f4x70okzZbIQl/NSRLkI/+tteV/9WqL98zx+SQ69KbXxmVrmjwsNUPn/gYJJ0sHvEak24cZgHIPegRePAtA/xw==","_location":"/elliptic","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"elliptic@6.5.2","name":"elliptic","escapedName":"elliptic","rawSpec":"6.5.2","saveSpec":null,"fetchSpec":"6.5.2"},"_requiredBy":["/browserify-sign","/create-ecdh"],"_resolved":"https://registry.npmjs.org/elliptic/-/elliptic-6.5.2.tgz","_spec":"6.5.2","_where":"/home/myros/projects/whatismykino","author":{"name":"Fedor Indutny","email":"fedor@indutny.com"},"bugs":{"url":"https://github.com/indutny/elliptic/issues"},"dependencies":{"bn.js":"^4.4.0","brorand":"^1.0.1","hash.js":"^1.0.0","hmac-drbg":"^1.0.0","inherits":"^2.0.1","minimalistic-assert":"^1.0.0","minimalistic-crypto-utils":"^1.0.0"},"description":"EC cryptography","devDependencies":{"brfs":"^1.4.3","coveralls":"^3.0.8","grunt":"^1.0.4","grunt-browserify":"^5.0.0","grunt-cli":"^1.2.0","grunt-contrib-connect":"^1.0.0","grunt-contrib-copy":"^1.0.0","grunt-contrib-uglify":"^1.0.1","grunt-mocha-istanbul":"^3.0.1","grunt-saucelabs":"^9.0.1","istanbul":"^0.4.2","jscs":"^3.0.7","jshint":"^2.10.3","mocha":"^6.2.2"},"files":["lib"],"homepage":"https://github.com/indutny/elliptic","keywords":["EC","Elliptic","curve","Cryptography"],"license":"MIT","main":"lib/elliptic.js","name":"elliptic","repository":{"type":"git","url":"git+ssh://git@github.com/indutny/elliptic.git"},"scripts":{"jscs":"jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js","jshint":"jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js","lint":"npm run jscs && npm run jshint","test":"npm run lint && npm run unit","unit":"istanbul test _mocha --reporter=spec test/index.js","version":"grunt dist && git add dist/"},"version":"6.5.2"}'
+      '{"_args":[["elliptic@6.5.2","/home/myros/projects/whatismykino"]],"_development":true,"_from":"elliptic@6.5.2","_id":"elliptic@6.5.2","_inBundle":false,"_integrity":"sha512-f4x70okzZbIQl/NSRLkI/+tteV/9WqL98zx+SQ69KbXxmVrmjwsNUPn/gYJJ0sHvEak24cZgHIPegRePAtA/xw==","_location":"/elliptic","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"elliptic@6.5.2","name":"elliptic","escapedName":"elliptic","rawSpec":"6.5.2","saveSpec":null,"fetchSpec":"6.5.2"},"_requiredBy":["/browserify-sign","/create-ecdh"],"_resolved":"https://registry.npmjs.org/elliptic/-/elliptic-6.5.2.tgz","_spec":"6.5.2","_where":"/home/myros/projects/whatismykino","author":{"name":"Fedor Indutny","email":"fedor@indutny.com"},"bugs":{"url":"https://github.com/indutny/elliptic/issues"},"dependencies":{"bn.js":"^4.4.0","brorand":"^1.0.1","hash.js":"^1.0.0","hmac-drbg":"^1.0.0","inherits":"^2.0.1","minimalistic-assert":"^1.0.0","minimalistic-crypto-utils":"^1.0.0"},"description":"EC cryptography","devDependencies":{"brfs":"^1.4.3","coveralls":"^3.0.8","grunt":"^1.0.4","grunt-browserify":"^5.0.0","grunt-cli":"^1.2.0","grunt-contrib-connect":"^1.0.0","grunt-contrib-copy":"^1.0.0","grunt-contrib-uglify":"^1.0.1","grunt-mocha-istanbul":"^3.0.1","grunt-saucelabs":"^9.0.1","istanbul":"^0.4.2","jscs":"^3.0.7","jshint":"^2.10.3","mocha":"^6.2.2"},"files":["lib"],"homepage":"https://github.com/indutny/elliptic","keywords":["EC","Elliptic","curve","Cryptography"],"license":"MIT","main":"lib/elliptic.js","name":"elliptic","repository":{"type":"git","url":"git+ssh://git@github.com/indutny/elliptic.git"},"scripts":{"jscs":"jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js","jshint":"jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js","lint":"npm run jscs && npm run jshint","test":"npm run lint && npm run unit","unit":"istanbul test _mocha --reporter=spec test/index.js","version":"grunt dist && git add dist/"},"version":"6.5.2"}'
     );
   },
   function(e, t, n) {
@@ -65331,7 +65331,7 @@ object-assign
         t = new Function("return this")(),
         n = "__coverage__",
         r = t[n] || (t[n] = {});
-      return r[e] && "48adc653fbc82e24ad23a89eaf92d320f0de1e4e" === r[e].hash
+      return r[e] && "2ec1d9a6466d571ca95d05ede6c29aa4231f88c5" === r[e].hash
         ? r[e]
         : (r[e] = {
             path: "/home/myros/projects/whatismykino/client/api/getKinoData.js",
@@ -65341,8 +65341,8 @@ object-assign
                 end: { line: 7, column: 33 }
               },
               1: {
-                start: { line: 20, column: 2 },
-                end: { line: 20, column: 14 }
+                start: { line: 19, column: 2 },
+                end: { line: 19, column: 14 }
               }
             },
             fnMap: {
@@ -65354,7 +65354,7 @@ object-assign
                 },
                 loc: {
                   start: { line: 6, column: 27 },
-                  end: { line: 21, column: 1 }
+                  end: { line: 20, column: 1 }
                 },
                 line: 6
               }
@@ -65364,7 +65364,7 @@ object-assign
             f: { 0: 0 },
             b: {},
             _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-            hash: "48adc653fbc82e24ad23a89eaf92d320f0de1e4e"
+            hash: "2ec1d9a6466d571ca95d05ede6c29aa4231f88c5"
           });
     })();
     function tn(e, t, n, r, i, a, o) {
@@ -65486,7 +65486,7 @@ object-assign
           t = new Function("return this")(),
           n = "__coverage__",
           r = t[n] || (t[n] = {});
-        return r[e] && "a7eef5fa2c2a7b67df1f433e0ff20a640b37c2d7" === r[e].hash
+        return r[e] && "bba72a2f18ec185c41dee5443698144108d4dbaa" === r[e].hash
           ? r[e]
           : (r[e] = {
               path:
@@ -65509,10 +65509,14 @@ object-assign
                   end: { line: 12, column: 3 }
                 },
                 4: {
+                  start: { line: 10, column: 4 },
+                  end: { line: 10, column: 35 }
+                },
+                5: {
                   start: { line: 11, column: 4 },
                   end: { line: 11, column: 42 }
                 },
-                5: {
+                6: {
                   start: { line: 15, column: 2 },
                   end: { line: 15, column: 15 }
                 }
@@ -65532,11 +65536,11 @@ object-assign
                 }
               },
               branchMap: {},
-              s: { 0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 },
+              s: { 0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0 },
               f: { 0: 0 },
               b: {},
               _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-              hash: "a7eef5fa2c2a7b67df1f433e0ff20a640b37c2d7"
+              hash: "bba72a2f18ec185c41dee5443698144108d4dbaa"
             });
       })(),
       ln = function(e, t) {
@@ -65545,8 +65549,11 @@ object-assign
           r = (sn.s[1]++, e.subtract(1, "days")),
           i = (sn.s[2]++, t);
         for (sn.s[3]++; r.add(1, "days").diff(i) <= 0; )
-          sn.s[4]++, n.push(r.clone().toDate());
-        return sn.s[5]++, n;
+          sn.s[4]++,
+            console.log(r.toDate()),
+            sn.s[5]++,
+            n.push(r.clone().toDate());
+        return sn.s[6]++, n;
       },
       un =
         (n(474),
@@ -65556,7 +65563,7 @@ object-assign
             n = "__coverage__",
             r = t[n] || (t[n] = {});
           return r[e] &&
-            "be2901b5f94325dfeab4f02388eda74c0db9aa4a" === r[e].hash
+            "ef05f72785c4f2499432441378c209f6cf473d9b" === r[e].hash
             ? r[e]
             : (r[e] = {
                 path:
@@ -65564,7 +65571,7 @@ object-assign
                 statementMap: {
                   0: {
                     start: { line: 2, column: 2 },
-                    end: { line: 2, column: 66 }
+                    end: { line: 4, column: 70 }
                   }
                 },
                 fnMap: {
@@ -65576,27 +65583,71 @@ object-assign
                     },
                     loc: {
                       start: { line: 2, column: 2 },
-                      end: { line: 2, column: 66 }
+                      end: { line: 4, column: 70 }
                     },
                     line: 2
                   }
                 },
-                branchMap: {},
+                branchMap: {
+                  0: {
+                    loc: {
+                      start: { line: 1, column: 22 },
+                      end: { line: 1, column: 39 }
+                    },
+                    type: "default-arg",
+                    locations: [
+                      {
+                        start: { line: 1, column: 30 },
+                        end: { line: 1, column: 39 }
+                      }
+                    ],
+                    line: 1
+                  },
+                  1: {
+                    loc: {
+                      start: { line: 2, column: 2 },
+                      end: { line: 4, column: 70 }
+                    },
+                    type: "cond-expr",
+                    locations: [
+                      {
+                        start: { line: 3, column: 6 },
+                        end: { line: 3, column: 70 }
+                      },
+                      {
+                        start: { line: 4, column: 6 },
+                        end: { line: 4, column: 70 }
+                      }
+                    ],
+                    line: 2
+                  }
+                },
                 s: { 0: 0 },
                 f: { 0: 0 },
-                b: {},
+                b: { 0: [0], 1: [0, 0] },
                 _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-                hash: "be2901b5f94325dfeab4f02388eda74c0db9aa4a"
+                hash: "ef05f72785c4f2499432441378c209f6cf473d9b"
               });
         })()),
       cn = function(e) {
+        var t =
+          arguments.length > 1 && void 0 !== arguments[1]
+            ? arguments[1]
+            : (un.b[0][0]++, "default");
         return (
           un.f[0]++,
           un.s[0]++,
-          ""
-            .concat(e.getDate(), "-")
-            .concat(e.getMonth() + 1, "-")
-            .concat(e.getFullYear())
+          "default" === t
+            ? (un.b[1][0]++,
+              ""
+                .concat(e.getDate(), "-")
+                .concat(e.getMonth() + 1, "-")
+                .concat(e.getFullYear()))
+            : (un.b[1][1]++,
+              ""
+                .concat(e.getFullYear(), "-")
+                .concat(e.getMonth() + 1, "-")
+                .concat(e.getDate()))
         );
       },
       dn = (function() {
@@ -65604,7 +65655,7 @@ object-assign
           t = new Function("return this")(),
           n = "__coverage__",
           r = t[n] || (t[n] = {});
-        return r[e] && "a62cd2970cee53f1912111f02b2811ce8803f8ae" === r[e].hash
+        return r[e] && "e064aa4c3a6f0d3721b8e79c924a1237f523dac8" === r[e].hash
           ? r[e]
           : (r[e] = {
               path: "/home/myros/projects/whatismykino/client/constants.js",
@@ -65670,120 +65721,120 @@ object-assign
                   end: { line: 58, column: 14 }
                 },
                 15: {
-                  start: { line: 59, column: 0 },
-                  end: { line: 59, column: 31 }
+                  start: { line: 60, column: 0 },
+                  end: { line: 60, column: 41 }
                 },
                 16: {
-                  start: { line: 60, column: 0 },
-                  end: { line: 64, column: 1 }
+                  start: { line: 62, column: 0 },
+                  end: { line: 66, column: 1 }
                 },
                 17: {
-                  start: { line: 61, column: 2 },
-                  end: { line: 61, column: 43 }
+                  start: { line: 63, column: 2 },
+                  end: { line: 63, column: 43 }
                 },
                 18: {
-                  start: { line: 62, column: 7 },
-                  end: { line: 64, column: 1 }
+                  start: { line: 64, column: 7 },
+                  end: { line: 66, column: 1 }
                 },
                 19: {
-                  start: { line: 63, column: 2 },
-                  end: { line: 63, column: 61 }
+                  start: { line: 65, column: 2 },
+                  end: { line: 65, column: 61 }
                 },
                 20: {
-                  start: { line: 66, column: 30 },
-                  end: { line: 66, column: 35 }
+                  start: { line: 68, column: 30 },
+                  end: { line: 68, column: 35 }
                 },
                 21: {
-                  start: { line: 68, column: 37 },
-                  end: { line: 86, column: 1 }
+                  start: { line: 70, column: 37 },
+                  end: { line: 88, column: 1 }
                 },
                 22: {
-                  start: { line: 70, column: 22 },
-                  end: { line: 70, column: 24 }
+                  start: { line: 72, column: 22 },
+                  end: { line: 72, column: 24 }
                 },
                 23: {
-                  start: { line: 71, column: 4 },
-                  end: { line: 74, column: 7 }
+                  start: { line: 73, column: 4 },
+                  end: { line: 76, column: 7 }
                 },
                 24: {
-                  start: { line: 75, column: 18 },
-                  end: { line: 75, column: 21 }
+                  start: { line: 77, column: 18 },
+                  end: { line: 77, column: 21 }
                 },
                 25: {
-                  start: { line: 77, column: 4 },
-                  end: { line: 83, column: 5 }
+                  start: { line: 79, column: 4 },
+                  end: { line: 85, column: 5 }
                 },
                 26: {
-                  start: { line: 77, column: 17 },
-                  end: { line: 77, column: 18 }
+                  start: { line: 79, column: 17 },
+                  end: { line: 79, column: 18 }
                 },
                 27: {
-                  start: { line: 79, column: 6 },
-                  end: { line: 82, column: 9 }
+                  start: { line: 81, column: 6 },
+                  end: { line: 84, column: 9 }
                 },
                 28: {
-                  start: { line: 84, column: 4 },
-                  end: { line: 84, column: 21 }
+                  start: { line: 86, column: 4 },
+                  end: { line: 86, column: 21 }
                 },
                 29: {
-                  start: { line: 88, column: 25 },
-                  end: { line: 88, column: 28 }
+                  start: { line: 90, column: 25 },
+                  end: { line: 90, column: 28 }
                 },
                 30: {
-                  start: { line: 89, column: 26 },
-                  end: { line: 89, column: 29 }
+                  start: { line: 91, column: 26 },
+                  end: { line: 91, column: 29 }
                 }
               },
               fnMap: {
                 0: {
                   name: "(anonymous_0)",
                   decl: {
-                    start: { line: 69, column: 18 },
-                    end: { line: 69, column: 19 }
+                    start: { line: 71, column: 18 },
+                    end: { line: 71, column: 19 }
                   },
                   loc: {
-                    start: { line: 69, column: 28 },
-                    end: { line: 85, column: 3 }
+                    start: { line: 71, column: 28 },
+                    end: { line: 87, column: 3 }
                   },
-                  line: 69
+                  line: 71
                 }
               },
               branchMap: {
                 0: {
                   loc: {
-                    start: { line: 60, column: 0 },
-                    end: { line: 64, column: 1 }
+                    start: { line: 62, column: 0 },
+                    end: { line: 66, column: 1 }
                   },
                   type: "if",
                   locations: [
                     {
-                      start: { line: 60, column: 0 },
-                      end: { line: 64, column: 1 }
+                      start: { line: 62, column: 0 },
+                      end: { line: 66, column: 1 }
                     },
                     {
-                      start: { line: 60, column: 0 },
-                      end: { line: 64, column: 1 }
-                    }
-                  ],
-                  line: 60
-                },
-                1: {
-                  loc: {
-                    start: { line: 62, column: 7 },
-                    end: { line: 64, column: 1 }
-                  },
-                  type: "if",
-                  locations: [
-                    {
-                      start: { line: 62, column: 7 },
-                      end: { line: 64, column: 1 }
-                    },
-                    {
-                      start: { line: 62, column: 7 },
-                      end: { line: 64, column: 1 }
+                      start: { line: 62, column: 0 },
+                      end: { line: 66, column: 1 }
                     }
                   ],
                   line: 62
+                },
+                1: {
+                  loc: {
+                    start: { line: 64, column: 7 },
+                    end: { line: 66, column: 1 }
+                  },
+                  type: "if",
+                  locations: [
+                    {
+                      start: { line: 64, column: 7 },
+                      end: { line: 66, column: 1 }
+                    },
+                    {
+                      start: { line: 64, column: 7 },
+                      end: { line: 66, column: 1 }
+                    }
+                  ],
+                  line: 64
                 }
               },
               s: {
@@ -65822,7 +65873,7 @@ object-assign
               f: { 0: 0 },
               b: { 0: [0, 0], 1: [0, 0] },
               _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-              hash: "a62cd2970cee53f1912111f02b2811ce8803f8ae"
+              hash: "e064aa4c3a6f0d3721b8e79c924a1237f523dac8"
             });
       })(),
       fn =
@@ -65856,17 +65907,13 @@ object-assign
         }),
       Sn = (dn.s[14]++, "");
     dn.s[15]++,
-      console.log(Object({ PRODUCTION: !0, VERSION: "1.0.0" }).USAGE),
+      console.log("USAGE:", "prod"),
       dn.s[16]++,
-      "dev" === Object({ PRODUCTION: !0, VERSION: "1.0.0" }).USAGE
-        ? (dn.b[0][0]++, dn.s[17]++, (Sn = "http://localhost:2345/getKinos"))
-        : (dn.b[0][1]++,
-          dn.s[18]++,
-          "prod" === Object({ PRODUCTION: !0, VERSION: "1.0.0" }).USAGE
-            ? (dn.b[1][0]++,
-              dn.s[19]++,
-              (Sn = "https://serene-dusk-60425.herokuapp.com/getKinos"))
-            : dn.b[1][1]++);
+      dn.b[0][1]++,
+      dn.s[18]++,
+      dn.b[1][0]++,
+      dn.s[19]++,
+      (Sn = "https://serene-dusk-60425.herokuapp.com/getKinos");
     var En = (dn.s[20]++, Sn),
       Tn =
         (dn.s[21]++,
@@ -65889,7 +65936,7 @@ object-assign
           t = new Function("return this")(),
           n = "__coverage__",
           r = t[n] || (t[n] = {});
-        return r[e] && "7548ef5b5854920fe1e063da502cd605b6d137e1" === r[e].hash
+        return r[e] && "0bcd19299a11440765527e59d4c03f113d4be491" === r[e].hash
           ? r[e]
           : (r[e] = {
               path:
@@ -65901,39 +65948,47 @@ object-assign
                 },
                 1: {
                   start: { line: 7, column: 2 },
-                  end: { line: 16, column: 5 }
+                  end: { line: 18, column: 5 }
                 },
                 2: {
                   start: { line: 8, column: 18 },
-                  end: { line: 8, column: 31 }
+                  end: { line: 8, column: 42 }
                 },
                 3: {
-                  start: { line: 11, column: 4 },
-                  end: { line: 11, column: 49 }
+                  start: { line: 10, column: 4 },
+                  end: { line: 10, column: 32 }
                 },
                 4: {
-                  start: { line: 18, column: 14 },
-                  end: { line: 18, column: 61 }
+                  start: { line: 11, column: 4 },
+                  end: { line: 11, column: 51 }
                 },
                 5: {
-                  start: { line: 18, column: 30 },
-                  end: { line: 18, column: 60 }
+                  start: { line: 13, column: 4 },
+                  end: { line: 13, column: 49 }
                 },
                 6: {
-                  start: { line: 18, column: 51 },
-                  end: { line: 18, column: 59 }
+                  start: { line: 20, column: 14 },
+                  end: { line: 20, column: 61 }
                 },
                 7: {
-                  start: { line: 21, column: 16 },
-                  end: { line: 21, column: 51 }
+                  start: { line: 20, column: 30 },
+                  end: { line: 20, column: 60 }
                 },
                 8: {
-                  start: { line: 21, column: 49 },
-                  end: { line: 21, column: 50 }
+                  start: { line: 20, column: 51 },
+                  end: { line: 20, column: 59 }
                 },
                 9: {
-                  start: { line: 25, column: 2 },
-                  end: { line: 25, column: 15 }
+                  start: { line: 23, column: 16 },
+                  end: { line: 23, column: 51 }
+                },
+                10: {
+                  start: { line: 23, column: 49 },
+                  end: { line: 23, column: 50 }
+                },
+                11: {
+                  start: { line: 27, column: 2 },
+                  end: { line: 27, column: 15 }
                 }
               },
               fnMap: {
@@ -65945,7 +66000,7 @@ object-assign
                   },
                   loc: {
                     start: { line: 4, column: 30 },
-                    end: { line: 26, column: 1 }
+                    end: { line: 28, column: 1 }
                   },
                   line: 4
                 },
@@ -65957,53 +66012,66 @@ object-assign
                   },
                   loc: {
                     start: { line: 7, column: 24 },
-                    end: { line: 16, column: 3 }
+                    end: { line: 18, column: 3 }
                   },
                   line: 7
                 },
                 2: {
                   name: "(anonymous_2)",
                   decl: {
-                    start: { line: 18, column: 23 },
-                    end: { line: 18, column: 24 }
+                    start: { line: 20, column: 23 },
+                    end: { line: 20, column: 24 }
                   },
                   loc: {
-                    start: { line: 18, column: 30 },
-                    end: { line: 18, column: 60 }
+                    start: { line: 20, column: 30 },
+                    end: { line: 20, column: 60 }
                   },
-                  line: 18
+                  line: 20
                 },
                 3: {
                   name: "(anonymous_3)",
                   decl: {
-                    start: { line: 18, column: 46 },
-                    end: { line: 18, column: 47 }
+                    start: { line: 20, column: 46 },
+                    end: { line: 20, column: 47 }
                   },
                   loc: {
-                    start: { line: 18, column: 51 },
-                    end: { line: 18, column: 59 }
+                    start: { line: 20, column: 51 },
+                    end: { line: 20, column: 59 }
                   },
-                  line: 18
+                  line: 20
                 },
                 4: {
                   name: "(anonymous_4)",
                   decl: {
-                    start: { line: 21, column: 44 },
-                    end: { line: 21, column: 45 }
+                    start: { line: 23, column: 44 },
+                    end: { line: 23, column: 45 }
                   },
                   loc: {
-                    start: { line: 21, column: 49 },
-                    end: { line: 21, column: 50 }
+                    start: { line: 23, column: 49 },
+                    end: { line: 23, column: 50 }
                   },
-                  line: 21
+                  line: 23
                 }
               },
               branchMap: {},
-              s: { 0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0 },
+              s: {
+                0: 0,
+                1: 0,
+                2: 0,
+                3: 0,
+                4: 0,
+                5: 0,
+                6: 0,
+                7: 0,
+                8: 0,
+                9: 0,
+                10: 0,
+                11: 0
+              },
               f: { 0: 0, 1: 0, 2: 0, 3: 0, 4: 0 },
               b: {},
               _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-              hash: "7548ef5b5854920fe1e063da502cd605b6d137e1"
+              hash: "0bcd19299a11440765527e59d4c03f113d4be491"
             });
       })();
     function jn(e, t, n, r, i, a, o) {
@@ -66031,27 +66099,32 @@ object-assign
                         Dn.s[1]++,
                         t.forEach(function(e) {
                           Dn.f[1]++;
-                          var t = (Dn.s[2]++, cn(e));
-                          Dn.s[3]++, n.push("".concat(En, "?date=").concat(t));
+                          var t = (Dn.s[2]++, cn(e, "reverse"));
+                          Dn.s[3]++,
+                            console.log("date:", t),
+                            Dn.s[4]++,
+                            console.log("localServerApi:", En),
+                            Dn.s[5]++,
+                            n.push("".concat(En, "?date=").concat(t));
                         }),
-                        Dn.s[4]++,
+                        Dn.s[6]++,
                         (r = n.map(function(e) {
                           return (
                             Dn.f[2]++,
-                            Dn.s[5]++,
+                            Dn.s[7]++,
                             fetch(e).then(function(e) {
-                              return Dn.f[3]++, Dn.s[6]++, e.json();
+                              return Dn.f[3]++, Dn.s[8]++, e.json();
                             })
                           );
                         })),
-                        Dn.s[7]++,
+                        Dn.s[9]++,
                         (e.next = 8),
                         Promise.all(r).then(function(e) {
-                          return Dn.f[4]++, Dn.s[8]++, e;
+                          return Dn.f[4]++, Dn.s[10]++, e;
                         })
                       );
                     case 8:
-                      return (i = e.sent), Dn.s[9]++, e.abrupt("return", i);
+                      return (i = e.sent), Dn.s[11]++, e.abrupt("return", i);
                     case 11:
                     case "end":
                       return e.stop();
@@ -66193,7 +66266,7 @@ object-assign
           t = new Function("return this")(),
           n = "__coverage__",
           r = t[n] || (t[n] = {});
-        return r[e] && "6ac003c0b28b2478c84d0be0b49cbac5ac4a2cae" === r[e].hash
+        return r[e] && "482cb12c309911cd04e3595619afea64d6ffcf34" === r[e].hash
           ? r[e]
           : (r[e] = {
               path:
@@ -66204,16 +66277,16 @@ object-assign
                   end: { line: 10, column: 48 }
                 },
                 1: {
-                  start: { line: 16, column: 14 },
-                  end: { line: 16, column: 36 }
+                  start: { line: 15, column: 14 },
+                  end: { line: 15, column: 36 }
                 },
                 2: {
-                  start: { line: 18, column: 16 },
-                  end: { line: 18, column: 33 }
+                  start: { line: 17, column: 16 },
+                  end: { line: 17, column: 33 }
                 },
                 3: {
-                  start: { line: 19, column: 2 },
-                  end: { line: 23, column: 4 }
+                  start: { line: 18, column: 2 },
+                  end: { line: 22, column: 4 }
                 }
               },
               fnMap: {
@@ -66225,7 +66298,7 @@ object-assign
                   },
                   loc: {
                     start: { line: 6, column: 45 },
-                    end: { line: 24, column: 1 }
+                    end: { line: 23, column: 1 }
                   },
                   line: 6
                 }
@@ -66235,7 +66308,7 @@ object-assign
               f: { 0: 0 },
               b: {},
               _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-              hash: "6ac003c0b28b2478c84d0be0b49cbac5ac4a2cae"
+              hash: "482cb12c309911cd04e3595619afea64d6ffcf34"
             });
       })();
     function Nn(e, t, n, r, i, a, o) {
@@ -67762,7 +67835,7 @@ object-assign
           t = new Function("return this")(),
           n = "__coverage__",
           r = t[n] || (t[n] = {});
-        return r[e] && "9e4bbad5ec47a3cd2755055a7b8dab2cbef8009d" === r[e].hash
+        return r[e] && "20b55af48719717bb7c82beefef56ceb87aa191b" === r[e].hash
           ? r[e]
           : (r[e] = {
               path: "/home/myros/projects/whatismykino/client/store/store.js",
@@ -67773,19 +67846,19 @@ object-assign
                 },
                 1: {
                   start: { line: 9, column: 16 },
-                  end: { line: 16, column: 3 }
+                  end: { line: 19, column: 3 }
                 },
                 2: {
-                  start: { line: 14, column: 67 },
-                  end: { line: 14, column: 68 }
+                  start: { line: 17, column: 15 },
+                  end: { line: 17, column: 16 }
                 },
                 3: {
-                  start: { line: 18, column: 2 },
-                  end: { line: 18, column: 31 }
+                  start: { line: 20, column: 2 },
+                  end: { line: 20, column: 31 }
                 },
                 4: {
-                  start: { line: 20, column: 2 },
-                  end: { line: 20, column: 15 }
+                  start: { line: 22, column: 2 },
+                  end: { line: 22, column: 15 }
                 }
               },
               fnMap: {
@@ -67797,48 +67870,66 @@ object-assign
                   },
                   loc: {
                     start: { line: 6, column: 38 },
-                    end: { line: 21, column: 1 }
+                    end: { line: 23, column: 1 }
                   },
                   line: 6
                 },
                 1: {
                   name: "(anonymous_1)",
                   decl: {
-                    start: { line: 14, column: 62 },
-                    end: { line: 14, column: 63 }
+                    start: { line: 17, column: 10 },
+                    end: { line: 17, column: 11 }
                   },
                   loc: {
-                    start: { line: 14, column: 67 },
-                    end: { line: 14, column: 68 }
+                    start: { line: 17, column: 15 },
+                    end: { line: 17, column: 16 }
                   },
-                  line: 14
+                  line: 17
                 }
               },
               branchMap: {
                 0: {
                   loc: {
-                    start: { line: 14, column: 6 },
-                    end: { line: 14, column: 68 }
+                    start: { line: 15, column: 6 },
+                    end: { line: 17, column: 16 }
                   },
                   type: "cond-expr",
                   locations: [
                     {
-                      start: { line: 14, column: 33 },
-                      end: { line: 14, column: 59 }
+                      start: { line: 16, column: 10 },
+                      end: { line: 16, column: 71 }
                     },
                     {
-                      start: { line: 14, column: 62 },
-                      end: { line: 14, column: 68 }
+                      start: { line: 17, column: 10 },
+                      end: { line: 17, column: 16 }
                     }
                   ],
-                  line: 14
+                  line: 15
+                },
+                1: {
+                  loc: {
+                    start: { line: 15, column: 6 },
+                    end: { line: 15, column: 68 }
+                  },
+                  type: "binary-expr",
+                  locations: [
+                    {
+                      start: { line: 15, column: 6 },
+                      end: { line: 15, column: 41 }
+                    },
+                    {
+                      start: { line: 15, column: 45 },
+                      end: { line: 15, column: 68 }
+                    }
+                  ],
+                  line: 15
                 }
               },
               s: { 0: 0, 1: 0, 2: 0, 3: 0, 4: 0 },
               f: { 0: 0, 1: 0 },
-              b: { 0: [0, 0] },
+              b: { 0: [0, 0], 1: [0, 0] },
               _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-              hash: "9e4bbad5ec47a3cd2755055a7b8dab2cbef8009d"
+              hash: "20b55af48719717bb7c82beefef56ceb87aa191b"
             });
       })();
     var kr = function(e) {
@@ -67880,12 +67971,16 @@ object-assign
                     };
                   };
                 })(t),
-                window.devToolsExtension
-                  ? (xr.b[0][0]++, window.devToolsExtension())
+                (xr.b[1][0]++,
+                window.__REDUX_DEVTOOLS_EXTENSION__ && (xr.b[1][1]++, 0)
+                  ? (xr.b[0][0]++,
+                    window.__REDUX_DEVTOOLS_EXTENSION__({
+                      name: "whatismykino"
+                    }))
                   : (xr.b[0][1]++,
                     function(e) {
                       return xr.f[1]++, xr.s[2]++, e;
-                    })
+                    }))
               )
             ));
         return xr.s[3]++, t.run(br), xr.s[4]++, n;
@@ -92146,7 +92241,7 @@ object-assign
           t = new Function("return this")(),
           n = "__coverage__",
           r = t[n] || (t[n] = {});
-        return r[e] && "4a10d318266ef5f676df86a2db74b35046ea78f1" === r[e].hash
+        return r[e] && "60f9b1cced940a1756deecd5455b9af965a65d02" === r[e].hash
           ? r[e]
           : (r[e] = {
               path:
@@ -92170,35 +92265,31 @@ object-assign
                 },
                 4: {
                   start: { line: 44, column: 4 },
-                  end: { line: 138, column: 5 }
+                  end: { line: 137, column: 5 }
                 },
                 5: {
-                  start: { line: 46, column: 6 },
-                  end: { line: 46, column: 15 }
+                  start: { line: 47, column: 6 },
+                  end: { line: 47, column: 30 }
                 },
                 6: {
                   start: { line: 48, column: 6 },
-                  end: { line: 48, column: 30 }
+                  end: { line: 132, column: 8 }
                 },
                 7: {
-                  start: { line: 49, column: 6 },
-                  end: { line: 133, column: 8 }
+                  start: { line: 133, column: 11 },
+                  end: { line: 137, column: 5 }
                 },
                 8: {
-                  start: { line: 134, column: 11 },
-                  end: { line: 138, column: 5 }
+                  start: { line: 134, column: 6 },
+                  end: { line: 134, column: 80 }
                 },
                 9: {
-                  start: { line: 135, column: 6 },
-                  end: { line: 135, column: 80 }
+                  start: { line: 136, column: 6 },
+                  end: { line: 136, column: 21 }
                 },
                 10: {
-                  start: { line: 137, column: 6 },
-                  end: { line: 137, column: 21 }
-                },
-                11: {
-                  start: { line: 142, column: 32 },
-                  end: { line: 142, column: 37 }
+                  start: { line: 141, column: 32 },
+                  end: { line: 141, column: 37 }
                 }
               },
               fnMap: {
@@ -92222,38 +92313,38 @@ object-assign
                   },
                   loc: {
                     start: { line: 25, column: 11 },
-                    end: { line: 139, column: 3 }
+                    end: { line: 138, column: 3 }
                   },
                   line: 25
                 },
                 2: {
                   name: "(anonymous_2)",
                   decl: {
-                    start: { line: 142, column: 23 },
-                    end: { line: 142, column: 24 }
+                    start: { line: 141, column: 23 },
+                    end: { line: 141, column: 24 }
                   },
                   loc: {
-                    start: { line: 142, column: 32 },
-                    end: { line: 142, column: 37 }
+                    start: { line: 141, column: 32 },
+                    end: { line: 141, column: 37 }
                   },
-                  line: 142
+                  line: 141
                 }
               },
               branchMap: {
                 0: {
                   loc: {
                     start: { line: 44, column: 4 },
-                    end: { line: 138, column: 5 }
+                    end: { line: 137, column: 5 }
                   },
                   type: "if",
                   locations: [
                     {
                       start: { line: 44, column: 4 },
-                      end: { line: 138, column: 5 }
+                      end: { line: 137, column: 5 }
                     },
                     {
                       start: { line: 44, column: 4 },
-                      end: { line: 138, column: 5 }
+                      end: { line: 137, column: 5 }
                     }
                   ],
                   line: 44
@@ -92278,39 +92369,39 @@ object-assign
                 },
                 2: {
                   loc: {
-                    start: { line: 134, column: 11 },
-                    end: { line: 138, column: 5 }
+                    start: { line: 133, column: 11 },
+                    end: { line: 137, column: 5 }
                   },
                   type: "if",
                   locations: [
                     {
-                      start: { line: 134, column: 11 },
-                      end: { line: 138, column: 5 }
+                      start: { line: 133, column: 11 },
+                      end: { line: 137, column: 5 }
                     },
                     {
-                      start: { line: 134, column: 11 },
-                      end: { line: 138, column: 5 }
+                      start: { line: 133, column: 11 },
+                      end: { line: 137, column: 5 }
                     }
                   ],
-                  line: 134
+                  line: 133
                 },
                 3: {
                   loc: {
-                    start: { line: 134, column: 15 },
-                    end: { line: 134, column: 59 }
+                    start: { line: 133, column: 15 },
+                    end: { line: 133, column: 59 }
                   },
                   type: "binary-expr",
                   locations: [
                     {
-                      start: { line: 134, column: 15 },
-                      end: { line: 134, column: 38 }
+                      start: { line: 133, column: 15 },
+                      end: { line: 133, column: 38 }
                     },
                     {
-                      start: { line: 134, column: 42 },
-                      end: { line: 134, column: 59 }
+                      start: { line: 133, column: 42 },
+                      end: { line: 133, column: 59 }
                     }
                   ],
-                  line: 134
+                  line: 133
                 }
               },
               s: {
@@ -92324,13 +92415,12 @@ object-assign
                 7: 0,
                 8: 0,
                 9: 0,
-                10: 0,
-                11: 0
+                10: 0
               },
               f: { 0: 0, 1: 0, 2: 0 },
               b: { 0: [0, 0], 1: [0, 0], 2: [0, 0], 3: [0, 0] },
               _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-              hash: "4a10d318266ef5f676df86a2db74b35046ea78f1"
+              hash: "60f9b1cced940a1756deecd5455b9af965a65d02"
             });
       })();
     function ex(e) {
@@ -92476,9 +92566,8 @@ object-assign
                   r.length > 0 && (Qw.b[1][1]++, !t)
                     ? (Qw.b[0][0]++,
                       Qw.s[5]++,
-                      Qw.s[6]++,
                       console.log(r),
-                      Qw.s[7]++,
+                      Qw.s[6]++,
                       o.a.createElement(
                         "div",
                         null,
@@ -92584,11 +92673,11 @@ object-assign
                         )
                       ))
                     : (Qw.b[0][1]++,
-                      Qw.s[8]++,
+                      Qw.s[7]++,
                       Qw.b[3][0]++,
                       0 === r.length && (Qw.b[3][1]++, t)
                         ? (Qw.b[2][0]++,
-                          Qw.s[9]++,
+                          Qw.s[8]++,
                           o.a.createElement(Yr.a, {
                             type: "ThreeDots",
                             color: "#ff6347",
@@ -92596,7 +92685,7 @@ object-assign
                             width: 80
                           }))
                         : (Qw.b[2][1]++,
-                          Qw.s[10]++,
+                          Qw.s[9]++,
                           o.a.createElement("div", null)))
                 );
               }
@@ -92607,7 +92696,7 @@ object-assign
         );
       })(a.Component),
       lx = oe(function(e) {
-        return Qw.f[2]++, Qw.s[11]++, e;
+        return Qw.f[2]++, Qw.s[10]++, e;
       }, r)(sx),
       ux = (function() {
         var e =

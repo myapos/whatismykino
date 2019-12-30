@@ -12,7 +12,6 @@ export default async (startDate, endDate) => {
   date formats yyyy-mm-dd
   1100 KINO gameid
   */
-
   const res = await loopDates(dates);
   // extract kinos from res
   const kinos = extractKinos(res);
