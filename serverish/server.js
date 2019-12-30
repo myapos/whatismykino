@@ -23,7 +23,7 @@ app.get("/getKinos", (req, res) => {
   // console.log('date:', date);
   // const apiUrl = `https://api.opap.gr/draws/v3.0/1100/draw-date/${date}/${date}?page=${page}`;
   const apiUrl = `https://applications.opap.gr/DrawsRestServices/kino/drawDate/${date}.json`;
-  debugger;
+
   // console.log(apiUrl);
   fetch(apiUrl)
     .then(res => res.json())
