@@ -60,6 +60,4 @@ typings/
 
 ignore/
 
-yarn.lock
-
 .cache
