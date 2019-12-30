@@ -9,9 +9,6 @@ const PORT = 1234;
 module.exports = merge(common, {
   mode: "development",
   devtool: "inline-source-map",
-  node: {
-    fs: "empty"
-  },
   devServer: {
     hot: true,
     overlay: true,

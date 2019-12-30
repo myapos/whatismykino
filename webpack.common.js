@@ -9,6 +9,10 @@ module.exports = {
   entry: {
     app: "./client/index.js"
   },
+  node: {
+    fs: "empty",
+    child_process: "empty"
+  },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
@@ -40,68 +44,28 @@ module.exports = {
         include: [path.resolve(__dirname, "./client")]
       },
       {
-        test: /\.(ico|jpg|jpeg|png|gif|eot|svg|otf|webp|ttf|woff|woff2)(\?.*)?$/,
+        test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
         use: "file-loader"
       },
-      // {
-      //   test: /\.svg$/,
-      //   loader: 'svg-inline-loader',
-      // },
       {
         test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              // you can specify a publicPath here
-              // by default it uses publicPath in webpackOptions.output
-              // publicPath: path.resolve(__dirname, 'dist'),
-              hmr: process.env.NODE_ENV === "development"
-              // options: { sourceMap: true },
-            }
-          },
-          "css-loader"
-        ]
+        use: [{ loader: "style-loader" }, { loader: "css-loader" }]
       },
       {
         test: /\.styl$/,
+        // use: 'css-loader',
         use: [
           {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              // you can specify a publicPath here
-              // by default it use publicPath in webpackOptions.output
-              publicPath: "../"
-            }
+            loader: "style-loader" // creates style nodes from JS strings
           },
           {
             loader: "css-loader" // translates CSS into CommonJS
           },
           {
-            loader: "stylus-loader", // compiles Stylus to CSS
-            options: {
-              use: [
-                // require('nib')(),
-                // require('rupture')(),
-              ]
-            }
+            loader: "stylus-loader" // compiles Stylus to CSS
           }
         ]
       }
-      // {
-      //   test: /\.styl$/,
-      //   use: [
-      //     {
-      //       loader: MiniCssExtractPlugin.loader,
-      //       options: {
-
-      //         hmr: process.env.NODE_ENV === 'development',
-      //         options: { sourceMap: true },
-      //       },
-      //     },
-      //     'stylus-loader',
-      //   ],
-      // },
     ]
   }
 };
