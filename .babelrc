@@ -4,21 +4,20 @@
       "@babel/preset-env",
       {
         "useBuiltIns": "usage",
+        "corejs": 2,
         "targets": {
-          "browsers": [
-            "last 2 versions",
-            "not ie < 10"
-          ]
+          "browsers": ["last 2 versions", "not ie < 10"]
         }
       }
     ]
   ],
+  "sourceMaps": "inline",
+  "retainLines": true,
   "plugins": [
     "@babel/plugin-syntax-dynamic-import",
     "@babel/plugin-proposal-object-rest-spread",
     "@babel/plugin-proposal-class-properties",
-    [
-      "@babel/plugin-transform-react-jsx"
-    ]
+    "istanbul",
+    ["@babel/plugin-transform-react-jsx"]
   ]
 }
