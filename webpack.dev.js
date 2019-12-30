@@ -32,6 +32,7 @@ module.exports = merge(common, {
     new webpack.DefinePlugin({
       "process.env": {
         PRODUCTION: process.env.PRODUCTION,
+        USAGE: JSON.stringify(process.env.USAGE),
         VERSION: JSON.stringify(require("./package.json").version)
       }
     })

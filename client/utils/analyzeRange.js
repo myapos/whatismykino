@@ -7,7 +7,7 @@ export default (startDate, endDate) => {
   const lastDate = endDate; // moment(endDate).startOf('day');
 
   while (currDate.add(1, "days").diff(lastDate) <= 0) {
-    // console.log(currDate.toDate());
+    console.log(currDate.toDate());
     dates.push(currDate.clone().toDate());
   }
 

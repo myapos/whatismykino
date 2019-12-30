@@ -9,7 +9,6 @@ export default async () => {
   // const res = await fetch(`https://pokeapi.co/api/v2/pokemon/ditto/`).then(r => r.json());
 
   // console.log('res:', res);
-  // // debugger;
 
   // console.log(initialQuery());
   // // Filter the data!

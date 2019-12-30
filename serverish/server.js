@@ -19,10 +19,12 @@ app.get("/", (req, res) => {
 app.get("/getKinos", (req, res) => {
   // console.log('request params', req.query);
   const { date } = req.query;
-
-  // console.log('date:', date);
+  console.log("date:", date);
   // const apiUrl = `https://api.opap.gr/draws/v3.0/1100/draw-date/${date}/${date}?page=${page}`;
-  const apiUrl = `https://applications.opap.gr/DrawsRestServices/kino/drawDate/${date}.json`;
+  // https://api.opap.gr/draws/v3.0/1100/draw-date/2019-01-01/2019-01-01
+
+  // const apiUrl = `https://applications.opap.gr/DrawsRestServices/kino/drawDate/${date}.json`;
+  const apiUrl = `https://api.opap.gr/draws/v3.0/1100/draw-date/${date}/${date}`;
 
   // console.log(apiUrl);
   fetch(apiUrl)
@@ -34,10 +36,6 @@ app.get("/getKinos", (req, res) => {
       // res.redirect('/error');
       console.log("error:", err);
     });
-  // const msg = {
-  //   'hello': 'Hello World',
-  // };
-  // res.send(msg);
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));

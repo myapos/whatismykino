@@ -43,7 +43,6 @@ class PredictionLinePlot extends Component {
 
     if (prediction.length > 0 && !waitForPrediction) {
       // preprocess data and convert  float32array to array with integers
-      debugger;
 
       console.log(prediction);
       return (
