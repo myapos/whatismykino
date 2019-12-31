@@ -34,13 +34,6 @@ class PredictionLinePlot extends Component {
       lwmaData
     } = this.props;
 
-    console.log(
-      "waitForPrediction:",
-      waitForPrediction,
-      " prediction:",
-      prediction
-    );
-
     if (prediction.length > 0 && !waitForPrediction) {
       // preprocess data and convert  float32array to array with integers
 
