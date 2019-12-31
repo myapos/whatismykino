@@ -11,7 +11,7 @@
     "build": "USAGE=prod PRODUCTION=true webpack --mode production --config webpack.prod.js",
     "buildOld": "USAGE=prod webpack --mode production --config webpack.config.production.js",
     "test": "jest",
-    "server": "nodemon ./serverish/server.js",
+    "server": "nodemon ./server/server.js",
     "precommit": "pretty-quick --staged"
   },
   "husky": {
