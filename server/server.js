@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 app.get("/getKinos", (req, res) => {
   // console.log('request params', req.query);
   const { date } = req.query;
-  console.log("date:", date);
+  // console.log("date:", date);
   const apiUrl = `https://api.opap.gr/draws/v3.0/1100/draw-date/${date}/${date}`;
   fetch(apiUrl)
     .then(res => res.json())

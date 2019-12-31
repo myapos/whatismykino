@@ -7,22 +7,10 @@ export default async kinos => {
   console.log("kinos received:", kinos);
   // export only kinos
   const onlyKinos = kinos.map(item => item.kino);
+
   const formattedKinos = kinos.map(item => {
     // item.kino
-    const splitted = item.drawTime.split("T");
-
-    const splittedDate = splitted[0].split("-");
-    const splittedTime = splitted[1].split(":");
-
-    const d = new Date(
-      splittedDate[2],
-      splittedDate[1] - 1,
-      splittedDate[0],
-      splittedTime[0],
-      splittedTime[1],
-      splittedTime[2]
-    );
-
+    const d = new Date(item.drawTime);
     const miniData = [d, item.kino];
     return miniData;
   });
