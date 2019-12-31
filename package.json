@@ -4,7 +4,7 @@
   "version": "0.0.5",
   "author": "Myron Apostolakis",
   "scripts": {
-    "start": "serve -s ./dist",
+    "serve": "serve -s ./dist",
     "devOld": "PRODUCTION=false USAGE=dev webpack-dev-server --mode development --hot",
     "dev": "PRODUCTION=false USAGE=dev webpack-dev-server --config webpack.dev.js --mode development --hot",
     "startDev": "concurrently \"npm run dev\" \"npm run server\"",
