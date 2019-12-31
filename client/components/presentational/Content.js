@@ -10,14 +10,10 @@ const Content = () => (
     <Section
       subtitle={constants.intro_subtitle}
       text={constants.intro_msg}
-      section_footer={constants.intro_section_footer}
+      link={constants.intro_link}
     />
 
-    <Section
-      subtitle={constants.graphs_subtitle}
-      text={constants.graphs_msg}
-      section_footer={constants.graphs_section_footer}
-    >
+    <Section subtitle={constants.graphs_subtitle} text={constants.graphs_msg}>
       <Options />
     </Section>
     {/* <Section
