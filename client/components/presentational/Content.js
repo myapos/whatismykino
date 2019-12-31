@@ -20,7 +20,7 @@ const Content = () => (
     >
       <Options />
     </Section>
-    <Section
+    {/* <Section
       subtitle={constants.links_subtitle}
       text={constants.links_msg}
       section_footer={constants.links_section_footer}
@@ -29,7 +29,7 @@ const Content = () => (
       subtitle={constants.about_subtitle}
       text={constants.about_msg}
       section_footer={constants.about_section_footer}
-    />
+    /> */}
   </div>
 );
 

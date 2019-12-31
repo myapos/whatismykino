@@ -15,9 +15,7 @@ More information about OPAP Web services can be found in the next link: OPAP web
 export const intro_subtitle = "Introduction";
 export const intro_section_footer = "Happy browsing";
 
-export const graphs_msg = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, 
-when an unknown printer took a galley of type and scrambled it to make a type`;
+export const graphs_msg = `Below you can find graphs about the kino occurences and the trend of kino lottery`;
 
 export const graphs_subtitle = "Graphs";
 export const graphs_section_footer = "graphs_section_footer";
