@@ -7,21 +7,18 @@ import Options from "../container/Options";
 
 const Content = () => (
   <div id="section_wrapper">
-    <Section
-      subtitle={constants.intro_subtitle}
-      text={constants.intro_msg}
-      link={constants.intro_link}
-    />
+    <Section subtitle={constants.intro_subtitle} text={constants.intro_msg} />
 
     <Section subtitle={constants.graphs_subtitle} text={constants.graphs_msg}>
       <Options />
     </Section>
-    {/* <Section
+    <Section
       subtitle={constants.links_subtitle}
       text={constants.links_msg}
+      links={constants.links}
       section_footer={constants.links_section_footer}
     />
-    <Section
+    {/* <Section
       subtitle={constants.about_subtitle}
       text={constants.about_msg}
       section_footer={constants.about_section_footer}

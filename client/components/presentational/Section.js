@@ -15,8 +15,8 @@ const scrollToTop = e => {
 };
 
 const Section = props => {
-  // console.log("props", props);
-  console.log("");
+  console.log("props", props);
+  // console.log("");
   return (
     <div className="section">
       <div className="subtitle">{props.subtitle ? props.subtitle : null}</div>
@@ -24,6 +24,17 @@ const Section = props => {
         {props.text ? props.text : null}
         {props.children ? props.children : null}
       </div>
+      {props.links ? (
+        <ul className="linksContainer">
+          {props.links.map(link => (
+            <li>
+              <a href={link.link} key={link.id} target="_blank">
+                {link.descr}
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : null}
       <div className="section_footer">
         {props.section_footer ? props.section_footer : null}
         <span className="top" onClick={e => scrollToTop(e)}>
