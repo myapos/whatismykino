@@ -1,12 +1,10 @@
 export const headerTitle = "headerTitle";
 
 export const intro_msg = `This web application aims to provide some tools that we would be useful in data processing for keno game of OPAP 
-(Greek lottery). Data are being retrieved live from OPAP REST API points. Basic usage is that you can enter the specific time frame of the 
-dates that you want to calculate data for and then the values will be ordered due to occurences. Also you can select the number of draws 
+(Greek lottery). Data are being retrieved on demand from OPAP REST API points. Basic usage is that you can enter the specific time frame of the 
+dates that you want to retrieve kino data and then the values will be ordered due to occurences. Also you can select the number of draws 
 to be used in the selected time frame.Further more, graphs that are displaying the number of occurences of each number are generated. More 
-information about OPAP Web services can be found in the links section.
-
-Happy browsing`;
+information about OPAP Web services can be found in the links section.`;
 
 export const intro_subtitle = "Introduction";
 export const intro_section_footer = "Happy browsing";

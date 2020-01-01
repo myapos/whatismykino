@@ -20,10 +20,8 @@ const Section = props => {
   return (
     <div className="section" id={props.id}>
       <div className="subtitle">{props.subtitle ? props.subtitle : null}</div>
-      <div className="msg">
-        {props.text ? props.text : null}
-        {props.children ? props.children : null}
-      </div>
+      <p className="msg">{props.text ? props.text : null}</p>
+      {props.children ? props.children : null}
       {props.links ? (
         <ul className="linksContainer">
           {props.links.map(link => (
