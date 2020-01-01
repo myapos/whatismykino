@@ -23,17 +23,17 @@ export const links = [
     descr: "OPAP web services",
     link: "https://www.opap.gr/web-services",
     id: 1
-  },
-  {
-    descr: "OPAP web services",
-    link: "https://www.opap.gr/web-services",
-    id: 2
-  },
-  {
-    descr: "OPAP web services",
-    link: "https://www.opap.gr/web-services",
-    id: 3
   }
+  // {
+  //   descr: "OPAP web services",
+  //   link: "https://www.opap.gr/web-services",
+  //   id: 2
+  // },
+  // {
+  //   descr: "OPAP web services",
+  //   link: "https://www.opap.gr/web-services",
+  //   id: 3
+  // }
 ];
 
 export const about_msg = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
