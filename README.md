@@ -19,3 +19,7 @@ the script `buildVersion.js` uses versiony package in order to autoupdate the ve
 
 We followed this approach in the case that someone clones and pulls project and his not one of the developers of the system.
 If you do not want to autoupdate the version you should give the command `HUSKY_SKIP_HOOKS=1 git pull`
+
+### Notes
+
+`https://stackoverflow.com/questions/47272428/template-literals-is-not-working-in-react`

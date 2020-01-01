@@ -10,15 +10,19 @@ const handleScroll = e => {
   );
   // get dimensions
 
-  const dim = goTo.getBoundingClientRect();
+  if (goTo) {
+    const dim = goTo.getBoundingClientRect();
 
-  // scroll to Element
+    // scroll to Element
 
-  window.scrollBy({
-    top: dim.top, // could be negative value
-    left: dim.left,
-    behavior: "smooth"
-  });
+    window.scrollBy({
+      top: dim.top, // could be negative value
+      left: dim.left,
+      behavior: "smooth"
+    });
+  } else {
+    alert(`${clickedElement} section not found`);
+  }
 };
 export const Nav = () => (
   <div id="nav">
@@ -32,9 +36,9 @@ export const Nav = () => (
       <li onClick={e => handleScroll(e)}>
         <span className="clickable">Links</span>{" "}
       </li>
-      <li onClick={e => handleScroll(e)}>
+      {/* <li onClick={e => handleScroll(e)}>
         <span className="clickable">About</span>{" "}
-      </li>
+      </li> */}
     </ul>
   </div>
 );

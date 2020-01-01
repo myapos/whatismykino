@@ -14,23 +14,34 @@ const scrollToTop = e => {
   });
 };
 
-const Section = props => (
-  <div className="section">
-    <div className="subtitle" id={props.subtitle}>
-      {props.subtitle ? props.subtitle : "subtitle"}
+const Section = props => {
+  // console.log("props", props);
+  console.log("");
+  return (
+    <div className="section" id={props.id}>
+      <div className="subtitle">{props.subtitle ? props.subtitle : null}</div>
+      <p className="msg">{props.text ? props.text : null}</p>
+      {props.children ? props.children : null}
+      {props.links ? (
+        <ul className="linksContainer">
+          {props.links.map(link => (
+            <li key={link.id}>
+              <a href={link.link} target="_blank">
+                {link.descr}
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : null}
+      <div className="section_footer">
+        {props.section_footer ? props.section_footer : null}
+        <span className="top" onClick={e => scrollToTop(e)}>
+          {" "}
+          Top{" "}
+        </span>
+      </div>
     </div>
-    <div className="msg">
-      {props.text ? props.text : "text"}
-      {props.children}
-    </div>
-    <div className="section_footer">
-      {props.section_footer ? props.section_footer : "section footer"}
-      <span className="top" onClick={e => scrollToTop(e)}>
-        {" "}
-        Top{" "}
-      </span>
-    </div>
-  </div>
-);
+  );
+};
 
 export default Section;
