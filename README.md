@@ -15,8 +15,6 @@ to be used in the selected time frame.Further more, graphs that are displaying t
 
 - `https://api.opap.gr/draws/v3.0/1100/draw-date/2019-01-01/2019-01-01`
 
-* Info: `https://www.opap.gr/web-services`
-
 ### Auto-Update Version approach
 
 For auto updating version you should give command `git pull`. After that husky hooks are triggered and the command
