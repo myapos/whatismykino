@@ -1,8 +1,11 @@
 from flask import Flask
 from flask import request
+from flask_cors import CORS
 import requests 
+
 app = Flask(__name__)
-# print(__name__)
+
+CORS(app)
 
 @app.route('/health')
 def hello_world():
@@ -21,7 +24,7 @@ def getKinos():
     # extracting data in json format 
     data = r.json()
 
-    print('request',request)
+    # print('data',data[0])
     return data
 
   
