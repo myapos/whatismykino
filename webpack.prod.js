@@ -25,6 +25,7 @@ const conf = merge(common, {
       "process.env": {
         PRODUCTION: process.env.PRODUCTION,
         USAGE: JSON.stringify(process.env.USAGE),
+        USE_PYTHON_SERVER: JSON.stringify(process.env.USE_PYTHON_SERVER),
         VERSION: JSON.stringify(require("./package.json").version)
       }
     })
