@@ -28,3 +28,5 @@ If you do not want to autoupdate the version you should give the command `HUSKY_
 
 - `https://stackoverflow.com/questions/47272428/template-literals-is-not-working-in-react`
 - `https://www.opap.gr/web-services`
+- `https://github.com/pallets/flask`
+- `https://flask.palletsprojects.com/en/1.1.x/quickstart/`
