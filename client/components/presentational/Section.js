@@ -15,10 +15,10 @@ const scrollToTop = e => {
 };
 
 const Section = props => {
-  console.log("props", props);
-  // console.log("");
+  // console.log("props", props);
+  console.log("");
   return (
-    <div className="section">
+    <div className="section" id={props.id}>
       <div className="subtitle">{props.subtitle ? props.subtitle : null}</div>
       <div className="msg">
         {props.text ? props.text : null}
@@ -27,8 +27,8 @@ const Section = props => {
       {props.links ? (
         <ul className="linksContainer">
           {props.links.map(link => (
-            <li>
-              <a href={link.link} key={link.id} target="_blank">
+            <li key={link.id}>
+              <a href={link.link} target="_blank">
                 {link.descr}
               </a>
             </li>

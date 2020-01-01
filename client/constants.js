@@ -17,7 +17,8 @@ export const graphs_subtitle = "Graphs";
 export const graphs_section_footer = "Kino statistics";
 
 export const links_subtitle = "Links";
-export const links_msg = "Interesting links";
+export const links_msg =
+  "Below you can find some interesting links that were used during the development of this project";
 export const links_section_footer = "links_section_footer";
 export const links = [
   {
@@ -46,8 +47,8 @@ export const about_section_footer = "about_section_footer";
 export const mapGoToElement = {
   Graphs: "Graphs",
   Introduction: "Introduction",
-  Links: "Links",
-  About: "About"
+  Links: "Links"
+  // About: "About"
 };
 
 let point = "";
