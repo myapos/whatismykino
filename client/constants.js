@@ -59,6 +59,10 @@ if (process.env.USAGE === "dev") {
   point = "https://serene-dusk-60425.herokuapp.com/getKinos"; // url of online server in kinoproxy heroku app
 }
 
+if (process.env.USE_PYTHON_SERVER === "true") {
+  point = "http://localhost:5000/getKinos"; // url of online server in kinoproxy heroku app
+}
+
 export const localServerApi = point;
 
 export const availableSelectValues = {

@@ -28,3 +28,6 @@ If you do not want to autoupdate the version you should give the command `HUSKY_
 
 - `https://stackoverflow.com/questions/47272428/template-literals-is-not-working-in-react`
 - `https://www.opap.gr/web-services`
+- `https://github.com/pallets/flask`
+- `https://flask.palletsprojects.com/en/1.1.x/quickstart/`
+- `https://stackoverflow.com/questions/16344756/auto-reloading-python-flask-app-upon-code-changes`
