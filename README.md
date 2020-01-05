@@ -31,3 +31,19 @@ If you do not want to autoupdate the version you should give the command `HUSKY_
 - `https://github.com/pallets/flask`
 - `https://flask.palletsprojects.com/en/1.1.x/quickstart/`
 - `https://stackoverflow.com/questions/16344756/auto-reloading-python-flask-app-upon-code-changes`
+- `https://numpy.org/`
+- `https://pandas.pydata.org/`
+- `https://scikit-learn.org/stable/`
+- `https://matplotlib.org/`
+- `https://www.kaggle.com/`
+- `https://towardsdatascience.com/an-overview-of-time-series-forecasting-models-a2fa7a358fcb`
+- `https://towardsdatascience.com/playing-with-time-series-data-in-python-959e2485bff8`
+- `https://jakevdp.github.io/PythonDataScienceHandbook/03.11-working-with-time-series.html`
+- `https://www.kdnuggets.com/2018/09/end-to-end-project-time-series-analysis-forecasting-python.html`
+- `https://machinelearningmastery.com/prepare-univariate-time-series-data-long-short-term-memory-networks/`
+- `https://www.machinelearningplus.com/time-series/arima-model-time-series-forecasting-python/`
+- `https://www.machinelearningplus.com/time-series/time-series-analysis-python/`
+- `https://ucilnica.fri.uni-lj.si/mod/resource/view.php?id=28089` example in python
+- `https://facebook.github.io/prophet/docs/quick_start.html` facebook prophet
+- `https://pythondata.com/forecasting-time-series-data-with-prophet-part-1/`
+- `https://www.opap.gr/en/kino-draw-results`
