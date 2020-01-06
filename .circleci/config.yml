@@ -6,17 +6,17 @@ jobs:
     steps:
       - checkout
       - run: echo "Installing node packages"
-      - run: yarn
-      - run: yarn build
+      - run: npm install
+      - run: npm run build
   test:
     docker:
       - image: circleci/node:10-browsers-legacy
     steps:
       - checkout
       - run: echo "Installing node packages"
-      - run: yarn
+      - run: npm install
       - run: echo "Testing"
-      - run: yarn test
+      - run: npm run test
   deploy:
     docker:
       - image: circleci/node:10-browsers-legacy
@@ -26,8 +26,8 @@ jobs:
       - run:
           name: Deploy Master to Heroku
           command: |
-            yarn
-            yarn build
+            npm install
+            npm run build
             git config credential.helper 'cache --timeout=120'
             git config user.email "<email>"
             git config user.name "Deployment Bot"
