@@ -7,7 +7,7 @@ const path = require("path");
 // const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 // const MomentLocalesPlugin = require('moment-locales-webpack-plugin');
 
-const PORT = 1234;
+const PORT = process.env.PORT || 1234;
 
 const config = {
   entry: {
