@@ -4,11 +4,15 @@ from flask_cors import CORS
 import requests 
 
 app = Flask(__name__)
-
 CORS(app)
+print(__name__)
+
+@app.route('/')
+def initial():
+    return 'OK!'
 
 @app.route('/health')
-def hello_world():
+def health():
     return 'OK!'
 
 @app.route('/getKinos')
@@ -28,4 +32,3 @@ def getKinos():
     return data
 
   
- 

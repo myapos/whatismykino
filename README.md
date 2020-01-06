@@ -24,6 +24,16 @@ the script `buildVersion.js` uses versiony package in order to autoupdate the ve
 We followed this approach in the case that someone clones and pulls project and his not one of the developers of the system.
 If you do not want to autoupdate the version you should give the command `HUSKY_SKIP_HOOKS=1 git pull`
 
+### In order to run python server give the following commands
+
+First you have to activate python environment with command `source python/bin/activate` command from root folder. To deactivate you can use `deactivate` command from root folder.
+
+- `cd python` to visit python folder which contains python server
+- `export FLASK_APP=server.py` to setup FLASK_APP environment variable
+- `flask run` to run the python server
+
+If you want to add permanently the environment variables you could add the command `export FLASK_APP=server.py` to the `~/.profile` file
+
 ### Notes
 
 - `https://stackoverflow.com/questions/47272428/template-literals-is-not-working-in-react`
