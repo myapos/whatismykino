@@ -64,4 +64,4 @@ If you want to add permanently the environment variables you could add the comma
 ### Issues
 
 1. Deploy python server to heroku
-2. Deploy client to heroku through CircleCI
+2. Deploy client to heroku through CircleCI.
