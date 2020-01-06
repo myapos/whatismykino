@@ -60,6 +60,9 @@ If you want to add permanently the environment variables you could add the comma
 - `https://gist.github.com/jesperorb/86952f98ed7ea3d1fbfa54824b22eee0` --> heroku deployment
 - `https://circleci.com/integrations/heroku/` --> heroku deployment from CircleCI
 - `https://circleci.com/docs/2.0/deployment-integrations/#heroku` --> heroku deployment from CircleCI
+- `heroku authorizations:create` to create heroku api key
+- `heroku apps` to find heroku app name
+- `https://stackabuse.com/deploying-a-flask-application-to-heroku/`
 
 ### Issues
 
