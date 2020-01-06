@@ -58,3 +58,10 @@ If you want to add permanently the environment variables you could add the comma
 - `https://pythondata.com/forecasting-time-series-data-with-prophet-part-1/`
 - `https://www.opap.gr/en/kino-draw-results`
 - `https://gist.github.com/jesperorb/86952f98ed7ea3d1fbfa54824b22eee0` --> heroku deployment
+- `https://circleci.com/integrations/heroku/` --> heroku deployment from CircleCI
+- `https://circleci.com/docs/2.0/deployment-integrations/#heroku` --> heroku deployment from CircleCI
+
+### Issues
+
+1. Deploy python server to heroku
+2. Deploy client to heroku through CircleCI
