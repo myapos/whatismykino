@@ -1,1 +1,1 @@
-web: FLASK_APP=python/server.py flask run
+web: source python/bin/activate FLASK_APP=python/server.py flask run
