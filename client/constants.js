@@ -56,7 +56,7 @@ console.log("USAGE:", process.env.USAGE);
 if (process.env.USAGE === "dev") {
   point = "http://localhost:2345/getKinos";
 } else if (process.env.USAGE === "prod") {
-  point = "https://serene-dusk-60425.herokuapp.com/getKinos"; // url of online server in kinoproxy heroku app
+  point = "https://polar-ridge-52039.herokuapp.com:5000/getKinos"; // url of online server in kinoproxy heroku app
 }
 
 if (process.env.USE_PYTHON_SERVER === "true") {
