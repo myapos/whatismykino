@@ -9,11 +9,13 @@
     "dev": "PRODUCTION=false USAGE=dev webpack-dev-server --config webpack.dev.js --mode development --hot",
     "devPython": "USE_PYTHON_SERVER=true PRODUCTION=false USAGE=dev webpack-dev-server --config webpack.dev.js --mode development --hot",
     "startDev": "concurrently \"npm run dev\" \"npm run server\"",
+    "start": "PRODUCTION=false concurrently \"npm run serve\" \"npm run server\"",
     "startClientAndPython": "USE_PYTHON_SERVER=true concurrently \"npm run devPython\" \"npm run server\"",
     "build": "USAGE=prod PRODUCTION=true webpack --mode production --config webpack.prod.js",
     "buildOld": "USAGE=prod webpack --mode production --config webpack.config.production.js",
     "test": "jest",
     "server": "nodemon ./server/server.js",
+    "serverPy": "python3 ./python/server.py",
     "precommit": "pretty-quick --staged"
   },
   "husky": {
