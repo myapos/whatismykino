@@ -47,3 +47,4 @@ If you do not want to autoupdate the version you should give the command `HUSKY_
 - `https://facebook.github.io/prophet/docs/quick_start.html` facebook prophet
 - `https://pythondata.com/forecasting-time-series-data-with-prophet-part-1/`
 - `https://www.opap.gr/en/kino-draw-results`
+- `https://gist.github.com/jesperorb/86952f98ed7ea3d1fbfa54824b22eee0` --> heroku deployment

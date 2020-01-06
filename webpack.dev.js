@@ -3,7 +3,7 @@ const path = require("path");
 const webpack = require("webpack");
 const common = require("./webpack.common.js");
 
-const PORT = 1234;
+const PORT = process.env.PORT || 1234;
 // console.log(process.env.PRODUCTION);
 // https://github.com/cvut/fittable/issues/171
 module.exports = merge(common, {
