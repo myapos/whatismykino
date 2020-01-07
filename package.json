@@ -1,7 +1,7 @@
 {
   "name": "what-is-my-kino-number",
   "description": "A web app that provides basic tools for data processing on Kino lottery",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "author": "Myron Apostolakis",
   "scripts": {
     "serve": "httpster -p 2222 -d ./dist",
