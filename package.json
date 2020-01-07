@@ -9,16 +9,12 @@
     "dev": "PRODUCTION=false USAGE=dev webpack-dev-server --config webpack.dev.js --mode development --hot",
     "devPython": "USE_PYTHON_SERVER=true PRODUCTION=false USAGE=dev webpack-dev-server --config webpack.dev.js --mode development --hot",
     "startDev": "concurrently \"npm run dev\" \"npm run server\"",
-    "start_": "USE_PYTHON_SERVER=true concurrently \"npm run serve\"",
-    "start": "USE_PYTHON_SERVER=true concurrently \"npm run serve\" \"npm run serverPy\"",
-    "start__": "USE_PYTHON_SERVER=true npm run serverPy || npm run serve",
-    "startClientAndPython": "USE_PYTHON_SERVER=true concurrently \"npm run devPython\" \"npm run serverPy\"",
+    "start": "USE_PYTHON_SERVER=true concurrently \"npm run serve\"",
     "build": "USAGE=prod PRODUCTION=true USE_PYTHON_SERVER=true webpack --mode production --config webpack.prod.js",
     "build_": "USAGE=prod PRODUCTION=true webpack --mode production --config webpack.prod.js",
     "buildOld": "USAGE=prod webpack --mode production --config webpack.config.production.js",
     "test": "jest",
     "server": "nodemon ./server/server.js",
-    "serverPy": "FLASK_APP=python/server.py flask run",
     "precommit": "pretty-quick --staged"
   },
   "husky": {
