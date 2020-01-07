@@ -54,14 +54,10 @@ let point = "";
 console.log("USAGE:", process.env.USAGE);
 
 if (process.env.USAGE === "dev") {
-  point = "http://localhost:2345/getKinos";
+  point = "http://localhost:5000/getKinos";
 } else if (process.env.USAGE === "prod") {
   point = "https://whatismykinopythonserver.herokuapp.com/getKinos"; // url of online server in kinoproxy heroku app
 }
-
-// if (process.env.USE_PYTHON_SERVER === "true") {
-//   point = "http://localhost:5000/getKinos"; // url of online server in kinoproxy heroku app
-// }
 
 export const localServerApi = point;
 

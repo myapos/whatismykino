@@ -1,4 +1,4 @@
-/*! @Build 1/7/2020, 10:27:01 PM */ !(function(e) {
+/*! @Build 1/7/2020, 10:37:23 PM */ !(function(e) {
   var t = {};
   function n(r) {
     if (t[r]) return t[r].exports;
@@ -64540,7 +64540,7 @@ object-assign
           t = new Function("return this")(),
           n = "__coverage__",
           r = t[n] || (t[n] = {});
-        return r[e] && "da65f24b92302cb97e57a0315e840ee55188f52e" === r[e].hash
+        return r[e] && "55398cae95acdcf62eb5b2f8c14e14a52323d1ca" === r[e].hash
           ? r[e]
           : (r[e] = {
               path: "/home/myros/projects/whatismykino/client/constants.js",
@@ -64630,62 +64630,62 @@ object-assign
                   end: { line: 59, column: 68 }
                 },
                 21: {
-                  start: { line: 66, column: 30 },
-                  end: { line: 66, column: 35 }
+                  start: { line: 62, column: 30 },
+                  end: { line: 62, column: 35 }
                 },
                 22: {
-                  start: { line: 68, column: 37 },
-                  end: { line: 86, column: 1 }
+                  start: { line: 64, column: 37 },
+                  end: { line: 82, column: 1 }
                 },
                 23: {
-                  start: { line: 70, column: 22 },
-                  end: { line: 70, column: 24 }
+                  start: { line: 66, column: 22 },
+                  end: { line: 66, column: 24 }
                 },
                 24: {
-                  start: { line: 71, column: 4 },
-                  end: { line: 74, column: 7 }
+                  start: { line: 67, column: 4 },
+                  end: { line: 70, column: 7 }
                 },
                 25: {
-                  start: { line: 75, column: 18 },
-                  end: { line: 75, column: 21 }
+                  start: { line: 71, column: 18 },
+                  end: { line: 71, column: 21 }
                 },
                 26: {
-                  start: { line: 77, column: 4 },
-                  end: { line: 83, column: 5 }
+                  start: { line: 73, column: 4 },
+                  end: { line: 79, column: 5 }
                 },
                 27: {
-                  start: { line: 77, column: 17 },
-                  end: { line: 77, column: 18 }
+                  start: { line: 73, column: 17 },
+                  end: { line: 73, column: 18 }
                 },
                 28: {
-                  start: { line: 79, column: 6 },
-                  end: { line: 82, column: 9 }
+                  start: { line: 75, column: 6 },
+                  end: { line: 78, column: 9 }
                 },
                 29: {
-                  start: { line: 84, column: 4 },
-                  end: { line: 84, column: 21 }
+                  start: { line: 80, column: 4 },
+                  end: { line: 80, column: 21 }
                 },
                 30: {
-                  start: { line: 88, column: 25 },
-                  end: { line: 88, column: 28 }
+                  start: { line: 84, column: 25 },
+                  end: { line: 84, column: 28 }
                 },
                 31: {
-                  start: { line: 89, column: 26 },
-                  end: { line: 89, column: 29 }
+                  start: { line: 85, column: 26 },
+                  end: { line: 85, column: 29 }
                 }
               },
               fnMap: {
                 0: {
                   name: "(anonymous_0)",
                   decl: {
-                    start: { line: 69, column: 18 },
-                    end: { line: 69, column: 19 }
+                    start: { line: 65, column: 18 },
+                    end: { line: 65, column: 19 }
                   },
                   loc: {
-                    start: { line: 69, column: 28 },
-                    end: { line: 85, column: 3 }
+                    start: { line: 65, column: 28 },
+                    end: { line: 81, column: 3 }
                   },
-                  line: 69
+                  line: 65
                 }
               },
               branchMap: {
@@ -64763,7 +64763,7 @@ object-assign
               f: { 0: 0 },
               b: { 0: [0, 0], 1: [0, 0] },
               _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-              hash: "da65f24b92302cb97e57a0315e840ee55188f52e"
+              hash: "55398cae95acdcf62eb5b2f8c14e14a52323d1ca"
             });
       })(),
       hn =
