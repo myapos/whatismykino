@@ -7,7 +7,7 @@
     "serve": "httpster -p 2222 -d ./dist",
     "dev": "USAGE=dev PRODUCTION=false webpack-dev-server --config webpack.dev.js --mode development --hot",
     "build": "USAGE=prod PRODUCTION=true webpack --mode production --config webpack.prod.js",
-    "start": "USE_PYTHON_SERVER=true concurrently \"npm run serve\"",
+    "start": "npm run serve",
     "test": "jest",
     "server": "nodemon ./server/server.js",
     "precommit": "pretty-quick --staged"
@@ -37,7 +37,6 @@
     "bootstrap-daterangepicker": "^3.0.5",
     "chalk": "^2.3.0",
     "clean-webpack-plugin": "^0.1.19",
-    "concurrently": "^5.0.2",
     "core-js": "^2.6.11",
     "cors": "^2.8.5",
     "css-loader": "^1.0.0",
