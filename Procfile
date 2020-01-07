@@ -1,1 +1,1 @@
-web: source python/bin/activate FLASK_APP=python/server.py flask run
+web: cd python && gunicorn server:app
