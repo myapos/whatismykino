@@ -39,7 +39,7 @@ class Options extends Component {
       <div id="options-container">
         <div id="options">
           <MyCustomDatePicker />
-          <div id="labelForSelect">Select last draws: </div>
+          {/* <div id="labelForSelect">Select last draws: </div> */}
           {/* <Select
             className="select"
             options={availableSelectValues.generateValues(kinos.length)}
@@ -52,9 +52,9 @@ class Options extends Component {
             {/* <LinePlot />
             <ScatterPlot /> */}
           </div>
-          <div className="preditionContainer">
+          {/* <div className="preditionContainer">
             <PredictionLinePlot />
-          </div>
+          </div> */}
         </div>
       </div>
     );
@@ -69,13 +69,3 @@ Options.propTypes = {
 };
 
 export default connect(state => state, actions)(Options);
-
-// export default connect(
-//   state => ({
-//     startDate: state.startDate,
-//     endDate: state.endDate,
-//     maxDate: state.maxDate,
-//     kinos: state.kinos,
-//   }),
-//   { fetchForDate }
-// )(Options);

@@ -34,25 +34,11 @@ function* fetchKinosForDates(action) {
   const { startDate, endDate } = action;
 
   const histogramResults = yield call(api.fetchKinos, startDate, endDate);
-  // console.log("res:", res);
-  // debugger;
   console.log("histogramResults", histogramResults);
-  debugger;
-  // const groupped = groupBy(kinos, "kino");
-  // // whatismykino(kinos);
-
-  // const occurences = Object.keys(groupped).map(key => ({
-  //   kino: key,
-  //   occurences: groupped[key].length
-  // }));
 
   yield put({
     type: actions.SAGAS_KINOS_FETCHED,
-    // kinos,
     histogramResults,
-    // frequencies,
-    // bins,
-    // occurences,
     waitForPrediction: false,
     startDate,
     endDate
@@ -65,9 +51,6 @@ function* limitKinos(action) {
   const results = yield call(whatismykino, state.kinos); // kinos here are limited already
 
   const { prediction, maData, lwmaData, trendData } = results;
-  // console.log(prediction);
-
-  // console.log(maData);
 
   yield put({
     type: actions.SAGAS_PREDICTION,

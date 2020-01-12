@@ -24,47 +24,8 @@ class Histogram extends Component {
   render() {
     const { occurences, limited, allOccurences, histogramResults } = this.props;
 
-    console.log(
-      "occurences",
-      occurences,
-      " limited",
-      limited,
-      " allOccurences:",
-      allOccurences
-    );
-
-    const data = [
-      {
-        kino: "Page A",
-        frequency: 4000
-      },
-      {
-        kino: "Page B",
-        frequency: 3000
-      },
-      {
-        kino: "Page C",
-        frequency: 2000
-      },
-      {
-        kino: "Page D",
-        frequency: 2780
-      },
-      {
-        kino: "Page E",
-        frequency: 1890
-      },
-      {
-        kino: "Page F",
-        frequency: 2390
-      },
-      {
-        kino: "Page G",
-        frequency: 3490
-      }
-    ];
-    // data={limited ? occurences : allOccurences}
-    if (1 || occurences.length > 0) {
+    console.log("histogramResults", histogramResults);
+    if (histogramResults && histogramResults.length > 0) {
       return (
         <div>
           <div className="labelForChart"> Histogram of kinos </div>
@@ -84,7 +45,11 @@ class Histogram extends Component {
         </div>
       );
     } else {
-      return null;
+      return (
+        <div className="dateRangeMsg">
+          Please select date range and click apply
+        </div>
+      );
     }
   }
 }

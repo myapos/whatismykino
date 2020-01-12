@@ -16,10 +16,6 @@ const onApply = (event, picker, fetchKinosForDates) => {
   fetchKinosForDates(picker.startDate, picker.endDate);
 };
 
-// const handleEvent = (event, picker) => {
-//   console.log(picker.startDate);
-// };
-
 const label = (startDate, endDate) => {
   let output = `${startDate.format("MMMM D, YYYY")} - ${endDate.format(
     "MMMM D, YYYY"
