@@ -20,8 +20,7 @@ const reducer = (state = {}, action) => {
     trendData,
     lwmaData,
     kinos,
-    bins,
-    frequencies,
+    kinoData,
     histogramResults
   } = action;
 
@@ -60,12 +59,10 @@ const reducer = (state = {}, action) => {
         allKinos: kinos,
         allOccurences: occurences,
         histogramResults,
-        // kinos,
+        kinos,
+        kinoData,
         startDate,
         endDate,
-        // occurences,
-        // bins,
-        // frequencies,
         loading: false,
         limited: false
       };

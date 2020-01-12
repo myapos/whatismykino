@@ -22,19 +22,19 @@ class LinePlot extends Component {
   }
 
   render() {
-    const { kinos, limited, allKinos } = this.props;
-    if (kinos.length > 0) {
+    const { kinoData, limited, allKinos } = this.props;
+    if (kinoData && kinoData.length > 0) {
       return (
         <div>
           <div className="labelForChart"> Kinos line plot </div>
           <LineChart
             width={widthPlot}
             height={heightPlot}
-            data={limited ? kinos : allKinos}
+            data={kinoData}
             margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
           >
-            <XAxis dataKey="drawNo" />
-            <YAxis />
+            <XAxis dataKey="drawId" />
+            <YAxis dataKey="kino" />
             <CartesianGrid strokeDasharray="3 3" />
             <Tooltip />
             <Legend />

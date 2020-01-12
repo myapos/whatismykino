@@ -12,6 +12,7 @@ import MyCustomDatePicker from "./MyCustomDatePicker";
 import ScatterPlot from "./charts/ScatterPlot";
 import Histogram from "./charts/Histogram";
 import LinePlot from "./charts/LinePlot";
+import PiePlot from "./charts/PiePlot";
 import PredictionLinePlot from "./charts/PredictionLinePlot";
 
 import { availableSelectValues } from "../../constants";
@@ -49,8 +50,9 @@ class Options extends Component {
         <div className="results">
           <div className="chartContainer">
             <Histogram />
-            {/* <LinePlot />
-            <ScatterPlot /> */}
+            <LinePlot />
+            <ScatterPlot />
+            <PiePlot />
           </div>
           {/* <div className="preditionContainer">
             <PredictionLinePlot />

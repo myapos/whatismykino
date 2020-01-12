@@ -33,12 +33,18 @@ function* fetchForDate(action) {
 function* fetchKinosForDates(action) {
   const { startDate, endDate } = action;
 
-  const histogramResults = yield call(api.fetchKinos, startDate, endDate);
+  const { histogramResults, kinos, kinoData } = yield call(
+    api.fetchKinos,
+    startDate,
+    endDate
+  );
   console.log("histogramResults", histogramResults);
 
   yield put({
     type: actions.SAGAS_KINOS_FETCHED,
     histogramResults,
+    kinos,
+    kinoData,
     waitForPrediction: false,
     startDate,
     endDate
