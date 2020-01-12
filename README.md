@@ -5,6 +5,8 @@ This web application aims to provide some tools that we would be useful in data 
 dates that you want to retrieve kino data and then the values will be ordered due to occurences. Also you can select the number of draws
 to be used in the selected time frame.Further more, graphs that are displaying the number of occurences of each number are generated.
 
+For development you should clone the python server from `https://github.com/myapos/whatIsMyKinoPythonServer` and follow the instructions for running the server.
+
 ### Commands
 
 - `npm install` to install npm packages

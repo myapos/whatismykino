@@ -49,17 +49,19 @@ export const mapGoToElement = {
   // About: "About"
 };
 
-let point = "";
+let BASE_URL = "";
 
 console.log("USAGE:", process.env.USAGE);
 
 if (process.env.USAGE === "dev") {
-  point = "http://localhost:5000/getKinos";
+  BASE_URL = "http://localhost:5000";
 } else if (process.env.USAGE === "prod") {
-  point = "https://whatismykinopythonserver.herokuapp.com/getKinos"; // url of online server in kinoproxy heroku app
+  BASE_URL = "https://whatismykinopythonserver.herokuapp.com"; // url of online server in kinoproxy heroku app
 }
 
-export const localServerApi = point;
+export const localServerApi = `${BASE_URL}/getHist`;
+export const localServerGetHist = `${BASE_URL}/getHist`;
+console.log("localServerGetHist____", localServerGetHist);
 
 export const availableSelectValues = {
   generateValues: length => {
