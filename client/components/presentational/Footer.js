@@ -34,11 +34,6 @@ export const Footer = () => (
         {" "}
         Myron Apostolakis{" "}
       </a>
-      and{" "}
-      <a id="mailToCoder" href="mailto:mkgrks@gmail.com">
-        {" "}
-        Michael Garganourakis{" "}
-      </a>
     </div>
     <div className="coder copyright">Copyright @2018. All rights reserved</div>
   </div>

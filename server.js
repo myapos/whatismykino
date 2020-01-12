@@ -1,13 +1,13 @@
 //server.js
 const express = require("express");
-// const favicon = require("express-favicon");
+const cors = require("cors");
 const path = require("path");
 const port = process.env.PORT || 2222;
 const app = express();
-// app.use(favicon(__dirname + "/build/favicon.ico"));
+app.use(cors());
 
 // the __dirname is the current directory from where the script is running
-// app.use(express.static(__dirname));
+
 app.use(express.static(path.join(__dirname, "dist")));
 
 // app.use(express.static(path.join(__dirname, "build")));

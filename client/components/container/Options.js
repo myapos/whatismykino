@@ -40,17 +40,17 @@ class Options extends Component {
         <div id="options">
           <MyCustomDatePicker />
           <div id="labelForSelect">Select last draws: </div>
-          <Select
+          {/* <Select
             className="select"
             options={availableSelectValues.generateValues(kinos.length)}
             onChange={this.handleChange.bind(this)}
-          />
+          /> */}
         </div>
         <div className="results">
           <div className="chartContainer">
-            <LinePlot />
-            <ScatterPlot />
             <Histogram />
+            {/* <LinePlot />
+            <ScatterPlot /> */}
           </div>
           <div className="preditionContainer">
             <PredictionLinePlot />

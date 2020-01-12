@@ -10,7 +10,6 @@ const reducer = (state = {}, action) => {
     kino,
     startDate,
     endDate,
-    kinos,
     occurences,
     loading,
     selectedOption,
@@ -19,7 +18,11 @@ const reducer = (state = {}, action) => {
     waitForPrediction,
     maData,
     trendData,
-    lwmaData
+    lwmaData,
+    kinos,
+    bins,
+    frequencies,
+    histogramResults
   } = action;
 
   switch (type) {
@@ -56,10 +59,13 @@ const reducer = (state = {}, action) => {
         ...state,
         allKinos: kinos,
         allOccurences: occurences,
-        kinos,
+        histogramResults,
+        // kinos,
         startDate,
         endDate,
-        occurences,
+        // occurences,
+        // bins,
+        // frequencies,
         loading: false,
         limited: false
       };

@@ -33,28 +33,29 @@ function* fetchForDate(action) {
 function* fetchKinosForDates(action) {
   const { startDate, endDate } = action;
 
-  const { kinos, fromDate, toDate } = yield call(
-    api.fetchKinos,
-    startDate,
-    endDate
-  );
-  // console.log('fetched', kinos);
+  const histogramResults = yield call(api.fetchKinos, startDate, endDate);
+  // console.log("res:", res);
+  // debugger;
+  console.log("histogramResults", histogramResults);
+  debugger;
+  // const groupped = groupBy(kinos, "kino");
+  // // whatismykino(kinos);
 
-  const groupped = groupBy(kinos, "kino");
-  // whatismykino(kinos);
-
-  const occurences = Object.keys(groupped).map(key => ({
-    kino: key,
-    occurences: groupped[key].length
-  }));
+  // const occurences = Object.keys(groupped).map(key => ({
+  //   kino: key,
+  //   occurences: groupped[key].length
+  // }));
 
   yield put({
     type: actions.SAGAS_KINOS_FETCHED,
-    kinos,
+    // kinos,
+    histogramResults,
+    // frequencies,
+    // bins,
+    // occurences,
     waitForPrediction: false,
-    startDate: fromDate,
-    endDate: toDate,
-    occurences
+    startDate,
+    endDate
   });
 }
 
