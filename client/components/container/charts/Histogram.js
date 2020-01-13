@@ -7,7 +7,8 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
-  ResponsiveContainer
+  ResponsiveContainer,
+  ComposedChart
 } from "recharts";
 import { connect } from "react-redux";
 import * as actions from "../../../store/actions";
@@ -28,21 +29,23 @@ class Histogram extends Component {
     console.log("histogramResults", histogramResults);
     if (histogramResults && histogramResults.length > 0) {
       return (
-        <div>
+        <div style={{ width: "100%", height: `${heightPlot}px` }}>
+          <ResponsiveContainer width={700} height="80%">
+            <BarChart
+              width={widthPlot}
+              height={heightPlot}
+              data={histogramResults}
+              margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="kino" />
+              <YAxis />
+              <Legend />
+              <Bar dataKey="frequency" fill="#8884d8" />
+              <Tooltip />
+            </BarChart>
+          </ResponsiveContainer>
           <div className="labelForChart"> Histogram of kinos </div>
-          <BarChart
-            width={widthPlot}
-            height={heightPlot}
-            data={histogramResults}
-            margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="kino" />
-            <YAxis />
-            <Legend />
-            <Bar dataKey="frequency" fill="#8884d8" />
-            <Tooltip />
-          </BarChart>
         </div>
       );
     } else {
