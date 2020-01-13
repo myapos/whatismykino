@@ -50,8 +50,8 @@ class Options extends Component {
         <div className="results">
           <div className="chartContainer">
             <Histogram />
-            {/* <LinePlot />
-            <ScatterPlot /> */}
+            <LinePlot />
+            <ScatterPlot />
             <PiePlot />
           </div>
           {/* <div className="preditionContainer">
