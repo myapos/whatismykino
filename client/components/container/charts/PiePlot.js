@@ -50,19 +50,24 @@ class PiePlot extends Component {
       left: 350,
       lineHeight: "24px"
     };
+    console.log("histogramResuls", histogramResults);
     if (histogramResults && histogramResults.length > 0) {
+      const hist = histogramResults.map(r => ({
+        name: `${r.kino}`,
+        value: r.frequency
+      }));
       return (
         <div>
           <div className="labelForChart"> Kinos pie plot </div>
           <PieChart width={widthPlot} height={heightPlot}>
             <Pie
-              dataKey="frequency"
-              data={histogramResults}
+              data={hist}
               label
-              outerRadius="100%"
+              outerRadius="90%"
               fill="#8884d8"
+              dataKey="value"
             />
-            <Tooltip />
+            <Tooltip formatter={(value, name) => `frequency: ${value}`} />
           </PieChart>
         </div>
       );
