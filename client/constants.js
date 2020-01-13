@@ -83,5 +83,5 @@ export const availableSelectValues = {
   }
 };
 
-export const widthPlot = 600;
-export const heightPlot = 300;
+export const widthPlot = 1200;
+export const heightPlot = 600;
