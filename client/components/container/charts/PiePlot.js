@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { PieChart, Pie, Legend, Tooltip } from "recharts";
+import { PieChart, Pie, Tooltip, ResponsiveContainer } from "recharts";
 
 import * as actions from "../../../store/actions";
 import { widthPlot, heightPlot } from "../../../constants";
@@ -57,18 +57,20 @@ class PiePlot extends Component {
         value: r.frequency
       }));
       return (
-        <div>
+        <div style={{ width: "100%", height: `${heightPlot}px` }}>
+          <ResponsiveContainer width={700} height="80%">
+            <PieChart width={widthPlot} height={heightPlot}>
+              <Pie
+                data={hist}
+                label
+                outerRadius="90%"
+                fill="#8884d8"
+                dataKey="value"
+              />
+              <Tooltip formatter={(value, name) => `frequency: ${value}`} />
+            </PieChart>
+          </ResponsiveContainer>
           <div className="labelForChart"> Kinos pie plot </div>
-          <PieChart width={widthPlot} height={heightPlot}>
-            <Pie
-              data={hist}
-              label
-              outerRadius="90%"
-              fill="#8884d8"
-              dataKey="value"
-            />
-            <Tooltip formatter={(value, name) => `frequency: ${value}`} />
-          </PieChart>
         </div>
       );
     } else {

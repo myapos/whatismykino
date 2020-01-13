@@ -52,7 +52,7 @@ class Options extends Component {
             <Histogram />
             <LinePlot />
             <ScatterPlot />
-            <PiePlot />
+            <PiePlot /> {/* */}
           </div>
           {/* <div className="preditionContainer">
             <PredictionLinePlot />
